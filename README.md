@@ -24,9 +24,10 @@ After completing the above steps, feel free to begin updating this readme where 
 
 ### Student First & Last Name
 
-🆔 &nbsp; 000#######
+🆔 &nbsp; Bradley Matera
+#0005252248
 
-📪 &nbsp; email@student.fullsail.edu
+📪 &nbsp; bfmatera@student.fullsail.edu
 
 Hello my name is [Bradley Matera]. I am a student from [Davis Illnois]. The purpose of this repository is to practice development using version control. This work will help me begin to build a portfolio of skills and accomplishment that can be shared in the future.
 
@@ -48,16 +49,51 @@ Each week I will summarize my milestone activity and progress by writing a stand
 
 ### Week 1
 
-Replace this paragraph with your stand up for this week. Use the prompts above to summarize your most recent milestone activity and work.
+⚙️ Overview - What I worked on this past week
+<br>
+🌵 Challenges - What problems did I have & how I'm addressing them
+<br>
+🏆 Accomplishments - What is something I "leveled up" on this week
+<br>
+🔮 Next Steps - What I plan to prioritize and do next
+
+<br>
 
 ### Week 2
 
-My next stand up will go here...
+⚙️ Overview - What I worked on this past week
+<br>
+🌵 Challenges - What problems did I have & how I'm addressing them
+<br>
+🏆 Accomplishments - What is something I "leveled up" on this week
+<br>
+🔮 Next Steps - What I plan to prioritize and do next
+
+<br>
+
 
 ### Week 3
 
-Stay tuned, this stand up is coming soon...
+⚙️ Overview - What I worked on this past week
+<br>
+🌵 Challenges - What problems did I have & how I'm addressing them
+<br>
+🏆 Accomplishments - What is something I "leveled up" on this week
+<br>
+🔮 Next Steps - What I plan to prioritize and do next
+
+<br>
+
 
 ### Week 4
 
-My final stand up...
+⚙️ Overview - What I worked on this past week
+<br>
+🌵 Challenges - What problems did I have & how I'm addressing them
+<br>
+🏆 Accomplishments - What is something I "leveled up" on this week
+<br>
+🔮 Next Steps - What I plan to prioritize and do next
+
+<br>
+
