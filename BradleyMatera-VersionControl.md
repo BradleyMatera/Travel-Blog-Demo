@@ -2,7 +2,7 @@
 
 Update this document where indicated [look for the brackets!]. Replace text inside the brackets with your own information. For example: Course Name should be the name of this course, and not the generic words "Course Name".
 
-## [ Course Name <-- Replace all text in brackets ]
+## [ Course Name ]
 
 - **[ Bradely Matera ]**
 - **[ March 10th 2024 ]**
