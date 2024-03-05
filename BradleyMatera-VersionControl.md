@@ -4,8 +4,8 @@ Update this document where indicated [look for the brackets!]. Replace text insi
 
 ## PROJECT AND PORTFOLIO I: WEB DEVELOPMENT - ONLINE
 
-- ** Bradely Matera **
-- ** March 10th 2024 **
+### **Bradely Matera**
+### **March 10th 2024**
 
 This paper addresses some of the topic matter covered in research and activity this week. Be sure to include reference links below to the research and information you used to complete this assignment.
 
@@ -15,103 +15,108 @@ Professional developers use Terminal daily. It's essential to understand some fu
 
 Update the information below to demonstrate your knowledge on this topic.
 
-**1. Using Terminal, there are essential commands to know.**
+**Using Terminal, there are essential commands to know**
 
 List the correct Terminal commands to do the actions listed below. Replace **CMD** with the correct command sequence. You can keep or enhance the brief description.
 
 **The last bullet provides an example**.
 
-- Ctrl+E: Clear the Screen
-- PWD: Print the "Working Directory" // Full path to the working directory
-- ls: List files and folders
-- ls -a: List files and folders, including invisible files
-- ls -lh: List all files and folders, in human-readable form
-- cd [folder: Change directory ex: cd /users/my name/documents/
-- cd /: Change directory, go to root directory
-- cd ~: Change directory and go to user home directory
-- cd ..: Change directory, go up one folder level
-- cd ../..: Change directory, go up two folder levels
-- cd ~/Desktop: Change the directory to my desktop!
 
-**2. Using Terminal...**
-For this assignment, I will be using the terminal, not iterm2 or any other specialty terminal
+- ``Ctrl+E``: Clear the Screen
+- ``PWD``: Print the "Working Directory" // Full path to the working directory
+- ``ls``: List files and folders
+- ``ls -a``: List files and folders, including invisible files
+- ``ls -lh``: List all files and folders, in human-readable form
+- ``cd`` [folder: Change directory ex: cd /users/my name/documents/
+- ``cd`` /: Change directory, go to root directory
+- ``cd`` ~: Change directory and go to user home directory
+- ``cd ..``: Change directory, go up one folder level
+- ``cd ../..``: Change directory, go up two folder levels
+- ``cd ~/Desktop``: Change the directory to my desktop!
+
+**Using Terminal**
+
 
 **Folder Drop:** Try typing "cd" followed by a space, and then drag a folder into the terminal and press return. Test this out and describe your results below.
 
 It opened up the content directory or the cd when I dragged and dropped it into the terminal after inputting the cmd,
-~ cd
-~ cd
-~ /Users/bradleymatera/Desktop/FullSail
+- ``~ cd``
+- ``~ cd``
+- ``~ /Users/bradleymatera/Desktop/FullSail``
 
-## Topic: Version Control & Git
+### Topic: Version Control & Git
 
 Version control, also known as revision control, records changes to a file or set of files over time so that you can recall specific versions later. In this class, we are learning Git. Update the information below where indicated.
 
-**1. There are three types of version control.**
+**. There are three types of version control.**
 
-[
-Local:Only you have access to the repository (No network connection needed)
-Centralized: A single central server controls the codebase and everyone works off that same copy
-Distributed: Everyone has a full copy of the entire project history; no need for a central authority
-]
 
-**2. Using Terminal, there are also essential Git commands to know.**
+- **Local: Only you have access to the repository (No network connection needed)**
+- **Centralized: A single central server controls the codebase and everyone works off that same copy**
+- **Distributed: Everyone has a full copy of the entire project history; no need for a central authority**
+
+
+**. Using Terminal, there are also essential Git commands to know.**
 
 List the correct Git commands to do the actions listed below in Terminal. Replace CMD with the correct command and keep or enhance the brief description.
 
-- git clone repository URL: Clones a remote repository
-- git config --global user.name"[Your Name]": Set up a global username
-- git config --global user.email "[your.email@example.com]": Set up a global email address (to match my GitHub account email)
-- git status: Shows the current state of your directory and staging area
-- git add .: Add modified files to the next commit
-- git commit -m "[commit message]"]: Make a commit with a new message
-- git log: Show my commit history
-- git --help: Show Git's help screen
+- ``git clone repository URL``: Clones a remote repository
+- ``git config --global user.name"[Your Name]"``: Set up a global username
+- ``git config --global user.email "[your.email@example.com]"``: Set up a global email address (to match my GitHub account email)
+- ``git status``: Shows the current state of your directory and staging area
+- ``git add .``: Add modified files to the next commit
+- ``git commit -m "[commit message]"]``: Make a commit with a new message
+- ``git log``: Show my commit history
+- ``git --help``: Show Git's help screen
 
-**3. Connecting to GitHub using Terminal.**  
+### **Connecting to GitHub using Terminal**  
 HTTPS is the correct way to connect to GitHub in this course. Describe how you connect to GitHub from Terminal using this protocol. What steps
 
-## 1 Configure your login by using the cmd
+### Configure your login by using the cmd
 
-git config --global user.name "Your User Name"
+``git config --global user.name "Your User Name"``
 
-git config --global user.email "Your Email Address"
+``git config --global user.email "Your Email Address"``
 
-## 2 Confirm it by retyping cmds
+ ### Confirm it by retyping cmds
 
-git config --global user.name
-git config --global user.email
+``git config --global user.name``
+``git config --global user.email``
 
-## 3 Clone repo: Go to the folder where you want to put the cloned repo in terminal
+ ### Clone repo: Go to the folder where you want to put the cloned repo in the terminal
 
-[# Type git clone https://github.com/username/repo]
+ Type git clone https://github.com/username/repo
 
-## 4 Wait for prompt/Confirm
+ ### Wait for a prompt/Confirm
 
-#Wait for it to prompt you for your access key if necessary. If not, move on to step 5. If you haven't set up your passkey and it asked for access key then you will have to go you your repo page directly to set it up.]
-#If it did prompt you in the terminal it would look like this:  
-#Cloning into 'folderName'...
-#remote: Counting objects: 57, done.
-#remote: Total 57 (delta 0), reused 0 (delta 0), pack-reused 56.  
-#Receiving objects: 100% (57/57), 49.8KiB
-#After pressing enter, you should now see all the contents from the repo.
+- Wait for it to prompt you for your access key if necessary. If not, move on to step 5. If you haven't set up your passkey and it asked for access key then you will have to go you your repo page directly to set it up.]
+- If it did prompt you in the terminal it would look like this:  
+ ``Cloning into 'folderName'...``
+ ``remote: Counting objects: 57, done.``
+ ``remote: Total 57 (delta 0), reused 0 (delta 0), pack-reused 56.  ``
+ ``Receiving objects: 100% (57/57), 49.8KiB``
+ ``After pressing enter, you should now see all the contents from the repo.``
 
-## 5 To push changes from the local machine to Github
+###  To push changes from the local machine to Github
 
-#First make sure you are in the correct directory
-#Then type git push origin master
+ First, make sure you are in the correct directory
+ Then type ``git push origin master``
+ ``git commit -a.``
+ ``git commit -m "commit message"``
+ ``git commit -am "commit message"``
+ ``git commit --amend.``
 
-## 6 To pull changes from Github to your local machine
+ 6 To pull changes from Github to your local machine
 
-#git pull origin master
+ ``git pull origin master``
 
-**4. Using .gitignore and Why it's Important**
+### **Using .gitignore and Why it's Important**
 
 Most repositories contain a .gitignore file.
 
 - What is the purpose of this file?
 <br>
-[The .gitignore file specifies intentionally untracked files that Git should ignore. This is useful for ignoring build artifacts, personal IDE config files, and other files that don't need to be version-controlled.
+The .gitignore file specifies intentionally untracked files that Git should ignore. This is useful for ignoring build artifacts, personal IDE config files, and other files that don't need to be version-controlled.
 
 - What is the "**.DS_Store**" file and why would you want to ignore it?
 <br>
@@ -122,7 +127,7 @@ Most repositories contain a .gitignore file.
  Node modules folder (node_modules/) - this contains dependencies installed by Node.js package managers which shouldn't be committed to version control.
 <br>
 
-# Reference Links
+### Reference Links
 
 Research Summary: What resource(s) did you find most helpful this past week and why? 
 
