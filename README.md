@@ -1,25 +1,3 @@
-# 🚀 Welcome to Project & Portfolio!
-
-This repository will be used to keep track of research and development conducted in this class. Follow the instructions below to get started.
-
-### Getting Started
-
-**1.** Review the [About](./docs/01_about/README.md) README and all of the links it provides.
-
-**2.** Review the documentation and [Getting Started](./docs/02_getting_started/README.md) steps in this repository's docs folder.
-
-**3.** Attend the first Live Lecture to see a live setup demo. If you are unable to attend, make sure to watch the archive.
-
-### Next Steps...
-
-After completing the above steps, feel free to begin updating this readme where indicated below. Remember to update this document each week to receive proper credit for the weekly Milestone assignment.
-
-<br>
-
-> ❗️ &nbsp; Now that you have read to this point, go ahead and delete this sentence and everything above it.
-
-<br>
-
 # Project & Portfolio 1
 
 ### Student First & Last Name
@@ -29,48 +7,53 @@ After completing the above steps, feel free to begin updating this readme where 
 
 📪 &nbsp; bfmatera@student.fullsail.edu
 
-Hello my name is [Bradley Matera]. I am a student from [Davis Illnois]. The purpose of this repository is to practice development using version control. This work will help me begin to build a portfolio of skills and accomplishment that can be shared in the future.
-
+Hello! My name is Bradley Matera. I am a student from Davis, Illinois. The purpose of this repository is to practice development using version control. This work will help me begin to build a portfolio of skills and accomplishments that can be shared in the future.
 <br>
 
 ## 📢 &nbsp; Weekly Stand Up
 
 Each week I will summarize my milestone activity and progress by writing a stand-up. A stand-up is meant to be a succinct update on how things are going. Use these prompts as a guide on what to write about:
-
-⚙️ Overview - What I worked on this past week
-<br>
-🌵 Challenges - What problems did I have & how I'm addressing them
-<br>
-🏆 Accomplishments - What is something I "leveled up" on this week
-<br>
-🔮 Next Steps - What I plan to prioritize and do next
-
-<br>
-
 ### Week 1
 
-⚙️ Overview - What I worked on this past week
+⚙️ Overview - What I worked on this past week:
+
+-Designing and developing my assignment portfolio.
+Exploring GitHub repositories management via Mac terminal commands. Learned Agile and Waterfall methodologies
 <br>
-🌵 Challenges - What problems did I have & how I'm addressing them
+
+🌵 Challenges - What problems did I have & how I'm addressing them:
+
+-No challenges so far. It was a bit tough at first, but I've used GitHub in the past. Actually learning it in a class and using the knowledge made this a lot easier for me.
 <br>
-🏆 Accomplishments - What is something I "leveled up" on this week
+
+🏆 Accomplishments - What is something I "leveled up" on this week:
+
+-My markdown skills have significantly improved.
 <br>
-🔮 Next Steps - What I plan to prioritize and do next
+
+🔮 Next Steps - What I plan to prioritize and do next:
+
+-Incorporating IMAGES, videos, and everything visual! I'm looking forward to what's next.
 
 <br>
 
 ### Week 2
 
 ⚙️ Overview - What I worked on this past week
+
 <br>
+
 🌵 Challenges - What problems did I have & how I'm addressing them
+
 <br>
+
 🏆 Accomplishments - What is something I "leveled up" on this week
+
 <br>
+
 🔮 Next Steps - What I plan to prioritize and do next
 
 <br>
-
 
 ### Week 3
 
@@ -94,6 +77,3 @@ Each week I will summarize my milestone activity and progress by writing a stand
 🏆 Accomplishments - What is something I "leveled up" on this week
 <br>
 🔮 Next Steps - What I plan to prioritize and do next
-
-<br>
-
