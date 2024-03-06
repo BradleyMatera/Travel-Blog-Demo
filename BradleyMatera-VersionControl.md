@@ -1,24 +1,25 @@
-# Instructions
 
-"Update this document where indicated [look for the brackets!]. Replace text inside the brackets with your own information. For example: Course Name should be the name of this course, and not the generic words "Course Name"."
+# **PROJECT AND PORTFOLIO I: WEB DEVELOPMENT - ONLINE**
 
-## PROJECT AND PORTFOLIO I: WEB DEVELOPMENT - ONLINE
+> **Note**: *This document has been meticulously updated to include my personal journey and insights.*
 
-### **Bradely Matera**
-### **March 10th 2024**
+### **Authored by Bradley Matera**
 
-"This paper addresses some of the topic matter covered in research and activity this week. Be sure to include reference links below to the research and information you used to complete this assignment."
+#### *Publish Date: March 10th, 2024*
 
-## Topic: Terminal
+This document elaborates on various topics explored through research and activities undertaken this week. For a deeper understanding, refer to the curated list of [reference links](#reference-links) at the document's end, which were instrumental in completing this assignment.
 
-Professional developers use Terminal daily. It's essential to understand some fundamental commands to use the application.
+---
 
-Update the information below to demonstrate your knowledge on this topic.
+## **A How-To Guide Using MAC Terminal for this assignment**
 
-**Using Terminal, there are essential commands to know**
+Professional developers integrate Terminal into their daily workflow. Understanding its fundamental commands is not just beneficial; it's essential. This section demonstrates its application by guiding you through the creation of my portfolio.
 
-List the correct Terminal commands to do the actions listed below. Replace **CMD** with the correct command sequence. You can keep or enhance the brief description.
+### **Getting Started with Terminal**
 
+- **Open Terminal on Mac**: Located in `/Applications/Utilities/`, or access it quickly with Spotlight `Cmd + Space`.
+
+- **Basic Navigation Commands**: Familiarize yourself with these to effortlessly navigate your system:
 **The last bullet provides an example**.
 
 
@@ -34,15 +35,22 @@ List the correct Terminal commands to do the actions listed below. Replace **CMD
 - ``cd ../..``: Change directory, go up two folder levels
 - ``cd ~/Desktop``: Change the directory to my desktop!
 
-**Using Terminal**
-
+## **Exercise:**
 
 **Folder Drop:** Try typing "cd" followed by a space, and then drag a folder into the terminal and press return. Test this out and describe your results below.
 
-It opened up the content directory or the cd when I dragged and dropped it into the terminal after inputting the cmd,
-- ``~ cd``
-- ``~ cd``
-- ``~ /Users/bradleymatera/Desktop/FullSail``
+**What happened for me**:
+It opened up the content directory or the cd when I dragged and dropped it into the terminal after inputting the cmd
+
+```
+
+ ~ cd
+
+ ~ cd
+
+~ /Users/bradleymatera/Desktop/FullSail
+
+```
 
 ### Topic: Version Control & Git
 
@@ -50,65 +58,87 @@ Version control, also known as revision control, records changes to a file or se
 
 **. There are three types of version control.**
 
-
 - **Local: Only you have access to the repository (No network connection needed)**
 - **Centralized: A single central server controls the codebase and everyone works off that same copy**
 - **Distributed: Everyone has a full copy of the entire project history; no need for a central authority**
 
+**Using Terminal, these are some essential Git commands to know with their own brief descriptions**
 
-**. Using Terminal, there are also essential Git commands to know.**
+- `git clone repository URL`: Clones a remote repository
+- `git config --global user.name"[Your Name]"`: Set up a global username
+- `git config --global user.email "[your.email@example.com]"`: Set up a global email address (to match my GitHub account email)
+- `git status`: Shows the current state of your directory and staging area
+- `git add .`: Add modified files to the next commit
+- `git commit -m "[commit message]"`: Make a commit with a new message
+- `git log`: Show my commit history
+- `git --help`: Show Git's help screen
 
-List the correct Git commands to do the actions listed below in Terminal. Replace CMD with the correct command and keep or enhance the brief description.
+## **Connecting to GitHub Using Terminal via HTTPS**
 
-- ``git clone repository URL``: Clones a remote repository
-- ``git config --global user.name"[Your Name]"``: Set up a global username
-- ``git config --global user.email "[your.email@example.com]"``: Set up a global email address (to match my GitHub account email)
-- ``git status``: Shows the current state of your directory and staging area
-- ``git add .``: Add modified files to the next commit
-- ``git commit -m "[commit message]"]``: Make a commit with a new message
-- ``git log``: Show my commit history
-- ``git --help``: Show Git's help screen
+Using HTTPS is the recommended method to connect to GitHub in this course. This guide will walk you through the steps of setting up your connection to GitHub using this protocol through the terminal.
 
-### **Connecting to GitHub using Terminal**  
-HTTPS is the correct way to connect to GitHub in this course. Describe how you connect to GitHub from Terminal using this protocol. What steps
+### Configuring Your GitHub Credentials
 
-### Configure your login by using the cmd
+Before you start, you need to configure your GitHub username and email associated with your GitHub account. This is a crucial step for commit history to accurately reflect your contributions.
 
-``git config --global user.name "Your User Name"``
+``git config --global user.name "Your UserName"``
 
-``git config --global user.email "Your Email Address"``
+``git config --global user.email "your.email@example.com"``
 
- ### Confirm it by retyping cmds
+### Verifying Your Configuration
+
+To ensure your global configuration for user.name and user.email has been set up correctly, you can retype the following commands. They should return the username and email you've just configured.
 
 ``git config --global user.name``
 ``git config --global user.email``
 
- ### Clone repo: Go to the folder where you want to put the cloned repo in the terminal
+### Cloning a Repository
 
- Type git clone https://github.com/username/repo
+To clone a repository, navigate to the folder in your terminal where you want to clone the repository and execute the clone command with the repository's HTTPS URL.
 
- ### Wait for a prompt/Confirm
+ ``Type git clone <https://github.com/username/repo>``
 
-- Wait for it to prompt you for your access key if necessary. If not, move on to step 5. If you haven't set up your passkey and it asked for access key then you will have to go you your repo page directly to set it up.]
-- If it did prompt you in the terminal it would look like this:  
- ``Cloning into 'folderName'...``
- ``remote: Counting objects: 57, done.``
- ``remote: Total 57 (delta 0), reused 0 (delta 0), pack-reused 56.  ``
- ``Receiving objects: 100% (57/57), 49.8KiB``
- ``After pressing enter, you should now see all the contents from the repo.``
+### Wait for a Prompt to Confirm
 
-###  To push changes from the local machine to Github
+If required, the terminal may prompt you for your GitHub access credentials. Follow the prompt to enter your access key or password.
 
- First, make sure you are in the correct directory
- Then type ``git push origin master``
- ``git commit -a.``
- ``git commit -m "commit message"``
- ``git commit -am "commit message"``
- ``git commit --amend.``
+If you haven't set up your Personal Access Token (PAT) and it asks for an access key, you will need to visit your GitHub settings to create one.
 
- 6 To pull changes from Github to your local machine
+Upon successful cloning, you'll see messages indicating the progress and completion of the clone operation:
+ ``Cloning into 'repository'...
+remote: Counting objects: 57, done.
+remote: Total 57 (delta 0), reused 0 (delta 0), pack-reused 56.
+Receiving objects: 100% (57/57), 49.8KiB | 0 bytes/s, done.``
 
- ``git pull origin master``
+
+### Pushing Changes to GitHub
+
+To push changes from your local repository to GitHub, ensure you're in the repository's directory and follow these steps:
+
+Stage your changes (if you have new files or modifications):
+``git add .``
+Commit your changes with a meaningful commit message:
+``git commit -m "Your detailed commit message"``
+For a quick commit of all modified and tracked files, you can use:
+``git commit -am "Your detailed commit message"``
+
+To amend the most recent commit, perhaps to adjust the commit message or include additional changes, use:
+``git commit --amend``
+
+Push your changes to GitHub:
+``git push origin master``
+
+**Note: Replace master with the name of the branch you want to push to if you're working on a branch other than master.**
+
+### Pulling Changes from GitHub
+
+To update your local repository with changes from GitHub, ensuring you have the latest version of the code, use the following command:
+
+``git pull origin master``
+
+**Again, replace master with the appropriate branch name if needed. By following these steps, you should be able to successfully connect to, clone, and synchronize your repository with GitHub using the terminal.**
+Just replace the placeholders (like `Your UserName`, `your.email@example.com`, `username`, `repository.git`) with your actual GitHub details when you use it.
+
 
 ### **Using .gitignore and Why it's Important**
 
@@ -116,6 +146,7 @@ Most repositories contain a .gitignore file.
 
 - What is the purpose of this file?
 <br>
+
 The .gitignore file specifies intentionally untracked files that Git should ignore. This is useful for ignoring build artifacts, personal IDE config files, and other files that don't need to be version-controlled.
 
 - What is the "**.DS_Store**" file and why would you want to ignore it?
@@ -129,7 +160,7 @@ The .gitignore file specifies intentionally untracked files that Git should igno
 
 ### Reference Links
 
-Research Summary: What resource(s) did you find most helpful this past week and why? 
+Research Summary: What resource(s) did you find most helpful this past week and why?
 
 **Terminal Commands**  
 [Link For Terminal Commands](https://github.com/0nn0/terminal-mac-cheatsheet#english-version)
