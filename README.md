@@ -13,67 +13,80 @@ Hello! My name is Bradley Matera. I am a student from Davis, Illinois. The purpo
 ## 📢 &nbsp; Weekly Stand Up
 
 Each week I will summarize my milestone activity and progress by writing a stand-up. A stand-up is meant to be a succinct update on how things are going. Use these prompts as a guide on what to write about:
-### Week 1
 
-⚙️ Overview - What I worked on this past week:
+## Week 1
 
--Designing and developing my assignment portfolio.
-Exploring GitHub repositories management via Mac terminal commands. Learned Agile and Waterfall methodologies
-<br>
+**⚙️ Overview - What I worked on this past week:**
 
-🌵 Challenges - What problems did I have & how I'm addressing them:
+- #### Designing and developing my assignment portfolio
 
--No challenges so far. It was a bit tough at first, but I've used GitHub in the past. Actually learning it in a class and using the knowledge made this a lot easier for me.
-<br>
+- #### Exploring GitHub repositories management via Mac terminal commands
 
-🏆 Accomplishments - What is something I "leveled up" on this week:
+- #### Learned Agile and Waterfall methodologies
 
--My markdown skills have significantly improved.
-<br>
+**🌵 Challenges - What problems did I have & how I'm addressing them:**
 
-🔮 Next Steps - What I plan to prioritize and do next:
+- #### No challenges so far. It was a bit tough at first, but I've used GitHub in the past. Actually learning it in a class and using the knowledge made this a lot easier for me
 
--Incorporating IMAGES, videos, and everything visual! I'm looking forward to what's next.
+**🏆 Accomplishments - What is something I "leveled up" on this week:**
 
-<br>
+- #### My markdown skills have significantly improved.
 
-### Week 2
+**🔮 Next Steps - What I plan to prioritize and do next:**
 
-⚙️ Overview - What I worked on this past week
+- #### Incorporating IMAGES, videos, and everything visual! I'm looking forward to what's next.
 
-<br>
+## Week 2
 
-🌵 Challenges - What problems did I have & how I'm addressing them
+**⚙️ Overview - What I worked on this past week**
 
-<br>
+- ####
 
-🏆 Accomplishments - What is something I "leveled up" on this week
+**🌵 Challenges - What problems did I have & how I'm addressing them**
 
-<br>
+- ####
 
-🔮 Next Steps - What I plan to prioritize and do next
+**🏆 Accomplishments - What is something I "leveled up" on this week**
 
-<br>
+- ####
 
-### Week 3
+**🔮 Next Steps - What I plan to prioritize and do next**
 
-⚙️ Overview - What I worked on this past week
-<br>
-🌵 Challenges - What problems did I have & how I'm addressing them
-<br>
-🏆 Accomplishments - What is something I "leveled up" on this week
-<br>
-🔮 Next Steps - What I plan to prioritize and do next
+- ####
 
-<br>
+## Week 3
 
+**⚙️ Overview - What I worked on this past week**
 
-### Week 4
+- ####
 
-⚙️ Overview - What I worked on this past week
-<br>
-🌵 Challenges - What problems did I have & how I'm addressing them
-<br>
-🏆 Accomplishments - What is something I "leveled up" on this week
-<br>
-🔮 Next Steps - What I plan to prioritize and do next
+**🌵 Challenges - What problems did I have & how I'm addressing them**
+
+- ####
+
+**🏆 Accomplishments - What is something I "leveled up" on this week**
+
+- ####
+
+**🔮 Next Steps - What I plan to prioritize and do next**
+
+- ####
+
+## Week 4
+
+**⚙️ Overview - What I worked on this past week**
+
+- ####
+
+**🌵 Challenges - What problems did I have & how I'm addressing them**
+
+- ####
+  
+**🏆 Accomplishments - What is something I "leveled up" on this week**
+
+- ####
+
+**🔮 Next Steps - What I plan to prioritize and do next**
+
+- ####
+  
