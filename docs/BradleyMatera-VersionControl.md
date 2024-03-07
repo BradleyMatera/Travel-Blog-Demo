@@ -99,6 +99,7 @@ If you haven't set up your Personal Access Token (PAT) and it asks for an access
 
 Upon successful cloning, you'll see messages indicating the progress and completion of the clone operation:
 ```Cloning into repository...```
+
 ```
 remote: Counting objects: 57, done.
 remote: Total 57 (delta 0), reused 0 (delta 0), pack-reused 56.
@@ -146,47 +147,60 @@ Just replace the placeholders (like `Your UserName`, `your.email@example.com`, `
 
 2. **Navigate to Your Project Directory**
    - If you just opened the Terminal, you'll likely start in your home directory. If your project directory is located directly within your home directory, navigate to it using the `cd` command.
+
      ```
      Example: cd wdv119-BradleyMatera
      ```
+
    - If your project directory is elsewhere, you'll need to provide the full path to it, like so:
+
      ```
      Example: cd /path/to/wdv119-BradleyMatera
      ```
 
 3. **Verify Your Current Branch (Optional)**
    - You can check which Git branch you're currently on with:
+
      ```
      git branch
      ```
+
    - This will list all local branches and highlight the one you're currently using.
 
 4. **Switch Branches if Necessary**
    - If you need to switch to the `main` branch (or any other branch), use:
+
      ```
      git checkout main
      ```
+
    - Replace `main` with the name of the branch you wish to switch to, if different.
 
 5. **Pull the Latest Changes**
    - Ensure you have the latest changes from your GitHub repository by pulling them into your local branch:
+
      ```
      git pull origin main
      ```
+
    - Again, replace `main` with your current branch's name if it's different.
 
 6. **Navigate to the Document's Directory**
    - Based on your last known position, it looks like there was confusion about accessing the `docs` directory. Ensure you are in the root directory of your project (`wdv119-BradleyMatera`), then navigate to `docs` with:
+
      ```
      cd docs
      ```
+
    - If you receive an error saying the directory doesn't exist, double-check your current location with `pwd` (print working directory) and list the contents of the current directory with `ls` to verify where you are.
 
 7. **Edit a File with Nano**
    - Once in the correct directory, open your Markdown file in Nano:
+
      ```
      nano BradleyMatera-VersionControl.md
      ```
+
    - This command opens `BradleyMatera-VersionControl.md` in Nano, allowing you to make changes directly in the terminal.
 
 8. **Using Nano**
@@ -196,19 +210,24 @@ Just replace the placeholders (like `Your UserName`, `your.email@example.com`, `
 
 9. **Commit Your Changes**
    - After editing, you'll want to commit your changes to document them in Git. First, add your changes:
+
      ```
      git add BradleyMatera-VersionControl.md
      ```
+
    - Then, commit them with a message describing what you did:
+
      ```
      git commit -m "Updated BradleyMatera-VersionControl.md"
      ```
 
 10. **Push Your Changes**
     - Finally, push your commit to GitHub to update the remote repository:
+
       ```
       git push origin main
       ```
+
     - Replace `main` with the name of the branch you're working on if necessary.
 
 ### **Using .gitignore and Why it's Important**
