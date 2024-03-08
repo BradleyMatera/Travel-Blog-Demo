@@ -2,108 +2,130 @@
 
 /* Typography */
 body {
-  font-family: 'Roboto', sans-serif;
-}
-
-h1, h2, h3 {
-  font-family: 'Abril Fatface', cursive;
-}
-
-h1 {
-  font-size: 48px;
-}
-
-h2 {
-  font-size: 36px;
-}
-
-h3 {
-  font-size: 24px;
-}
-
-h4 {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-p {
-  font-size: 16px;
-}
-
-/* Colors */
-.text-primary {
-  color: #587C93;
-}
-
-.text-secondary {
-  color: #EEBA5A;
-}
-
-.bg-secondary {
-  background-color: #EEBA5A;
-}
-
-/* Buttons */
-.button {
-  transition: background-color 0.3s ease;
-}
-
-/* Navigation */
-nav ul.show {
-  display: flex;
-  flex-direction: column;
-}
-nav ul {
-  display: flex;
-}
-nav ul li {
-  margin-right: 20px;
-}
-nav ul li:last-child {
-  margin-right: 0;
-}
-/* Hero Section */
-#hero {
-  background-image: url('../img/clientimgs/assets/hero-bg.jpg'); /* Add this line */
-  background-size: cover;
-  background-position: center;
-  height: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#hero h1 {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-#hero p {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-/* Tours Section */
-#tours .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-}
-
-/* Destinations Section */
-#destinations .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-}
-
-/* Footer */
-footer {
-  background-color: #222;
-}
-
-footer a {
-  transition: color 0.3s ease;
-}
-
-footer a:hover {
-  color: #EEBA5A;
-}
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Abril Fatface', cursive;
+  }
+  
+  h1 {
+    font-size: 48px;
+  }
+  
+  h2 {
+    font-size: 36px;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  
+  h4 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  /* Colors */
+  .text-primary {
+    color: #587C93;
+  }
+  
+  .text-secondary {
+    color: #EEBA5A;
+  }
+  
+  .bg-secondary {
+    background-color: #EEBA5A;
+  }
+  
+  /* Buttons */
+  .button, .book-now {
+    transition: background-color 0.3s ease;
+    background-color: #EEBA5A; /* Secondary color */
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .button:hover, .book-now:hover {
+    background-color: #d8a04e;
+  }
+  
+  /* Navigation */
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul.show {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+  
+  /* Hero Section */
+  #hero {
+    background-image: url('/dev/readysettravel/img/clientimgs/assets/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #hero h1, #hero p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Tours Section */
+  #tours .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  /* Destinations Section */
+  #destinations .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #222;
+    color: white;
+  }
+  
+  footer a {
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #EEBA5A;
+  }
+  
