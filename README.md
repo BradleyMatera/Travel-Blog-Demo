@@ -1,6 +1,6 @@
-# Project & Portfolio Version Control For Future Clients
+# Project & Portfolio Weekly Stand Ups
 
-### By Bradley Matera
+### Bradley Matera
 
 🆔 &nbsp; Bradley Matera
 #0005252248
