@@ -67,6 +67,7 @@ nav ul li:last-child {
 
 /* Hero Section */
 #hero {
+  background-image: url('../img/clientimgs/assets/hero-bg.jpg'); /* Add this line */
   background-size: cover;
   background-position: center;
   height: 600px;
