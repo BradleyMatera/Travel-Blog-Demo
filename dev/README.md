@@ -1,4 +1,4 @@
-**PROJECT AND PORTFOLIO I: WEB DEVELOPMENT - ONLINE**
+# **PROJECT AND PORTFOLIO I: WEB DEVELOPMENT - ONLINE**
 
 > **Note**: *This document has been meticulously updated to include my personal journey and insights.*
 
