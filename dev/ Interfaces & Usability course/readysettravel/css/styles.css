@@ -85,16 +85,17 @@ body {
     z-index: 1000;
   }
   
-  /* Hero Section */
-  #hero {
-    background-image: url('/dev/readysettravel/img/clientimgs/assets/hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+/* Hero Section */
+#hero {
+  background-image: url('/img/clientimgs/assets/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
   
   #hero h1, #hero p {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
