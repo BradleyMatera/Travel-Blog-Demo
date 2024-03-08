@@ -36,19 +36,21 @@ bookNowButtons.forEach(function(button) {
 let searchForm = document.querySelector(".search-form");
 let searchInput = document.querySelector(".search-input");
 
-searchForm.addEventListener("submit", function(e) {
-  e.preventDefault();
-  
-  let destination = searchInput.value.trim();
-  
-  if (destination === "") {
-    reportValidation("Please enter a destination.");
-  } else {
-    // Perform search or redirect to search results page
-    alert("Searching for: " + destination);
-    searchInput.value = "";
-  }
-});
+if (searchForm) {
+  searchForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+    
+    let destination = searchInput.value.trim();
+    
+    if (destination === "") {
+      reportValidation("Please enter a destination.");
+    } else {
+      // Perform search or redirect to search results page
+      alert("Searching for: " + destination);
+      searchInput.value = "";
+    }
+  });
+}
 
 // Validation function
 function reportValidation(message) {
