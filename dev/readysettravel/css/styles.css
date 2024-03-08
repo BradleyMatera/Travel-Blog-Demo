@@ -1,0 +1,111 @@
+/* Custom CSS */
+
+/* Typography */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* Colors */
+.text-primary {
+  color: #587C93;
+}
+
+.text-secondary {
+  color: #EEBA5A;
+}
+
+.bg-secondary {
+  background-color: #EEBA5A;
+}
+
+/* Buttons */
+.button {
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #d8a04e;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+/* Hero Section */
+#hero {
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#hero p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Tours Section */
+#tours .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Destinations Section */
+#destinations .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+}
+
+footer a {
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #EEBA5A;
+}

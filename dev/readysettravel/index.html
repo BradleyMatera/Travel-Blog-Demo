@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>ReadySetTravel</title>
+</head>
+<body>
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-primary">ReadySetTravel</a>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#about" class="text-gray-600 hover:text-secondary">About</a></li>
+          <li><a href="#destinations" class="text-gray-600 hover:text-secondary">Destinations</a></li>
+          <li><a href="#tours" class="text-gray-600 hover:text-secondary">Tours</a></li>
+          <li><a href="#blog" class="text-gray-600 hover:text-secondary">Blog</a></li>
+        </ul>
+      </nav>
+      <button class="bg-secondary text-white px-6 py-3 rounded-lg shadow-md hover:bg-opacity-90 transition duration-300">Book a Trip</button>
+    </div>
+  </header>
+
+  <section id="hero" class="bg-cover bg-center py-48" style="background-image: url('img/clientimgs/assets/hero-bg.jpg')">
+    <div class="container mx-auto text-center">
+      <h1 class="text-5xl font-bold text-white mb-6">Book the trip of a lifetime</h1>
+      <p class="text-xl text-white mb-12">Get the best advice and tips for your dream trip</p>
+      <div class="bg-white rounded-lg shadow-lg inline-block">
+        <div class="flex">
+          <input type="text" placeholder="Where do you want to go?" class="px-4 py-3 w-96 text-gray-700 rounded-l-lg focus:outline-none">
+          <button class="bg-secondary text-white px-6 py-3 rounded-r-lg hover:bg-opacity-90 transition duration-300">Search</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tours" class="container mx-auto py-24">
+    <h2 class="text-4xl font-bold text-center mb-12">Trending Tours</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="img/clientimgs/assets/tour-mountainHiking.jpg" alt="Tour 1" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-4">Alps Mountain Hiking Tour</h3>
+          <p class="text-gray-600 mb-4">$1,500</p>
+          <button class="bg-secondary text-white px-6 py-3 rounded-lg shadow-md hover:bg-opacity-90 transition duration-300">Book Now</button>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="img/clientimgs/assets/tour-snorkel.jpg" alt="Snorkel Tour" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-4">Snorkel the Barrier Reef Tour</h3>
+          <p class="text-gray-600 mb-4">$1,000</p>
+          <button class="bg-secondary text-white px-6 py-3 rounded-lg shadow-md hover:bg-opacity-90 transition duration-300">Book Now</button>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="img/clientimgs/assets/tour-pyramids.jpg" alt="Tour 3" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-4">Tour the Pyramids on Camelback</h3>
+          <p class="text-gray-600 mb-4">$2,000</p>
+          <button class="bg-secondary text-white px-6 py-3 rounded-lg shadow-md hover:bg-opacity-90 transition duration-300">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="plan" class="bg-gray-100 py-24">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12">Plan the Perfect Trip</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-10 rounded-lg shadow-lg text-center">
+          <img src="img/clientimgs/assets/icon-flights.png" alt="Flights" class="h-16 mb-6 mx-auto">
+          <h3 class="text-2xl font-bold">Flights</h3>
+        </div>
+        <div class="bg-white p-10 rounded-lg shadow-lg text-center">
+          <img src="img/clientimgs/assets/icon-transport.png" alt="Transportation" class="h-16 mb-6 mx-auto">
+          <h3 class="text-2xl font-bold">Transportation</h3>
+        </div>
+        <div class="bg-white p-10 rounded-lg shadow-lg text-center">
+          <img src="img/clientimgs/assets/icon-guide.png" alt="Guides" class="h-16 mb-6 mx-auto">
+          <h3 class="text-2xl font-bold">Guides</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="destinations" class="container mx-auto py-24">
+    <h2 class="text-4xl font-bold text-center mb-12">Top Notch Destinations</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="relative rounded-lg overflow-hidden">
+        <img src="img/clientimgs/assets/destinations-machu.jpg" alt="Machu Picchu" class="w-full h-96 object-cover">
+        <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-6">
+          <h3 class="text-2xl font-bold">Machu Picchu</h3>
+        </div>
+      </div>
+      <div class="relative rounded-lg overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1194&q=80" alt="Tokyo" class="w-full h-96 object-cover">
+        <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-6">
+          <h3 class="text-2xl font-bold">Tokyo</h3>
+        </div>
+      </div>
+      <div class="relative rounded-lg overflow-hidden">
+        <img src="img/clientimgs/assets/destinations-rome.jpg" alt="Rome" class="w-full h-96 object-cover">
+        <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-6">
+          <h3 class="text-2xl font-bold">Rome</h3>
+        </div>
+      </div>
+      <div class="relative rounded-lg overflow-hidden">
+        <img src="img/clientimgs/assets/destinations-sydney.jpg" alt="Sydney" class="w-full h-96 object-cover">
+        <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-6">
+          <h3 class="text-2xl font-bold">Sydney</h3>
+        </div>
+      </div>
+      <div class="relative rounded-lg overflow-hidden">
+        <img src="img/clientimgs/assets/destinations-rio.jpg" alt="Brazil" class="w-full h-96 object-cover">
+        <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-6">
+          <h3 class="text-2xl font-bold">Rio de Janeiro</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-white py-12">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-8 md:mb-0">
+        <a href="#" class="text-3xl font-bold mb-4">ReadySetTravel</a>
+        <p class="text-gray-400">We can provide you with the best advice and tips for your dream trip.</p>
+      </div>
+      <div class="mb-8 md:mb-0">
+        <h4 class="text-xl font-bold mb-4">Contact Us</h4>
+        <p class="text-gray-400">1234 Address Street<br>Winter Park, FL 32792</p>
+        <p class="text-gray-400">123-456-7890</p>
+      </div>
+      <div>
+        <h4 class="text-xl font-bold mb-4">Links</h4>
+        <ul class="space-y-2">
+          <li><a href="#about" class="text-gray-400 hover:text-secondary">About</a></li>
+          <li><a href="#destinations" class="text-gray-400 hover:text-secondary">Destinations</a></li>
+          <li><a href="#tours" class="text-gray-400 hover:text-secondary">Tours</a></li>
+          <li><a href="#blog" class="text-gray-400 hover:text-secondary">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/dev/readysettravel/js/script.js"> defer</script>
+</body>
+</html>
