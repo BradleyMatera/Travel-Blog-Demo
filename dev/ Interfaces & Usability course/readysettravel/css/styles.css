@@ -44,9 +44,10 @@ p {
 }
 
 /* Buttons */
-.button, .book-now {
+.button,
+.book-now {
   transition: background-color 0.3s ease;
-  background-color: #EEBA5A; /* Secondary color */
+  background-color: #EEBA5A;
   color: white;
   padding: 8px 16px;
   border-radius: 4px;
@@ -55,7 +56,8 @@ p {
   cursor: pointer;
 }
 
-.button:hover, .book-now:hover {
+.button:hover,
+.book-now:hover {
   background-color: #d8a04e;
 }
 
@@ -81,57 +83,57 @@ nav ul.show {
   top: 60px;
   left: 0;
   background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
 
 /* Hero Section */
 #hero {
-  background-image: url('../img/clientimgs/assets/hero-bg.jpg'); /* Adjust the path as needed */
+  background-image: url('../img/clientimgs/assets/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white; /* Ensuring text is white for visibility */
+  color: white;
 }
-
 
 .hero-content {
-position: relative;
-z-index: 1; /* Ensure the content is above the background image */
+  position: relative;
+  z-index: 1;
 }
 
-#hero h1, #hero p {
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+#hero h1,
+#hero p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Tours Section */
 #tours .grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
 }
 
 /* Destinations Section */
 #destinations .grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
 }
 
 /* Footer */
 footer {
-background-color: #222;
-color: white;
+  background-color: #222;
+  color: white;
 }
 
 footer a {
-color: white;
-transition: color 0.3s ease;
+  color: white;
+  transition: color 0.3s ease;
 }
 
 footer a:hover {
-color: #EEBA5A;
+  color: #EEBA5A;
 }
