@@ -1,59 +1,46 @@
-// script.js
+// JS CODE //
 document.addEventListener("DOMContentLoaded", function() {
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
+    // Attach click event listeners to navigation links for smooth scrolling
+    var navLinks = document.querySelectorAll('nav a[href^="#"]');
+    for (var i = 0; i < navLinks.length; i++) {
+        navLinks[i].addEventListener('click', function (e) {
             e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+            var target = document.querySelector(this.getAttribute('href'));
+            target.scrollIntoView({ behavior: 'smooth' });
         });
-    });
+    }
 
     // Toggle mobile navigation menu
-    const navToggle = document.querySelector(".nav-toggle");
-    const navMenu = document.querySelector("nav ul");
+    var navToggle = document.querySelector(".nav-toggle");
+    var navMenu = document.querySelector("nav ul");
     navToggle.addEventListener("click", function() {
-        navMenu.classList.toggle("show");
-    });
-
-    // Display popup when "Book Now" buttons are clicked
-    document.querySelectorAll(".book-now").forEach(button => {
-        button.addEventListener("click", function() {
-            alert("Thank you for your interest! We will contact you shortly.");
-        });
-    });
-
-    // Validate form input and display popup
-    const searchForm = document.querySelector(".search-form");
-    const searchInput = document.querySelector(".search-input");
-    searchForm.addEventListener("submit", function(e) {
-        e.preventDefault();
-        const destination = searchInput.value.trim();
-        if (destination === "") {
-            alert("Please enter a destination.");
+        if (navMenu.classList.contains("show")) {
+            navMenu.classList.remove("show");
         } else {
-            alert(`Searching for: ${destination}`);
-            searchInput.value = ""; // Clear input after search
+            navMenu.classList.add("show");
         }
     });
-});
 
-// Validation function
-function reportValidation(message) {
-    let existingMessage = document.querySelector(".validation-message");
-    if (existingMessage) {
-        existingMessage.remove(); // Remove existing message before adding a new one
+    // Display alert when "Book Now" buttons are clicked
+    var bookNowButtons = document.querySelectorAll(".book-now");
+    for (var j = 0; j < bookNowButtons.length; j++) {
+        bookNowButtons[j].addEventListener("click", function() {
+            alert("Thank you for your interest! We will contact you shortly.");
+        });
     }
-    let validationMessage = document.createElement("div");
-    validationMessage.classList.add("validation-message");
-    validationMessage.textContent = message;
-    let searchForm = document.querySelector(".search-form"); // Ensure searchForm is available
+
+    // Validate form input and display alert
+    var searchForm = document.querySelector(".search-form");
     if (searchForm) {
-        searchForm.appendChild(validationMessage);
+        searchForm.addEventListener("submit", function(e) {
+            e.preventDefault();
+            var destination = document.querySelector(".search-input").value.trim();
+            if (destination === "") {
+                alert("Please enter a destination.");
+            } else {
+                alert("Searching for: " + destination);
+                document.querySelector(".search-input").value = "";
+            }
+        });
     }
-    
-    setTimeout(function() {
-        validationMessage.remove();
-    }, 3000);
-}
+});
