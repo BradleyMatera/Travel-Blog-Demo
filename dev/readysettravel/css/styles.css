@@ -48,23 +48,20 @@ p {
   transition: background-color 0.3s ease;
 }
 
-.button:hover {
-  background-color: #d8a04e;
-}
-
 /* Navigation */
+nav ul.show {
+  display: flex;
+  flex-direction: column;
+}
 nav ul {
   display: flex;
 }
-
 nav ul li {
   margin-right: 20px;
 }
-
 nav ul li:last-child {
   margin-right: 0;
 }
-
 /* Hero Section */
 #hero {
   background-image: url('../img/clientimgs/assets/hero-bg.jpg'); /* Add this line */
