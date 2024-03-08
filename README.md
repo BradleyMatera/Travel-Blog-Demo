@@ -1,6 +1,10 @@
-# Project & Portfolio Weekly Stand Ups
+# Project & Portfolio: Travel Site
 
-### Bradley Matera
+# Workflow and Version Control Standards and Expectations
+
+**This GitHub repository serves as a foundational pillar for my journey forward. It meticulously outlines my workflow, details the version control practices I adhere to, and exemplifies how I initiate and sustain a project from its inception through continuous updates and maintenance. Utilizing a combination of GitHub, VS Code, and the Mac terminal, this repository not only demonstrates my project development process but also my commitment to employing industry-standard version control methodologies to ensure efficient and scalable project evolution.**
+
+### by Bradley Matera
 
 🆔 &nbsp; Bradley Matera
 #0005252248
