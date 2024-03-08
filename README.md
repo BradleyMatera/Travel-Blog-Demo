@@ -1,6 +1,6 @@
-# Project & Portfolio 1
+# Project & Portfolio Version Control For Future Clients
 
-### Student First & Last Name
+### By Bradley Matera
 
 🆔 &nbsp; Bradley Matera
 #0005252248
