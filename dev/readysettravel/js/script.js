@@ -1,66 +1,78 @@
 // script.js
-
-// Smooth scrolling for navigation links
 document.addEventListener("DOMContentLoaded", function() {
-  let navLinks = document.querySelectorAll("nav a");
-  
-  navLinks.forEach(function(link) {
-    link.addEventListener("click", function(e) {
-      e.preventDefault();
-      let target = document.querySelector(this.getAttribute("href"));
-      target.scrollIntoView({
-        behavior: "smooth"
-      });
+    // Smooth scrolling for navigation links
+    let navLinks = document.querySelectorAll("nav a");
+    navLinks.forEach(function(link) {
+        link.addEventListener("click", function(e) {
+            e.preventDefault();
+            let targetId = this.getAttribute("href");
+            let target = document.querySelector(targetId);
+            if (target) {
+                target.scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                console.error("Target not found for:", targetId);
+            }
+        });
     });
-  });
-});
 
-// Toggle mobile navigation menu
-let navToggle = document.querySelector(".nav-toggle");
-let navMenu = document.querySelector("nav ul");
-
-navToggle.addEventListener("click", function() {
-  navMenu.classList.toggle("show");
-});
-
-// Display popup when "Book Now" buttons are clicked
-let bookNowButtons = document.querySelectorAll(".book-now");
-
-bookNowButtons.forEach(function(button) {
-  button.addEventListener("click", function() {
-    alert("Thank you for your interest! We will contact you shortly.");
-  });
-});
-
-// Validate form input
-let searchForm = document.querySelector(".search-form");
-let searchInput = document.querySelector(".search-input");
-
-if (searchForm) {
-  searchForm.addEventListener("submit", function(e) {
-    e.preventDefault();
-    
-    let destination = searchInput.value.trim();
-    
-    if (destination === "") {
-      reportValidation("Please enter a destination.");
+    // Toggle mobile navigation menu
+    let navToggle = document.querySelector(".nav-toggle");
+    let navMenu = document.querySelector("nav ul");
+    if (navToggle && navMenu) {
+        navToggle.addEventListener("click", function() {
+            navMenu.classList.toggle("show");
+        });
     } else {
-      // Perform search or redirect to search results page
-      alert("Searching for: " + destination);
-      searchInput.value = "";
+        console.error("Nav toggle or menu not found");
     }
-  });
-}
+
+    // Display popup when "Book Now" buttons are clicked
+    let bookNowButtons = document.querySelectorAll(".book-now");
+    bookNowButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            alert("Thank you for your interest! We will contact you shortly.");
+        });
+    });
+
+    // Validate form input
+    let searchForm = document.querySelector(".search-form");
+    let searchInput = document.querySelector(".search-input");
+
+    if (searchForm && searchInput) {
+        searchForm.addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            let destination = searchInput.value.trim();
+            
+            if (destination === "") {
+                reportValidation("Please enter a destination.");
+            } else {
+                alert("Searching for: " + destination);
+                searchInput.value = "";
+            }
+        });
+    } else {
+        console.error("Search form or input not found");
+    }
+});
 
 // Validation function
 function reportValidation(message) {
-  let validationMessage = document.createElement("div");
-  validationMessage.classList.add("validation-message");
-  validationMessage.textContent = message;
-  
-  searchForm.appendChild(validationMessage);
-  
-  setTimeout(function() {
-    validationMessage.remove();
-  }, 3000);
+    let existingMessage = document.querySelector(".validation-message");
+    if (existingMessage) {
+        existingMessage.remove(); // Remove existing message before adding a new one
+    }
+    let validationMessage = document.createElement("div");
+    validationMessage.classList.add("validation-message");
+    validationMessage.textContent = message;
+    let searchForm = document.querySelector(".search-form"); // Ensure searchForm is available
+    if (searchForm) {
+        searchForm.appendChild(validationMessage);
+    }
+    
+    setTimeout(function() {
+        validationMessage.remove();
+    }, 3000);
 }
