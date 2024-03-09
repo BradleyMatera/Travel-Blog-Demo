@@ -66,8 +66,6 @@ The example below highlights in yellow where to locate a Google image ID.
 
 ![Snorkle](https://drive.google.com/file/d/1jKy-TwGUw4p5eUg-I1x1AZytVTcgoKqv/view?usp=sharing)
 
-https://drive.google.com/file/d/1jKy-TwGUw4p5eUg-I1x1AZytVTcgoKqv/view?usp=sharing)
-
 
 
 
