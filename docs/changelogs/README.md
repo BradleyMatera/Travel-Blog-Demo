@@ -21,3 +21,6 @@
  [ReadySetTravel](https://github.com/BradleyMatera/WDV-119-Bradley-Matera/tree/main/dev/%20Interfaces%20%26%20Usability%20course/readysettravel)
 
 * Homepage construction includes all content aspects as shown in design mockup
+
+* [Free Code Camp A Beginner’s Guide to Git — What is a Changelog and How to Generate it](https://www.freecodecamp.org/news/a-beginners-guide-to-git-what-is-a-changelog-and-how-to-generate-it/)
+  
