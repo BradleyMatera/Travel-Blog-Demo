@@ -1,40 +1,37 @@
-document.addEventListener("DOMContentLoaded", function() {
-
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('nav a[href^="#"]').forEach(function(link) {
-      link.addEventListener('click', function(event) {
-        event.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
+document.addEventListener('DOMContentLoaded', function () {
+  // Smooth scrolling for navigation links
+  const navLinks = document.querySelectorAll('nav a[href^="#"]');
+  navLinks.forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
           behavior: 'smooth'
         });
-      });
-    });
-  
-    // Toggle mobile navigation menu
-    document.querySelector(".nav-toggle").addEventListener("click", function() {
-      document.querySelector("nav ul").classList.toggle("show");
-    });
-  
-    // Alert for "Book Now" buttons
-    var bookNowButtons = document.querySelectorAll(".book-now");
-    for (var i = 0; i < bookNowButtons.length; i++) {
-      bookNowButtons[i].addEventListener("click", function() {
-        alert("Thank you for your interest! We will contact you shortly.");
-      });
-    }
-  
-    // Form submission validation
-    document.querySelector(".search-form").addEventListener("submit", function(event) {
-      event.preventDefault();
-      var searchInput = document.querySelector(".search-input");
-      var destination = searchInput.value.trim();
-      
-      if (destination === "") {
-        alert("Please enter a destination.");
-      } else {
-        alert("Searching for: " + destination);
-        searchInput.value = "";
       }
     });
-  
   });
+
+  // Book Now button interaction
+  const bookNowButtons = document.querySelectorAll('.Tour1BookBtn, .Tour2BookBtn, .Tour3BookBtn');
+  bookNowButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      alert('Thank you for your interest! We will contact you shortly.');
+    });
+  });
+
+  // Form submission handling
+  const searchForm = document.getElementById('searchForm');
+  searchForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    const destinationInput = document.querySelector('[name="destination"]');
+    const destination = destinationInput.value;
+    if (destination === '') {
+      alert('Please enter a destination.');
+    } else {
+      alert('Searching for: ' + destination);
+      destinationInput.value = '';
+    }
+  });
+});

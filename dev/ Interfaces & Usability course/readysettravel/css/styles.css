@@ -1,4 +1,10 @@
-/* Custom CSS */
+/* Global styles and resets */
+body, h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
 
 /* Typography */
 body {
@@ -9,131 +15,85 @@ h1, h2, h3 {
   font-family: 'Abril Fatface', cursive;
 }
 
-h1 {
-  font-size: 48px;
-}
-
-h2 {
-  font-size: 36px;
-}
-
-h3 {
-  font-size: 24px;
-}
-
-h4 {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-p {
-  font-size: 16px;
-}
-
-/* Colors */
-.text-primary {
-  color: #587C93;
-}
-
-.text-secondary {
+/* Utility and component classes */
+.text-orange-400 {
   color: #EEBA5A;
 }
 
-.bg-secondary {
+.bg-orange-400 {
   background-color: #EEBA5A;
 }
 
-/* Buttons */
-.button,
-.book-now {
-  transition: background-color 0.3s ease;
-  background-color: #EEBA5A;
-  color: white;
-  padding: 8px 16px;
-  border-radius: 4px;
-  text-align: center;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.button:hover,
-.book-now:hover {
+.hover\:bg-orange-500:hover {
   background-color: #d8a04e;
 }
 
-/* Navigation */
-nav ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
+/* Navigation styles */
+nav {
+  background-color: #dde0e5; /* Match with the background color of the navigation */
 }
 
-nav ul li {
-  margin-right: 20px;
+nav a:hover {
+  color: #EEBA5A; /* Match with the hover color */
 }
 
-nav ul li:last-child {
-  margin-right: 0;
-}
-
-nav ul.show {
-  display: block;
-  position: absolute;
-  width: 100%;
-  top: 60px;
-  left: 0;
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-}
-
-/* Hero Section */
-#hero {
-  background-image: url('../img/clientimgs/assets/hero-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-}
-
-#hero h1,
-#hero p {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-/* Tours Section */
-#tours .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-}
-
-/* Destinations Section */
-#destinations .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-}
-
-/* Footer */
+/* Footer styles */
 footer {
-  background-color: #222;
-  color: white;
+  background-color: #5a677b; /* Match with the background color of the footer */
+  color: #d7d7e4; /* Text color */
+  font-family: 'Roboto', sans-serif; /* Match with the body font */
 }
 
-footer a {
-  color: white;
-  transition: color 0.3s ease;
+footer h2,
+footer h3 {
+  font-family: 'Abril Fatface', cursive; /* Match with the heading font */
 }
 
+footer p {
+  color: #e2e5e9; /* Match with the paragraph text color */
+}
+
+/* Social media icons */
 footer a:hover {
-  color: #EEBA5A;
+  color: #EEBA5A; /* Match with the hover color */
+}
+
+/* Adjustments for the hero section */
+header {
+  background-image: url('/dev/ Interfaces & Usability course/readysettravel/img/clientimgs/assets/hero-bg.jpg');
+  background-color: #374151; /* Match with the background color of the hero section */
+  background-size: cover; /* Ensure the image covers the container, cropping if necessary */
+  background-position: center; /* Center the image */
+  color: #D1D5DB; /* Text color */
+  font-family: 'Roboto', sans-serif; /* Match with the body font */
+  height: 20vh; /* Height of the hero section */
+}
+
+/* CTA section */
+section.bg-gray-800 {
+  background-color: #374151; /* Match with the background color of the CTA section */
+}
+
+/* Responsive Grid Layout for Destinations Section */
+@media (min-width: 768px) {
+  .grid-cols-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns layout for medium screens and up */
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns layout for large screens and up */
+  }
+}
+
+/* Adjustments for the hero section */
+.h-hero {
+  height: 20vh; /* Height of the hero section */
+}
+
+.h-icon {
+  height: 100px; /* Set height for the icons */
 }
