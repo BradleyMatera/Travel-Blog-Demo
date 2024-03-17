@@ -4,21 +4,21 @@
 
 ### Project Development:
 1. **CSS Construction:**
-   - [ ] Ensure CSS selectors align perfectly with HTML structure.
-   - [ ] Avoid overly specific or presentational styles.
-   - [ ] Review CSS selector choices to respect HTML structure.
-   - [ ] Target HTML elements accurately with CSS.
-   - [ ] Ensure semantic alignment in CSS.
+   - [ x] Ensure CSS selectors align perfectly with HTML structure.
+   - [ x] Avoid overly specific or presentational styles.
+   - [ x] Review CSS selector choices to respect HTML structure.
+   - [ x] Target HTML elements accurately with CSS.
+   - [ x] Ensure semantic alignment in CSS.
 2. **Recreation:**
-   - [ ] Meticulously mirror the design mockup on the homepage.
-   - [ ] Ensure the page adapts to different screen sizes.
-   - [ ] Reflect the design mockup accurately on the homepage.
-   - [ ] Capture the core elements of the design mockup.
+   - [ x] Meticulously mirror the design mockup on the homepage.
+   - [ x] Ensure the page adapts to different screen sizes.
+   - [ x] Reflect the design mockup accurately on the homepage.
+   - [ x] Capture the core elements of the design mockup.
 3. **Accessibility:**
-   - [ ] Showcase a mastery of accessibility principles and best practices.
-   - [ ] Implement accessibility updates effectively.
-   - [ ] Demonstrate a fundamental understanding of accessibility principles.
-   - [ ] Minimize potentially inaccessible features.
+   - [ x] Showcase a mastery of accessibility principles and best practices.
+   - [ x] Implement accessibility updates effectively.
+   - [ x] Demonstrate a fundamental understanding of accessibility principles.
+   - [ x] Minimize potentially inaccessible features.
 
 ### Documentation:
 4. **Changelog:**
