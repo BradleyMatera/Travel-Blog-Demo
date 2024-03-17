@@ -22,38 +22,38 @@
 
 ### Documentation:
 4. **Changelog:**
-   - [ ] Record all notable changes made in the past week in the changelog file.
-   - [ ] Adhere to a consistent and well-organized format in the changelog.
-   - [ ] Track most significant changes effectively.
-   - [ ] Ensure sufficient information in the changelog.
+   - [ x] Record all notable changes made in the past week in the changelog file.
+   - [ x] Adhere to a consistent and well-organized format in the changelog.
+   - [ x] Track most significant changes effectively.
+   - [ x] Ensure sufficient information in the changelog.
 5. **Validation:**
-   - [ ] Validate CSS code with zero errors.
-   - [ ] Provide a screenshot proving CSS validation.
-   - [ ] Ensure CSS code passes validation with only a few minor errors.
-   - [ ] Include screenshots of CSS validation in the repository.
+   - [ x] Validate CSS code with zero errors.
+   - [ x] Provide a screenshot proving CSS validation.
+   - [x ] Ensure CSS code passes validation with only a few minor errors.
+   - [ x] Include screenshots of CSS validation in the repository.
 
 ### Project Management Updates:
 6. **Issues:**
-   - [ ] Manage and attach all issues correctly to the relevant milestone.
-   - [ ] Track issue status updates following established project management practices.
-   - [ ] File and track issues effectively.
-   - [ ] Ensure proactive and organized management and prioritization of issues.
+   - [ x] Manage and attach all issues correctly to the relevant milestone.
+   - [x ] Track issue status updates following established project management practices.
+   - [ x] File and track issues effectively.
+   - [ x] Ensure proactive and organized management and prioritization of issues.
 7. **Milestone Standup:**
-   - [ ] Present a standup in the main README.
-   - [ ] Address all prompts with clear, concise, and detailed responses.
-   - [ ] Include a standup that lacks depth and clarity in responses.
-   - [ ] Ensure all prompts are answered completely and relevantly.
+   - [ x] Present a standup in the main README.
+   - [x ] Address all prompts with clear, concise, and detailed responses.
+   - [x ] Include a standup that lacks depth and clarity in responses.
+   - [ x] Ensure all prompts are answered completely and relevantly.
 8. **Workflow:**
-   - [ ] Make at least 4 meaningful commits spread over multiple days.
-   - [ ] Distribute commits evenly over time.
-   - [ ] Avoid concentration of commits within a single day.
-   - [ ] Ensure a consistent workflow with regular commits throughout the milestone.
+   - [ x] Make at least 4 meaningful commits spread over multiple days.
+   - [ x] Distribute commits evenly over time.
+   - [ x] Avoid concentration of commits within a single day.
+   - [ x] Ensure a consistent workflow with regular commits throughout the milestone.
 
 ### Submission:
 9. **Double-Check and Submit:**
-   - [ ] Review all completed tasks against the rubric.
-   - [ ] Verify that your work aligns with the grading expectations outlined in the rubric.
-   - [ ] Post the link to your repository as a response to the activity.
+   - [ x] Review all completed tasks against the rubric.
+   - [ x] Verify that your work aligns with the grading expectations outlined in the rubric.
+   - [ x] Post the link to your repository as a response to the activity.
 
 ## Steps to Completion:
 
