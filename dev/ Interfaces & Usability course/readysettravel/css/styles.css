@@ -69,6 +69,8 @@ header {
   height: 20vh; /* Height of the hero section */
 }
 
+/* ... Previous CSS code ... */
+
 /* CTA section */
 section.bg-gray-800 {
   background-color: #374151; /* Match with the background color of the CTA section */
@@ -83,9 +85,9 @@ section.bg-gray-800 {
 }
 
 @media (min-width: 1024px) {
-  .lg\:grid-cols-5 {
+  .lg\:grid-cols-3 {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 columns layout for large screens and up */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns layout for large screens and up */
   }
 }
 
