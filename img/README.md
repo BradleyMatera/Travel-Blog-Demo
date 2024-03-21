@@ -57,4 +57,6 @@ If you are linking to a Google Drive image, follow the steps outlined below.
 The example below highlights in yellow where to locate a Google image ID.  
 **Note:** It is located after **"d/"** and before **"/view"**
 
-![Snorkle](https://drive.google.com/uc?id=1jKy-TwGUw4p5eUg-I1x1AZytVTcgoKqv)
+![Snorkle](https://drive.google.com/uc?id=14k5PAaBoVZz1fRpxZdx7_MMUtZlKWKlT)
+
+https://drive.google.com/file/d/14k5PAaBoVZz1fRpxZdx7_MMUtZlKWKlT/view?usp=sharing
