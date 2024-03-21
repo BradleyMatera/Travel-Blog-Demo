@@ -3,132 +3,106 @@ body, h1, h2, h3, p, ul, li, a {
   margin: 0;
   padding: 0;
   list-style: none;
-    text-decoration: none;
-  }
-
-  /* Typography */
-  body {
-    font-family: 'Roboto', sans-serif;
-  }
-
-  h1, h2, h3 {
-    font-family: 'Abril Fatface', cursive;
-  }
-
-  /* Utility and component classes */
-  .text-orange-400 {
-    color: #EEBA5A;
-  }
-
-  .bg-orange-400 {
-    background-color: #EEBA5A;
-  }
-
-  .hover\:bg-orange-500:hover {
-    background-color: #d8a04e;
-  }
-
-  /* Navigation styles */
-  nav {
-    background-color: #dde0e5; /* Match with the background color of the navigation */
-  }
-
-  nav a:hover {
-    color: #EEBA5A; /* Match with the hover color */
-  }
-
-  /* Footer styles */
-  footer {
-    background-color: #5a677b; /* Match with the background color of the footer */
-    color: #d7d7e4; /* Text color */
-    font-family: 'Roboto', sans-serif; /* Match with the body font */
-  }
-
-  footer h2,
-  footer h3 {
-    font-family: 'Abril Fatface', cursive; /* Match with the heading font */
-  }
-
-  footer p {
-    color: #e2e5e9; /* Match with the paragraph text color */
-  }
-
-  /* Social media icons */
-  footer a:hover {
-    color: #EEBA5A; /* Match with the hover color */
-  }
-
-  /* Adjustments for the hero section */
-  header {
-    background-image: url('/dev/ Interfaces & Usability course/readysettravel/img/clientimgs/assets/hero-bg.jpg');
-    background-color: #374151; /* Match with the background color of the hero section */
-    background-size: cover; /* Ensure the image covers the container, cropping if necessary */
-    background-position: center; /* Center the image */
-    color: #D1D5DB; /* Text color */
-    font-family: 'Roboto', sans-serif; /* Match with the body font */
-    height: 20vh; /* Height of the hero section */
-  }
-
-  /* ... Previous CSS code ... */
-
-  /* CTA section */
-  section.bg-gray-800 {
-    background-color: #374151; /* Match with the background color of the CTA section */
-  }
-
-  /* Responsive Grid Layout for Destinations Section */
-  @media (min-width: 768px) {
-    .grid-cols-2 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); /* 2 columns layout for medium screens and up */
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .lg\:grid-cols-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr); /* 3 columns layout for large screens and up */
-    }
-  }
-
-  
-  .h-icon {
-    height: 100px; /* Set height for the icons */
-  }
-
-  .h-hero {
-    height: 30vh; /* Adjust the height of the hero section for the Tours page */
-  }
-/* Adjustments for the hero section */
-.h-hero {
-  height: 30vh; /* Adjust the height of the hero section for the Tours page */
+  text-decoration: none;
 }
 
-/* Adjustments for the blog page */
-.blog-post-card {
-  transition: transform 0.3s ease;
+/* Typography */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #222222; /* Dark text color for body */
 }
 
+h1, h2, h3 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+/* Utility and component classes */
+.text-orange-400 {
+  color: #EEBA5A; /* Tailwind's orange-400 */
+}
+
+.bg-orange-400 {
+  background-color: #EEBA5A; /* Tailwind's orange-400 */
+}
+
+.hover\:bg-orange-500:hover {
+  background-color: #d8a04e; /* Slightly darker orange on hover */
+}
+
+/* Navigation styles */
+nav {
+  background-color: #A8C7DC; /* Secondary light blue */
+}
+
+nav a:hover {
+  color: #587C93; /* Primary blue for hover state */
+}
+
+/* Footer styles */
+footer {
+  background-color: #5c5e60; /* Secondary grey for footer background */
+  color: #ab8c1c; /* Secondary dark blue for text */
+}
+
+footer h2, footer h3 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+footer p {
+  color: #444444; /* Darker text color */
+}
+
+/* Social media icons */
+footer a:hover {
+  color: #EEBA5A; /* Accent orange for hover state */
+}
+
+/* Hero section styles */
+header {
+  background-image: url('/dev/ Interfaces & Usability course/readysettravel/img/clientimgs/assets/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #D1D5DB; /* Light text color for header */
+  height: 25vh; /* Tailwind utility for height might override this, consider adding a custom class or inline style */
+}
+
+/* CTA section */
+section.bg-gray-800 {
+  background-color: #587C93; /* Primary blue */
+}
+
+/* Responsive Grid Layout for Destinations Section */
+@media (min-width: 768px) {
+  .grid-cols-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Icon sizing */
+.h-icon {
+  height: 100px; /* Original height for icons */
+}
+
+/* Blog post card hover effect */
 .blog-post-card:hover {
   transform: translateY(-5px);
 }
 
-/* Adjustments for the booking page */
-.booking-form input,
-.booking-form textarea {
-  transition: border-color 0.3s ease;
-}
-
+/* Booking form focus effect */
 .booking-form input:focus,
 .booking-form textarea:focus {
-  border-color: #EEBA5A;
+  border-color: #EEBA5A; /* Tailwind's orange-400 */
 }
 
-/* Adjustments for the about page */
-.about-image {
-  transition: transform 0.3s ease;
-}
-
+/* About page image hover effect */
 .about-image:hover {
   transform: scale(1.05);
 }

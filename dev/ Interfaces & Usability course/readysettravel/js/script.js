@@ -11,48 +11,38 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Book Now button interaction
-  const bookNowButtons = document.querySelectorAll('.Tour1BookBtn, .Tour2BookBtn, .Tour3BookBtn');
+  // Interaction for all Book Now buttons
+  const bookNowButtons = document.querySelectorAll('.Tour1BookBtn, .Tour2BookBtn, .Tour3BookBtn, .Tour4BookBtn, .Tour5BookBtn, .Tour6BookBtn, .Tour7BookBtn, .Tour8BookBtn, .Tour9BookBtn');
   bookNowButtons.forEach(button => {
     button.addEventListener('click', function () {
       alert('Thank you for your interest! We will contact you shortly.');
     });
   });
 
-  // Form submission handling
-  const searchForm = document.getElementById('searchForm');
-  searchForm.addEventListener('submit', function (event) {
-    event.preventDefault();
-    const destinationInput = document.querySelector('[name="destination"]');
-    const destination = destinationInput.value;
-    if (destination === '') {
-      alert('Please enter a destination.');
-    } else {
-      alert('Searching for: ' + destination);
-      destinationInput.value = '';
-    }
+  // Form submission handling for the Search form on the Home, Destinations, and Tours pages
+  const searchForms = document.querySelectorAll('form[aria-label="Search form"]');
+  searchForms.forEach(form => {
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      const destinationInput = this.querySelector('input[name="destination"]');
+      const destination = destinationInput.value.trim();
+      if (destination === '') {
+        alert('Please enter a destination.');
+      } else {
+        alert(`Searching for: ${destination}`);
+        destinationInput.value = ''; // Clear the input after search
+      }
+    });
   });
-// Book Now button interaction for Tours page
-const toursBookNowButtons = document.querySelectorAll('.Tour4BookBtn, .Tour5BookBtn, .Tour6BookBtn, .Tour7BookBtn, .Tour8BookBtn, .Tour9BookBtn');
-toursBookNowButtons.forEach(button => {
-  button.addEventListener('click', function () {
-    alert('Thank you for your interest! We will contact you shortly.');
-  });
-// ... Previous JavaScript code ...
 
-// Book Now button interaction for tours page
-const toursBookNowButtons = document.querySelectorAll('.Tour4BookBtn, .Tour5BookBtn, .Tour6BookBtn, .Tour7BookBtn, .Tour8BookBtn, .Tour9BookBtn');
-toursBookNowButtons.forEach(button => {
-  button.addEventListener('click', function () {
-    alert('Thank you for your interest! We will contact you shortly.');
-  });
-});
-
-// Form submission handling for booking page
-const bookingForm = document.querySelector('.booking-form');
-bookingForm.addEventListener('submit', function (event) {
-  event.preventDefault();
-  // Handle form submission logic here
-  alert('Your booking request has been submitted. We will get back to you soon!');
-  bookingForm.reset();
+  // Form submission handling for the booking page
+  const bookingForm = document.querySelector('form[action="/bookTrip"]');
+  if (bookingForm) { // Check if the booking form exists on the current page
+    bookingForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+      // Insert form validation and submission logic here
+      alert('Your booking request has been submitted. We will get back to you soon!');
+      this.reset(); // Reset the form after submission
+    });
+  }
 });
