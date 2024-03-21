@@ -82,23 +82,66 @@ Each week I will summarize my milestone activity and progress by writing a stand
 - Prepare the website for deployment by setting up the necessary hosting environment and ensuring seamless integration with the backend services.
 - Plan for future enhancements and features to be added to the website, creating a roadmap for ongoing development and improvement.
 
-### Week 3
+# Week 3 Report for ReadySetTravel
 
-**⚙️ Overview - What I worked on this past week:**
+## ⚙️ Overview
 
-- *Your content here*
+This past week, I concentrated on enhancing the ReadySetTravel website's accessibility and responsiveness. Key tasks included integrating Tailwind CSS for adaptive design, ensuring HTML validation, and deploying the site on Azure.
 
-**🌵 Challenges - What problems did I have & how I'm addressing them:**
+## 🌵 Challenges
 
-- *Your content here*
+Faced challenges with HTML validation, specifically around `role` attributes and unclosed `div` tags. Addressed these by refining the HTML code based on W3C validator feedback and ensuring compatibility with Tailwind CSS.
 
-**🏆 Accomplishments - What is something I "leveled up" on this week:**
+## 🏆 Accomplishments
 
-- *Your content here*
+Successfully deployed the ReadySetTravel site on Azure, understanding cloud-based hosting and CI/CD pipelines deeply. Achieved 100% W3C validation compliance, significantly enhancing my web development skills.
 
-**🔮 Next Steps - What I plan to prioritize and do next:**
+## 🔮 Next Steps
 
-- *Your content here*
+Plan to conduct user testing for usability feedback and explore advanced Tailwind CSS features for a more engaging design.
+
+---
+
+# Website Validation Report
+
+Confirmed by the W3C Markup Validation Service, the ReadySetTravel website has been validated successfully, adhering to W3C standards. Below is an image showcasing the website URL in the address bar during the validation process.
+
+![Validation](https://drive.google.com/uc?id=14k5PAaBoVZz1fRpxZdx7_MMUtZlKWKlT)
+
+---
+
+# Changelog
+
+## v0.3.0 - 2024/03/20
+
+### Features
+- Uniformed and enhanced header sections across all pages for a cohesive visual identity.
+- Introduced Tailwind CSS enhancements for a responsive UI design.
+- Added `role="banner"` to all header sections for improved accessibility.
+
+### Enhancements
+- Optimized CSS for performance and maintainability.
+- Refined text and background contrast in headers.
+- Standardized header heights and background images for a unified look.
+
+### Bug Fixes
+- Corrected background image paths for the About and Destinations pages.
+- Fixed duplicate headers issue.
+
+### Documentation
+- Updated guidelines on header design and Tailwind CSS integration.
+- Documented the Azure deployment process.
+
+### Accessibility
+- Ensured all headers meet WCAG AA contrast ratio guidelines.
+- Added descriptive text to header images for screen readers.
+
+### Validation
+- Conducted HTML and CSS validation checks to ensure code quality.
+
+### Deployment
+- Successfully deployed to Azure. [View the live site](https://lively-ocean-00bcdaa10.5.azurestaticapps.net/).
+
 
 ### Week 4
 
