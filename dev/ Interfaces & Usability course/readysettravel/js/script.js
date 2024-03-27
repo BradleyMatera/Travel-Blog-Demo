@@ -115,9 +115,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const blogPostData = [
     {
-      image: 'img/clientimgs/assets/blog-post-1.jpg',
-      title: '10 Must-Visit Destinations for Adventure Seekers',
-      excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a bibendum bibendum, augue magna tincidunt enim, eget ultricies magna augue eget est.'
+      image: '../img/clientimgs/bigfamily.jpeg',
+      title: 'How to save big money with a big family',
+      excerpt: 'Traveling with a large family can be expensive, but with these insider tips, you can save money without sacrificing fun or sp....'
+    },
+    {
+      image: '../img/clientimgs/bigfam.jpeg',
+      title: 'Our 2024 Maui Vacation',
+      excerpt: 'Join the Johnson family as they explore the stunning beaches, lush landscapes, and vibrant culture of Maui. From snorkeling with sea turtl......'
+    },
+    {
+      image: '../img/clientimgs/2012 deployment.jpeg',
+      title: "Kandahar, Afghanistan's Hidden Gem",
+      excerpt: 'In this throwback post from 2012, intrepid traveler bradley shares his experience hiking through the remote and breathtaking Zhari Dist.....'
+    },
+    {
+      image: '../img/clientimgs/denaya korea.jpeg',
+      title: 'A girls guide to korea!',
+      excerpt: "From must-see sights to local fashion tips, our insider's guide has everything you need for an unforgettable girls' trip to Korea."
     }
     // Add more blog post data objects as needed
   ];
