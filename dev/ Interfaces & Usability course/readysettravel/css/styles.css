@@ -345,3 +345,11 @@ footer a {
 footer a:hover {
   transform: scale(1.2);
 }
+
+/* Search bar section background image */
+section[aria-label="Search section"] {
+  background-image: url('../img/clientimgs/nadia-hania-fNGL2sMxPI4-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Ensure text contrast */
+}
