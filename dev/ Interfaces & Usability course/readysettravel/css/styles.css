@@ -353,3 +353,12 @@ section[aria-label="Search section"] {
   background-position: center;
   color: #fff; /* Ensure text contrast */
 }
+/* Booking form background image */
+.booking-form {
+  background-image: url('../img/clientimgs/oxana-v-qoAIlAmLJBU-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px; /* Add some padding around the form */
+  border-radius: 8px; /* Optional: Adds rounded corners to the form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+}
