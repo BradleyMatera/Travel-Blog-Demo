@@ -75,7 +75,7 @@ header {
   background-size: cover;
   background-position: center;
   color: #D1D5DB;
-  height: 60vh; /* Adjusted for better responsiveness */
+  height: 30vh; /* Adjusted for better responsiveness */
   display: flex;
   align-items: center;
   justify-content: center;
