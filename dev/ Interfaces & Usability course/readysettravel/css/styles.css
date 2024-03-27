@@ -82,7 +82,7 @@ header {
   padding: 20px;
 }
 
-* Responsive typography adjustments */
+/* Responsive typography adjustments */
 @media (max-width: 1024px) {
   header h1 {
     font-size: 3.5rem; /* Smaller font size for tablets */
