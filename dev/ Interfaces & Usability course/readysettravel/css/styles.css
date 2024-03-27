@@ -75,7 +75,7 @@ header {
   background-size: cover;
   background-position: center;
   color: #D1D5DB;
-  height: 50vh; /* Original: 30vh; Adjusted for a balanced initial height */
+  height: 60vh; /* Original: 30vh; Adjusted for a balanced initial height */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,23 +86,23 @@ header {
 /* Responsive adjustments for the header */
 @media (max-width: 1024px) {
   header {
-    height: 45vh; /* Adjusted for tablet devices */
+    height: 50vh; /* Adjusted for tablet devices */
   }
 }
 
 @media (max-width: 768px) {
   header {
-    height: 35vh; /* Adjusted for mobile devices */
+    height: 40vh; /* Adjusted for mobile devices */
   }
 }
 
 @media (max-width: 480px) {
   header {
-    height: 30vh; /* Further reduced for smaller screens */
+    height: 35vh; /* Further reduced for smaller screens */
   }
 }
 .custom-header-height {
-  height: 30vh; /* Adjust this value to change the height */
+  height: 45vh; /* Adjust this value to change the height */
 }
 
 
