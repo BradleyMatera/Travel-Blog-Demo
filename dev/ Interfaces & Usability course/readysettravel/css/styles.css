@@ -86,19 +86,19 @@ header {
 /* Responsive adjustments for the header */
 @media (max-width: 1024px) {
   header {
-    height: 45vh; /* Adjusted for tablet devices */
+    height: 15vh; /* Adjusted for tablet devices */
   }
 }
 
 @media (max-width: 768px) {
   header {
-    height: 35vh; /* Adjusted for mobile devices */
+    height: 15vh; /* Adjusted for mobile devices */
   }
 }
 
 @media (max-width: 480px) {
   header {
-    height: 30vh; /* Further reduced for smaller screens */
+    height: 15vh; /* Further reduced for smaller screens */
   }
 }
 
