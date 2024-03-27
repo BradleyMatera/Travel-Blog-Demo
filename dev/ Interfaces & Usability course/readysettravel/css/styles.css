@@ -82,27 +82,29 @@ section.bg-gray-800 {
 @media (min-width: 1024px) {
   .lg\:grid-cols-3 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
+
+
+grid-template-columns: repeat(3, 1fr);
+}
 }
 
-/* Icon sizing */
+
 .h-icon {
-  height: 100px; /* Original height for icons */
+height: 100px; / Original height for icons */
 }
 
 /* Blog post card hover effect */
 .blog-post-card:hover {
-  transform: translateY(-5px);
+transform: translateY(-5px);
 }
 
-/* Booking form focus effect */
+
 .booking-form input:focus,
 .booking-form textarea:focus {
-  border-color: #EEBA5A; /* Tailwind's orange-400 */
+border-color: #EEBA5A; / Tailwind's orange-400 */
 }
 
 /* About page image hover effect */
 .about-image:hover {
-  transform: scale(1.05);
+transform: scale(1.05);
 }
