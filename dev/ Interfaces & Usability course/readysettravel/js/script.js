@@ -15,7 +15,28 @@ document.addEventListener('DOMContentLoaded', function () {
   const bookNowButtons = document.querySelectorAll('.Tour1BookBtn, .Tour2BookBtn, .Tour3BookBtn, .Tour4BookBtn, .Tour5BookBtn, .Tour6BookBtn, .Tour7BookBtn, .Tour8BookBtn, .Tour9BookBtn');
   bookNowButtons.forEach(button => {
     button.addEventListener('click', function () {
-      alert('Thank you for your interest! We will contact you shortly.');
+      let tourName = "";
+      if (this.classList.contains('Tour1BookBtn')) {
+        tourName = "Alps Mountain Hiking Tour";
+      } else if (this.classList.contains('Tour2BookBtn')) {
+        tourName = "Snorkel the Barrier Reef Tour";
+      } else if (this.classList.contains('Tour3BookBtn')) {
+        tourName = "Tour the Pyramids on Camelback";
+      } else if (this.classList.contains('Tour4BookBtn')) {
+        tourName = "Morning at a Sea Tour";
+      } else if (this.classList.contains('Tour5BookBtn')) {
+        tourName = "Ngorongoro Conservation Tours";
+      } else if (this.classList.contains('Tour6BookBtn')) {
+        tourName = "Ellis Island Tours";
+      } else if (this.classList.contains('Tour7BookBtn')) {
+        tourName = "Guatemala Wine House Tour";
+      } else if (this.classList.contains('Tour8BookBtn')) {
+        tourName = "Thailand Adult Beach Tour";
+      } else if (this.classList.contains('Tour9BookBtn')) {
+        tourName = "Pathway to the Mediterraneans adults only tour";
+      }
+      document.getElementById("Propertietype").innerHTML = tourName;
+      alert('Thank you for your interest in ' + tourName + '! We will contact you shortly.');
     });
   });
 
