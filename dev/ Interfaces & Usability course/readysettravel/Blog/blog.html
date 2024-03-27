@@ -14,7 +14,7 @@
   <nav class="bg-slate-200 py-4" aria-label="Primary navigation">
     <div class="container mx-auto flex justify-between items-center px-6">
       <a href="/index.html" class="text-2xl font-bold leading-10 text-slate-900">ReadySet<span class="text-orange-400">Travel</span></a>
-      <div class="flex items-center space-x-4" role="navigation">
+      <div class="flex items-center space-x-4">
         <a href="/about/about.html" class="text-base font-medium text-slate-900 hover:text-orange-400">About</a>
         <a href="/Destinations/destinations.html" class="text-base font-medium text-slate-900 hover:text-orange-400">Destinations</a>
         <a href="/Tours/tours.html" class="text-base font-medium text-slate-900 hover:text-orange-400">Tours</a>
@@ -35,8 +35,8 @@
   <section class="bg-gray-800 py-12 text-center" aria-label="Search section">
     <div class="container mx-auto">
       <h2 class="text-3xl font-Abril_Fatface text-white mb-6">Where do you want to go?</h2>
-      <div class="flex justify-center items-center" role="search">
-        <form id="searchForm" aria-label="Search form">
+      <div class="flex justify-center items-center">
+        <form role="search" aria-label="Search form">
           <label for="destination" class="sr-only">Enter a destination</label>
           <input type="text" id="destination" placeholder="Enter a destination" class="w-full max-w-md p-2 mr-4 text-gray-800" aria-label="Search for a destination" name="destination">
           <button type="submit" class="bg-orange-400 text-white py-3 px-6 rounded hover:bg-orange-500 transition duration-300">Search</button>
@@ -62,6 +62,7 @@
       </div>
     </div>
   </section>
+
   <footer class="bg-slate-500 py-12">
     <div class="container mx-auto px-6">
       <div class="flex flex-wrap justify-between">
