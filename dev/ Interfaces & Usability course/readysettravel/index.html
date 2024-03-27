@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ReadySetTravel - Home</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
@@ -29,7 +29,7 @@
       <p class="text-lg md:text-xl lg:text-2xl font-semibold text-center">Get the best advice and tips for your dream trip</p>
     </div>
   </header>
-  
+
   <section class="bg-gray-800 py-12 text-center" aria-label="Search section">
     <div class="container mx-auto">
       <h2 class="text-3xl font-Abril_Fatface text-white mb-6">Where do you want to go?</h2>
@@ -42,7 +42,7 @@
       </div>
     </div>
   </section>
-  
+
   <section class="bg-white py-12" aria-label="Services section">
     <div class="container mx-auto px-6 text-center">
       <h2 class="text-4xl font-normal text-neutral-800 mb-4">Plan the Perfect Trip</h2>
@@ -63,26 +63,109 @@
       </div>
     </div>
   </section>
-  
+
   <section class="py-12 bg-white" aria-label="Trending Tours section">
     <div class="container mx-auto">
       <h2 class="text-4xl font-normal leading-10 font-Abril_Fatface text-center text-neutral-800 mb-6">Trending Tours</h2>
       <p class="text-base font-light text-stone-500 text-center mb-10">Get out there and experience some adventure!</p>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <!-- Tour cards will be dynamically generated here -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img class="w-full h-56 object-cover" src="img/clientimgs/assets/tour-mountainHiking.jpg" alt="Alps Mountain Hiking Tour">
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-slate-900">Alps Mountain Hiking Tour</h3>
+            <p class="text-sm text-stone-400">4 days | 10 stops</p>
+            <p class="text-2xl font-bold text-slate-900">$1,500</p>
+            <button class="mt-4 w-full bg-orange-400 text-white py-2 rounded hover:bg-orange-500 transition duration-300 Tour1BookBtn">Book Now</button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img class="w-full h-56 object-cover" src="img/clientimgs/assets/tour-snorkel.jpg" alt="Snorkel the Barrier Reef Tour">
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-slate-900">Snorkel the Barrier Reef Tour</h3>
+            <p class="text-sm text-stone-400">2 days | 3 stops</p>
+            <p class="text-2xl font-bold text-slate-900">$1,000</p>
+            <button class="mt-4 w-full bg-orange-400 text-white py-2 rounded hover:bg-orange-500 transition duration-300 Tour2BookBtn">Book Now</button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img class="w-full h-56 object-cover" src="img/clientimgs/assets/tour-pyramids.jpg" alt="Tour the Pyramids on Camelback">
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-slate-900">Tour the Pyramids on Camelback</h3>
+            <p class="text-sm text-stone-400">3 days | 5 stops</p>
+            <p class="text-2xl font-bold text-slate-900">$2,000</p>
+            <button class="mt-4 w-full bg-orange-400 text-white py-2 rounded hover:bg-orange-500 transition duration-300 Tour3BookBtn">Book Now</button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  
+
   <section class="bg-gray-100 py-12" aria-label="Top Destinations section">
     <div class="container mx-auto px-6 text-center">
       <h2 class="text-4xl font-Abril_Fatface leading-10 text-neutral-800 mb-6">Top Notch Destinations</h2>
       <p class="text-base font-light text-stone-500 mb-10">These places are on everyone's bucket list.</p>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Destination cards will be dynamically generated here -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img class="w-full h-64 object-cover" src="img/clientimgs/assets/destinations-paris.jpg" alt="Paris, France">
+          <div class="p-4">
+            <h3 class="text-lg font-bold">Paris</h3>
+            <p class="text-gray-600">France</p>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img class="w-full h-64 object-cover" src="img/clientimgs/assets/destinations-sydney.jpg" alt="Sydney, Australia">
+          <div class="p-4">
+            <h3 class="text-lg font-bold">Sydney</h3>
+            <p class="text-gray-600">Australia</p>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img class="w-full h-64 object-cover" src="img/clientimgs/assets/destinations-machu.jpg" alt="Machu Picchu, Peru">
+          <div class="p-4">
+            <h3 class="text-lg font-bold">Machu Picchu</h3>
+            <p class="text-gray-600">Peru</p>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img class="w-full h-64 object-cover" src="img/clientimgs/assets/destinations-rio.jpg" alt="Rio de Janeiro, Brazil">
+          <div class="p-4">
+            <h3 class="text-lg font-bold">Rio de Janeiro</h3>
+            <p class="text-gray-600">Brazil</p>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img class="w-full h-64 object-cover" src="img/clientimgs/assets/destinations-rome.jpg" alt="Rome, Italy">
+          <div class="p-4">
+            <h3 class="text-lg font-bold">Rome</h3>
+            <p class="text-gray-600">Italy</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
+  <footer class="bg-slate-500 py-12">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-wrap justify-between">
+        <div class="w-full md:w-1/3 mb-6 md:mb-0">
+          <h2 class="text-2xl font-bold leading-10 text-white">ReadySet<span class="text-orange-400">Travel</span></h2>
+          <p class="mt-2 text-gray-300">We can provide you with the best advice and tips for your dream trip.</p>
+        </div>
+        <div class="w-full md:w-1/3 mb-6 md:mb-0">
+          <h3 class="text-lg font-semibold mb-2 text-white">Contact Us</h3>
+          <p class="text-gray-300">1234 Address Street<br>Winter Park, FL 32792</p>
+          <p class="mt-2 text-gray-300">123-456-7890</p>
+        </div>
+        <div class="w-full md:w-1/3">
+          <h3 class="text-lg font-semibold mb-2 text-white">Follow Us</h3>
+          <div class="flex mt-2">
+            <a href="#" class="mr-4 text-white hover:text-orange-400"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="mr-4 text-white hover:text-orange-400"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white hover:text-orange-400"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <script src="js/script.js"></script>
