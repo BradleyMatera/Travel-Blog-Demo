@@ -75,11 +75,12 @@ header {
   background-size: cover;
   background-position: center;
   color: #D1D5DB;
-  height: 60vh;
+  height: 60vh; /* Adjusted for better responsiveness */
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  padding: 20px; /* Added padding for smaller devices */
 }
 
 header::before {
@@ -96,7 +97,56 @@ header::before {
 header .container {
   position: relative;
   z-index: 2;
+  text-align: center; /* Center the text for all device sizes */
 }
+
+/* Adjust header height for different devices */
+@media (max-width: 1024px) {
+  header {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 40vh;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    height: 30vh;
+  }
+}
+
+/* Responsive typography adjustments */
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 3.5rem; /* Smaller font size for tablets */
+  }
+  header p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem; /* Even smaller font size for mobile */
+  }
+  header p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2rem; /* Smallest font size for very small devices */
+  }
+  header p {
+    font-size: 1rem;
+  }
+}
+
 
 /* CTA section */
 section.bg-gray-800 {
