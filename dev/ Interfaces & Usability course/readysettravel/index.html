@@ -9,39 +9,39 @@
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-<body class="font-Roboto">
-  <nav class="bg-slate-200 py-4" aria-label="Primary navigation">
-    <div class="container mx-auto flex justify-between items-center px-6">
-      <a href="/index.html" class="text-2xl font-bold leading-10 text-slate-900">ReadySet<span class="text-orange-400">Travel</span></a>
-      <div class="flex items-center space-x-4">
-        <a href="/about/about.html" class="text-base font-medium text-slate-900 hover:text-orange-400">About</a>
-        <a href="/Destinations/destinations.html" class="text-base font-medium text-slate-900 hover:text-orange-400">Destinations</a>
-        <a href="/Tours/tours.html" class="text-base font-medium text-slate-900 hover:text-orange-400">Tours</a>
-        <a href="/Blog/blog.html" class="text-base font-medium text-slate-900 hover:text-orange-400">Blog</a>
-        <a href="/Book/book.html" class="bg-orange-400 text-white py-2 px-4 rounded-lg hover:bg-orange-500 transition duration-300">Book a Trip</a>
-      </div>
+<nav class="bg-slate-200 py-4 sticky top-0 z-50 shadow-md" aria-label="Primary navigation">
+  <div class="container mx-auto flex justify-between items-center px-6">
+    <a href="/index.html" class="text-2xl font-bold leading-10 text-slate-900 hover:text-orange-400 transition duration-300">ReadySet<span class="text-orange-400">Travel</span></a>
+    <div class="flex items-center space-x-4">
+      <a href="/about/about.html" class="text-base font-medium text-slate-900 hover:text-orange-400 transition duration-300">About</a>
+      <a href="/Destinations/destinations.html" class="text-base font-medium text-slate-900 hover:text-orange-400 transition duration-300">Destinations</a>
+      <a href="/Tours/tours.html" class="text-base font-medium text-slate-900 hover:text-orange-400 transition duration-300">Tours</a>
+      <a href="/Blog/blog.html" class="text-base font-medium text-slate-900 hover:text-orange-400 transition duration-300">Blog</a>
+      <a href="/Book/book.html" class="bg-orange-400 text-white py-2 px-4 rounded-lg hover:bg-orange-500 transition duration-300 shadow-md">Book a Trip</a>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <header class="relative bg-cover bg-center text-white h-hero">
-    <div class="container mx-auto flex flex-col justify-center items-center py-1 md:py-2 px-6">
-      <h1 class="text-3xl md:text-4xl lg:text-5xl font-normal leading-tight font-Abril_Fatface mb-2 text-center">Book the trip of a lifetime</h1>
-      <p class="text-lg md:text-xl lg:text-2xl font-semibold text-center">Get the best advice and tips for your dream trip</p>
-    </div>
-  </header>
+<header class="relative bg-cover bg-center text-white h-screen flex items-center justify-center">
+  <div class="absolute inset-0 bg-black opacity-50"></div>
+  <div class="container mx-auto flex flex-col justify-center items-center py-1 md:py-2 px-6 z-10">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight font-Abril_Fatface mb-4 text-center text-shadow-lg animate-fade-in-up">Book the trip of a lifetime</h1>
+    <p class="text-lg md:text-xl lg:text-2xl font-semibold text-center text-shadow-md animate-fade-in-up animation-delay-200">Get the best advice and tips for your dream trip</p>
+  </div>
+</header>
 
-  <section class="bg-gray-800 py-12 text-center" aria-label="Search section">
-    <div class="container mx-auto">
-      <h2 class="text-3xl font-Abril_Fatface text-white mb-6">Where do you want to go?</h2>
-      <div class="flex justify-center items-center">
-        <form role="search" aria-label="Search form">
-          <label for="destination" class="sr-only">Enter a destination</label>
-          <input type="text" id="destination" placeholder="Enter a destination" class="w-full max-w-md p-2 mr-4 text-gray-800" aria-label="Search for a destination" name="destination">
-          <button type="submit" class="bg-orange-400 text-white py-3 px-6 rounded hover:bg-orange-500 transition duration-300">Search</button>
-        </form>
-      </div>
+<section class="bg-gray-800 py-12 text-center" aria-label="Search section">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-Abril_Fatface text-white mb-6 animate-fade-in-up">Where do you want to go?</h2>
+    <div class="flex justify-center items-center">
+      <form role="search" aria-label="Search form" class="flex flex-col md:flex-row">
+        <label for="destination" class="sr-only">Enter a destination</label>
+        <input type="text" id="destination" placeholder="Enter a destination" class="w-full max-w-md p-2 mr-0 md:mr-4 text-gray-800 rounded-lg mb-4 md:mb-0 focus:outline-none focus:ring-2 focus:ring-orange-400" aria-label="Search for a destination" name="destination">
+        <button type="submit" class="bg-orange-400 text-white py-3 px-6 rounded-lg hover:bg-orange-500 transition duration-300 shadow-md animate-fade-in-up animation-delay-400">Search</button>
+      </form>
     </div>
-  </section>
+  </div>
+</section>
 
   <section class="bg-white py-12" aria-label="Services section">
     <div class="container mx-auto px-6 text-center">
