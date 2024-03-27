@@ -9,7 +9,7 @@ body, h1, h2, h3, p, ul, li, a {
 /* Typography */
 body {
   font-family: 'Roboto', sans-serif;
-  color: #222222; /* Dark text color for body */
+  color: #222222;
 }
 
 h1, h2, h3 {
@@ -18,30 +18,30 @@ h1, h2, h3 {
 
 /* Utility and component classes */
 .text-orange-400 {
-  color: #EEBA5A; /* Tailwind's orange-400 */
+  color: #EEBA5A;
 }
 
 .bg-orange-400 {
-  background-color: #EEBA5A; /* Tailwind's orange-400 */
+  background-color: #EEBA5A;
 }
 
 .hover\:bg-orange-500:hover {
-  background-color: #d8a04e; /* Slightly darker orange on hover */
+  background-color: #d8a04e;
 }
 
 /* Navigation styles */
 nav {
-  background-color: #A8C7DC; /* Secondary light blue */
+  background-color: #A8C7DC;
 }
 
 nav a:hover {
-  color: #587C93; /* Primary blue for hover state */
+  color: #587C93;
 }
 
 /* Footer styles */
 footer {
-  background-color: #5c5e60; /* Secondary grey for footer background */
-  color: #ab8c1c; /* Secondary dark blue for text */
+  background-color: #5c5e60;
+  color: #ab8c1c;
 }
 
 footer h2, footer h3 {
@@ -49,12 +49,12 @@ footer h2, footer h3 {
 }
 
 footer p {
-  color: #444444; /* Darker text color */
+  color: #444444;
 }
 
 /* Social media icons */
 footer a:hover {
-  color: #EEBA5A; /* Accent orange for hover state */
+  color: #EEBA5A;
 }
 
 /* Hero section styles */
@@ -62,13 +62,13 @@ header {
   background-image: url('/img/clientimgs/assets/hero-bg.jpg');
   background-size: cover;
   background-position: center;
-  color: #D1D5DB; /* Light text color for header */
-  height: 25vh; /* Tailwind utility for height might override this, consider adding a custom class or inline style */
+  color: #D1D5DB;
+  height: 25vh;
 }
 
 /* CTA section */
 section.bg-gray-800 {
-  background-color: #587C93; /* Primary blue */
+  background-color: #587C93;
 }
 
 /* Responsive Grid Layout for Destinations Section */
@@ -82,29 +82,27 @@ section.bg-gray-800 {
 @media (min-width: 1024px) {
   .lg\:grid-cols-3 {
     display: grid;
-
-
-grid-template-columns: repeat(3, 1fr);
-}
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-
+/* Icon sizing */
 .h-icon {
-height: 100px; / Original height for icons */
+  height: 100px;
 }
 
 /* Blog post card hover effect */
 .blog-post-card:hover {
-transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
-
+/* Booking form focus effect */
 .booking-form input:focus,
 .booking-form textarea:focus {
-border-color: #EEBA5A; / Tailwind's orange-400 */
+  border-color: #EEBA5A;
 }
 
 /* About page image hover effect */
 .about-image:hover {
-transform: scale(1.05);
+  transform: scale(1.05);
 }
