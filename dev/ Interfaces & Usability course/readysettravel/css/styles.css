@@ -353,12 +353,30 @@ section[aria-label="Search section"] {
   background-position: center;
   color: #fff; /* Ensure text contrast */
 }
-/* Booking form background image */
+/* Booking form background image with lightening effect */
 .booking-form {
+  position: relative;
   background-image: url('../img/clientimgs/oxana-v-qoAIlAmLJBU-unsplash.jpg');
   background-size: cover;
   background-position: center;
-  padding: 20px; /* Add some padding around the form */
-  border-radius: 8px; /* Optional: Adds rounded corners to the form */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.booking-form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5); /* Adjust transparency as needed */
+  border-radius: 8px; /* Match the border-radius of the form */
+  z-index: 0;
+}
+
+/* Ensure form content is above the overlay */
+.booking-form > * {
+  position: relative;
+  z-index: 1;
 }
