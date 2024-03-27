@@ -137,24 +137,25 @@ document.addEventListener('DOMContentLoaded', function () {
     // Add more blog post data objects as needed
   ];
 
-  // Render tour cards
-  const tourCardContainer = document.querySelector('.grid-cols-1.md\\:grid-cols-3.gap-4');
-  if (tourCardContainer) {
-    tourData.forEach(tour => {
-      const tourCard = `
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img class="w-full h-56 object-cover" src="${tour.image}" alt="${tour.title}">
-          <div class="p-4">
-            <h3 class="text-lg font-bold text-slate-900">${tour.title}</h3>
-            <p class="text-sm text-stone-400">${tour.duration}</p>
-            <p class="text-2xl font-bold text-slate-900">${tour.price}</p>
-            <button class="mt-4 w-full bg-orange-400 text-white py-2 rounded hover:bg-orange-500 transition duration-300 ${tour.bookingClass}">Book Now</button>
-          </div>
+// Render tour cards
+const tourCardContainer = document.getElementById('tourCardContainer');
+if (tourCardContainer) {
+  tourCardContainer.innerHTML = ''; // Clear any existing content
+  tourData.forEach(tour => {
+    const tourCard = `
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img class="w-full h-56 object-cover" src="${tour.image}" alt="${tour.title}">
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-slate-900">${tour.title}</h3>
+          <p class="text-sm text-stone-400">${tour.duration}</p>
+          <p class="text-2xl font-bold text-slate-900">${tour.price}</p>
+          <button class="mt-4 w-full bg-orange-400 text-white py-2 rounded hover:bg-orange-500 transition duration-300 ${tour.bookingClass}">Book Now</button>
         </div>
-      `;
-      tourCardContainer.insertAdjacentHTML('beforeend', tourCard);
-    });
-  }
+      </div>
+    `;
+    tourCardContainer.insertAdjacentHTML('beforeend', tourCard);
+  });
+}
 
   // Render destination cards
   const destinationCardContainer = document.querySelector('.grid.grid-cols-1.md\\:grid-cols-2.lg\\:grid-cols-3.gap-6');
