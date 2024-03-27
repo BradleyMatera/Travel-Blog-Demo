@@ -75,7 +75,7 @@ header {
   background-size: cover;
   background-position: center;
   color: #D1D5DB;
-  height: 40vh; /* Original: 30vh; Adjusted for a balanced initial height */
+  height: 10vh; /* Original: 30vh; Adjusted for a balanced initial height */
   display: flex;
   align-items: center;
   justify-content: center;
