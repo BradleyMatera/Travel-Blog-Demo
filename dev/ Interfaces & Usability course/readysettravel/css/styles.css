@@ -59,7 +59,7 @@ footer a:hover {
 
 /* Hero section styles */
 header {
-  background-image: url('/img/clientimgs/assets/hero-bg.jpg');
+  background-image: url('../img/clientimgs/assets/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   color: #D1D5DB;
