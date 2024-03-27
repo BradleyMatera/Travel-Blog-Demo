@@ -367,3 +367,50 @@ section[aria-label="Search section"] {
   position: relative;
   z-index: 1;
 }
+.treasures-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  grid-template-areas:
+    "madagascar austria paris"
+    "california switzerland machupicchu"
+    "italy italy italy";
+}
+
+.treasures-grid > div:nth-child(1) { grid-area: madagascar; }
+.treasures-grid > div:nth-child(2) { grid-area: austria; }
+.treasures-grid > div:nth-child(3) { grid-area: paris; }
+.treasures-grid > div:nth-child(4) { grid-area: california; }
+.treasures-grid > div:nth-child(5) { grid-area: switzerland; }
+.treasures-grid > div:nth-child(6) { grid-area: machupicchu; }
+.treasures-grid > div:nth-child(7) { grid-area: italy; }
+
+.treasures-grid > div {
+  background-color: #fff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.treasures-grid > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.treasures-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.treasures-grid div:hover img {
+  transform: scale(1.05);
+}
+
+.treasures-grid div p {
+  padding: 15px;
+  font-size: 1rem;
+  color: #333;
+}
