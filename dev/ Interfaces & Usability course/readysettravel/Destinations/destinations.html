@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ReadySetTravel - Destinations</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css"> 
+  <link rel="stylesheet" href="/css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
@@ -13,7 +13,7 @@
   <nav class="bg-slate-200 py-4" aria-label="Primary navigation">
     <div class="container mx-auto flex justify-between items-center px-6">
       <a href="/index.html" class="text-2xl font-bold leading-10 text-slate-900">ReadySet<span class="text-orange-400">Travel</span></a>
-      <div class="flex items-center space-x-4" role="navigation">
+      <div class="flex items-center space-x-4">
         <a href="/about/about.html" class="text-base font-medium text-slate-900 hover:text-orange-400">About</a>
         <a href="/Destinations/destinations.html" class="text-base font-medium text-slate-900 hover:text-orange-400">Destinations</a>
         <a href="/Tours/tours.html" class="text-base font-medium text-slate-900 hover:text-orange-400">Tours</a>
@@ -25,17 +25,16 @@
 
   <header class="relative bg-cover bg-center text-white h-hero">
     <div class="container mx-auto flex flex-col justify-center items-center py-1 md:py-2 px-6">
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight font-Abril_Fatface mb-4 text-center">Uncover the World's Wonders</h1>
-          <p class="text-lg md:text-xl lg:text-2xl font-semibold text-center max-w-3xl mx-auto">From iconic cities to hidden gems, our destinations span the globe, offering unforgettable experiences and breathtaking sights.</p>
-        </div>
-      </header>
-      
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight font-Abril_Fatface mb-4 text-center">Uncover the World's Wonders</h1>
+      <p class="text-lg md:text-xl lg:text-2xl font-semibold text-center max-w-3xl mx-auto">From iconic cities to hidden gems, our destinations span the globe, offering unforgettable experiences and breathtaking sights.</p>
+    </div>
+  </header>
 
   <section class="bg-gray-800 py-12 text-center" aria-label="Search section">
     <div class="container mx-auto">
       <h2 class="text-3xl font-Abril_Fatface text-white mb-6">Where do you want to go?</h2>
-      <div class="flex justify-center items-center" role="search">
-        <form id="searchForm" aria-label="Search form">
+      <div class="flex justify-center items-center">
+        <form role="search" aria-label="Search form">
           <label for="destination" class="sr-only">Enter a destination</label>
           <input type="text" id="destination" placeholder="Enter a destination" class="w-full max-w-md p-2 mr-4 text-gray-800" aria-label="Search for a destination" name="destination">
           <button type="submit" class="bg-orange-400 text-white py-3 px-6 rounded hover:bg-orange-500 transition duration-300">Search</button>
@@ -47,22 +46,22 @@
   <section class="py-12 bg-white" aria-label="Global Marvels section">
     <div class="container mx-auto">
       <h2 class="text-4xl font-bold leading-10 font-Abril_Fatface text-center text-neutral-800 mb-8">Global Marvels</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8" role="list">
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 hover:shadow-xl" role="listitem">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 hover:shadow-xl">
           <img class="w-full h-64 object-cover transition duration-300 hover:scale-105" src="/dev/ Interfaces & Usability course/readysettravel/img/clientimgs/assets/destinations-rome.jpg" alt="Rome, Italy">
           <div class="p-6">
             <h3 class="text-2xl font-bold text-slate-900 mb-2">Rome</h3>
             <p class="text-base text-stone-500">Italy</p>
           </div>
         </div>
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 hover:shadow-xl" role="listitem">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 hover:shadow-xl">
           <img class="w-full h-64 object-cover transition duration-300 hover:scale-105" src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1194&q=80" alt="Sydney, Australia">
           <div class="p-6">
             <h3 class="text-2xl font-bold text-slate-900 mb-2">Sydney</h3>
             <p class="text-base text-stone-500">Australia</p>
           </div>
         </div>
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 hover:shadow-xl" role="listitem">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 hover:shadow-xl">
           <img class="w-full h-64 object-cover transition duration-300 hover:scale-105" src="/dev/ Interfaces & Usability course/readysettravel/img/clientimgs/assets/destinations-rio.jpg" alt="Rio de Janeiro, Brazil">
           <div class="p-6">
             <h3 class="text-2xl font-bold text-slate-900 mb-2">Rio de Janeiro</h3>
@@ -76,47 +75,47 @@
   <section class="py-12 bg-gray-100" aria-label="Off The Beaten Path Treasures section">
     <div class="container mx-auto">
       <h2 class="text-4xl font-bold leading-10 font-Abril_Fatface text-center text-neutral-800 mb-8">Off The Beaten Path Treasures</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" role="list">
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 hover:shadow-xl" role="listitem">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 hover:shadow-xl">
           <img class="w-full h-64 object-cover transition duration-300 hover:scale-105" src="/dev/ Interfaces & Usability course/readysettravel/img/clientimgs/assets/destinations-mada.jpg" alt="Madagascar">
           <div class="p-6">
             <h3 class="text-2xl font-bold text-slate-900 mb-2">Madagascar</h3>
           </div>
         </div>
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 hover:shadow-xl" role="listitem">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 hover:shadow-xl">
           <img class="w-full h-64 object-cover transition duration-300 hover:scale-105" src="/dev/ Interfaces & Usability course/readysettravel/img/clientimgs/assets/destinations-austria.jpg" alt="Austria">
           <div class="p-6">
             <h3 class="text-2xl font-bold text-slate-900 mb-2">Austria</h3>
           </div>
         </div>
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 hover:shadow-xl" role="listitem">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 hover:shadow-xl">
           <img class="w-full h-64 object-cover transition duration-300 hover:scale-105" src="/dev/ Interfaces & Usability course/readysettravel/img/clientimgs/assets/destinations-paris.jpg" alt="Paris, France">
           <div class="p-6">
             <h3 class="text-2xl font-bold text-slate-900 mb-2">Paris</h3>
             <p class="text-base text-stone-500">France</p>
           </div>
         </div>
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 hover:shadow-xl" role="listitem">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 hover:shadow-xl">
           <img class="w-full h-64 object-cover transition duration-300 hover:scale-105" src="/dev/ Interfaces & Usability course/readysettravel/img/clientimgs/assets/destinations-CA.jpg" alt="California, USA">
           <div class="p-6">
             <h3 class="text-2xl font-bold text-slate-900 mb-2">California</h3>
             <p class="text-base text-stone-500">USA</p>
           </div>
         </div>
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 hover:shadow-xl" role="listitem">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 hover:shadow-xl">
           <img class="w-full h-64 object-cover transition duration-300 hover:scale-105" src="/dev/ Interfaces & Usability course/readysettravel/img/clientimgs/assets/destinations-switzerland.jpg" alt="Switzerland">
           <div class="p-6">
             <h3 class="text-2xl font-bold text-slate-900 mb-2">Switzerland</h3>
           </div>
         </div>
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 hover:shadow-xl" role="listitem">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 hover:shadow-xl">
           <img class="w-full h-64 object-cover transition duration-300 hover:scale-105" src="/dev/ Interfaces & Usability course/readysettravel/img/clientimgs/assets/destinations-machu.jpg" alt="Machu Picchu, Peru">
           <div class="p-6">
             <h3 class="text-2xl font-bold text-slate-900 mb-2">Machu Picchu</h3>
             <p class="text-base text-stone-500">Peru</p>
           </div>
         </div>
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 hover:shadow-xl" role="listitem">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 hover:shadow-xl">
           <img class="w-full h-64 object-cover transition duration-300 hover:scale-105" src="/dev/ Interfaces & Usability course/readysettravel/img/clientimgs/assets/destinations-italy.jpg" alt="Italy">
           <div class="p-6">
             <h3 class="text-2xl font-bold text-slate-900 mb-2">Italy</h3>
@@ -133,6 +132,7 @@
       <a href="/dev/ Interfaces & Usability course/readysettravel/" class="bg-orange-400 text-white py-3 px-8 rounded-lg text-lg font-semibold hover:bg-orange-500 transition duration-300">Book Now</a>
     </div>
   </section>
+
   <footer class="bg-slate-500 py-12">
     <div class="container mx-auto px-6">
       <div class="flex flex-wrap justify-between">
