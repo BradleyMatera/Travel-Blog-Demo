@@ -71,21 +71,21 @@ document.addEventListener('DOMContentLoaded', function () {
   // You can replace the sample data with data from an API or database
   const tourData = [
     {
-      image: 'img/clientimgs/assets/tour-mountainHiking.jpg',
+      image: '../img/clientimgs/assets/tour-mountainHiking.jpg',
       title: 'Alps Mountain Hiking Tour',
       duration: '4 days | 10 stops',
       price: '$1,500',
       bookingClass: 'Tour1BookBtn'
     },
     {
-      image: 'img/clientimgs/assets/tour-snorkel.jpg',
+      image: '../img/clientimgs/assets/tour-snorkel.jpg',
       title: 'Snorkel the Barrier Reef Tour',
       duration: '2 days | 3 stops',
       price: '$1,000',
       bookingClass: 'Tour2BookBtn'
     },
     {
-      image: 'img/clientimgs/assets/tour-pyramids.jpg',
+      image: '../img/clientimgs/assets/tour-pyramids.jpg',
       title: 'Tour the Pyramids on Camelback',
       duration: '3 days | 5 stops',
       price: '$2,000',
@@ -96,17 +96,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const destinationData = [
     {
-      image: 'img/clientimgs/assets/destinations-paris.jpg',
+      image: '../img/clientimgs/assets/destinations-paris.jpg',
       title: 'Paris',
       subtitle: 'France'
     },
     {
-      image: 'img/clientimgs/assets/destinations-sydney.jpg',
+      image: '../img/clientimgs/assets/destinations-sydney.jpg',
       title: 'Sydney',
       subtitle: 'Australia'
     },
     {
-      image: 'img/clientimgs/assets/destinations-machu.jpg',
+      image: '../img/clientimgs/assets/destinations-machu.jpg',
       title: 'Machu Picchu',
       subtitle: 'Peru'
     }
