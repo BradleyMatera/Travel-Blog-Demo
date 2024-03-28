@@ -44,105 +44,65 @@
   </div>
 </section>
 
-  <section class="bg-white py-12" aria-label="Services section">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-4xl font-normal text-neutral-800 mb-4">Plan the Perfect Trip</h2>
-      <p class="text-base font-light text-stone-500 mb-8">We take care of it all so you can get out there and experience some adventure!</p>
-      <div class="flex justify-center space-x-4">
-        <div class="flex flex-col items-center">
-          <img src="../img/clientimgs/assets/icon-flights.png" alt="Flights" class="mb-2 h-icon">
-          <span class="text-lg font-bold text-slate-900">Flights</span>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src="../img/clientimgs/assets/icon-transport.png" alt="Transportation" class="mb-2 h-icon">
-          <span class="text-lg font-bold text-slate-900">Transportation</span>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src="../img/clientimgs/assets/icon-guide.png" alt="Guides" class="mb-2 h-icon">
-          <span class="text-lg font-bold text-slate-900">Guides</span>
-        </div>
+<section class="bg-white py-12" aria-label="Services section">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-4xl font-normal text-neutral-800 mb-4">Plan the Perfect Trip</h2>
+    <p class="text-base font-light text-stone-500 mb-8">We take care of it all so you can get out there and experience some adventure!</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Service icons -->
+      <div class="flex flex-col items-center">
+        <img src="../img/clientimgs/assets/icon-flights.png" alt="Flights" class="mb-4 h-24">
+        <span class="text-lg font-bold text-slate-900">Flights</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="../img/clientimgs/assets/icon-transport.png" alt="Transportation" class="mb-4 h-24">
+        <span class="text-lg font-bold text-slate-900">Transportation</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="../img/clientimgs/assets/icon-guide.png" alt="Guides" class="mb-4 h-24">
+        <span class="text-lg font-bold text-slate-900">Guides</span>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="py-12 bg-white" aria-label="Trending Tours section">
-    <div class="container mx-auto">
-      <h2 class="text-4xl font-normal leading-10 font-Abril_Fatface text-center text-neutral-800 mb-6">Trending Tours</h2>
-      <p class="text-base font-light text-stone-500 text-center mb-10">Get out there and experience some adventure!</p>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img class="w-full h-56 object-cover" src="../img/clientimgs/assets/tour-mountainHiking.jpg" alt="Alps Mountain Hiking Tour">
-          <div class="p-4">
-            <h3 class="text-lg font-bold text-slate-900">Alps Mountain Hiking Tour</h3>
-            <p class="text-sm text-stone-400">4 days | 10 stops</p>
-            <p class="text-2xl font-bold text-slate-900">$1,500</p>
-            <button class="mt-4 w-full bg-orange-400 text-white py-2 rounded hover:bg-orange-500 transition duration-300 Tour1BookBtn">Book Now</button>
-          </div>
-        </div>
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img class="w-full h-56 object-cover" src="../img/clientimgs/assets/tour-snorkel.jpg" alt="Snorkel the Barrier Reef Tour">
-          <div class="p-4">
-            <h3 class="text-lg font-bold text-slate-900">Snorkel the Barrier Reef Tour</h3>
-            <p class="text-sm text-stone-400">2 days | 3 stops</p>
-            <p class="text-2xl font-bold text-slate-900">$1,000</p>
-            <button class="mt-4 w-full bg-orange-400 text-white py-2 rounded hover:bg-orange-500 transition duration-300 Tour2BookBtn">Book Now</button>
-          </div>
-        </div>
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img class="w-full h-56 object-cover" src="../img/clientimgs/assets/tour-pyramids.jpg" alt="Tour the Pyramids on Camelback">
-          <div class="p-4">
-            <h3 class="text-lg font-bold text-slate-900">Tour the Pyramids on Camelback</h3>
-            <p class="text-sm text-stone-400">3 days | 5 stops</p>
-            <p class="text-2xl font-bold text-slate-900">$2,000</p>
-            <button class="mt-4 w-full bg-orange-400 text-white py-2 rounded hover:bg-orange-500 transition duration-300 Tour3BookBtn">Book Now</button>
-          </div>
+<section class="py-12 bg-white" aria-label="Trending Tours section">
+  <div class="container mx-auto">
+    <h2 class="text-4xl font-normal leading-10 font-Abril_Fatface text-center text-neutral-800 mb-6">Trending Tours</h2>
+    <p class="text-base font-light text-stone-500 text-center mb-10">Get out there and experience some adventure!</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Trending Tour cards -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img class="w-full h-56 object-cover" src="../img/clientimgs/assets/tour-mountainHiking.jpg" alt="Alps Mountain Hiking Tour">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Alps Mountain Hiking Tour</h3>
+          <p class="text-sm text-stone-400 mb-4">4 days | 10 stops</p>
+          <p class="text-2xl font-bold text-slate-900 mb-4">$1,500</p>
+          <button class="w-full bg-orange-400 text-white py-2 px-4 rounded-lg hover:bg-orange-500 transition duration-300 shadow-md Tour1BookBtn">Book Now</button>
         </div>
       </div>
+      <!-- Add more Trending Tour cards -->
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="bg-gray-100 py-12" aria-label="Top Destinations section">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-4xl font-Abril_Fatface leading-10 text-neutral-800 mb-6">Top Notch Destinations</h2>
-      <p class="text-base font-light text-stone-500 mb-10">These places are on everyone's bucket list.</p>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img class="w-full h-64 object-cover" src="../img/clientimgs/assets/destinations-paris.jpg" alt="Paris, France">
-          <div class="p-4">
-            <h3 class="text-lg font-bold">Paris</h3>
-            <p class="text-gray-600">France</p>
-          </div>
-        </div>
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img class="w-full h-64 object-cover" src="../img/clientimgs/assets/destinations-sydney.jpg" alt="Sydney, Australia">
-          <div class="p-4">
-            <h3 class="text-lg font-bold">Sydney</h3>
-            <p class="text-gray-600">Australia</p>
-          </div>
-        </div>
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img class="w-full h-64 object-cover" src="../img/clientimgs/assets/destinations-machu.jpg" alt="Machu Picchu, Peru">
-          <div class="p-4">
-            <h3 class="text-lg font-bold">Machu Picchu</h3>
-            <p class="text-gray-600">Peru</p>
-          </div>
-        </div>
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img class="w-full h-64 object-cover" src="../img/clientimgs/assets/destinations-rio.jpg" alt="Rio de Janeiro, Brazil">
-          <div class="p-4">
-            <h3 class="text-lg font-bold">Rio de Janeiro</h3>
-            <p class="text-gray-600">Brazil</p>
-          </div>
-        </div>
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img class="w-full h-64 object-cover" src="../img/clientimgs/assets/destinations-rome.jpg" alt="Rome, Italy">
-          <div class="p-4">
-            <h3 class="text-lg font-bold">Rome</h3>
-            <p class="text-gray-600">Italy</p>
-          </div>
+<section class="bg-gray-100 py-12" aria-label="Top Destinations section">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-4xl font-Abril_Fatface leading-10 text-neutral-800 mb-6">Top Notch Destinations</h2>
+    <p class="text-base font-light text-stone-500 mb-10">These places are on everyone's bucket list.</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Top Destination cards -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img class="w-full h-64 object-cover" src="../img/clientimgs/assets/destinations-paris.jpg" alt="Paris, France">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Paris</h3>
+          <p class="text-base text-stone-500">France</p>
         </div>
       </div>
+      <!-- Add more Top Destination cards -->
     </div>
+  </div>
+</section>
   </section>
 
   <footer class="bg-slate-500 py-12">
