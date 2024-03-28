@@ -387,3 +387,48 @@ section[aria-label="Search section"] {
 .rounded-lg {
   border-radius: 0.5rem;
 }
+.container {
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 0 15px; /* For some padding on the sides */
+}
+
+/* Grid layout for blog posts */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Default to single column */
+  gap: 20px; /* Space between grid items */
+}
+
+@media (min-width: 768px) { /* Medium devices (tablets, 768px and up) */
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium devices */
+  }
+}
+
+@media (min-width: 1024px) { /* Large devices (desktops, 1024px and up) */
+  .grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for large devices */
+  }
+}
+
+.bg-white {
+  /* Ensures the background is white for each card */
+  background-color: #fff;
+}
+
+.shadow-lg {
+  /* Adds a large shadow to each card for depth */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.rounded-lg {
+  /* Rounds the corners of each card */
+  border-radius: 0.5rem;
+}
+
+.overflow-hidden {
+  /* Prevents content from spilling outside the card */
+  overflow: hidden;
+}
