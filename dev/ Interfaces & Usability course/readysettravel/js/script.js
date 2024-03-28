@@ -90,27 +90,102 @@ document.addEventListener('DOMContentLoaded', function () {
       duration: '3 days | 5 stops',
       price: '$2,000',
       bookingClass: 'Tour3BookBtn'
+    },
+    {
+      image: '/img/clientimgs/dibakar-roy-DngE5PTxOwY-unsplash.jpg',
+      title: 'Morning at a Sea Tour',
+      duration: '6 days | Morning Only',
+      price: '$1,500',
+      bookingClass: 'Tour4BookBtn'
+    },
+    {
+      image: '/img/clientimgs/ema-studios-4RS_8dmxAR0-unsplash.jpg',
+      title: 'Ngorongoro Conservation Tours',
+      duration: '7 days | Varies',
+      price: '$1,000',
+      bookingClass: 'Tour5BookBtn'
+    },
+    {
+      image: '../img/clientimgs/jenna-day-UM8bURrginM-unsplash.jpg',
+      title: 'Ellis Island Tours',
+      duration: '1 day | only 1 stop',
+      price: '$2,000',
+      bookingClass: 'Tour6BookBtn'
+    },
+    {
+      image: '/img/clientimgs/nathan-cima-RTQKAxfUGMw-unsplash.jpg',
+      title: 'Guatemala Wine House Tour',
+      duration: '7 days | 12 tastings',
+      price: '$1,500',
+      bookingClass: 'Tour7BookBtn'
+    },
+    {
+      image: '../img/clientimgs/norbert-braun-KHK607p3TVA-unsplash.jpg',
+      title: 'Thailand Adult Beach Tour',
+      duration: '7 days | Beach Access',
+      price: '$1,000',
+      bookingClass: 'Tour8BookBtn'
+    },
+    {
+      image: '../img/clientimgs/ryan-spencer-XGKaRnWjv1c-unsplash.jpg',
+      title: 'Pathway to the Mediterraneans adults only tour',
+      duration: '23 days | 13 stops',
+      price: '$2,000',
+      bookingClass: 'Tour9BookBtn'
     }
-    // Add more tour data objects as needed
   ];
 
   const destinationData = [
     {
-      image: '../img/clientimgs/assets/destinations-paris.jpg',
+      image: '/img/clientimgs/assets/destinations-rome.jpg',
+      title: 'Rome',
+      subtitle: 'Italy'
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1194&q=80',
+      title: 'Sydney',
+      subtitle: 'Australia'
+    },
+    {
+      image: '/img/clientimgs/assets/destinations-rio.jpg',
+      title: 'Rio de Janeiro',
+      subtitle: 'Brazil'
+    },
+    {
+      image: '../img/clientimgs/ema-studios-4RS_8dmxAR0-unsplash.jpg',
+      title: 'Madagascar',
+      subtitle: ''
+    },
+    {
+      image: '../img/clientimgs/philipp-kammerer-6Mxb_mZ_Q8E-unsplash.jpg',
+      title: 'Austria',
+      subtitle: ''
+    },
+    {
+      image: '../img/clientimgs/damiano-baschiera-hFXZ5cNfkOk-unsplash.jpg',
       title: 'Paris',
       subtitle: 'France'
     },
     {
-      image: '../img/clientimgs/assets/destinations-sydney.jpg',
-      title: 'Sydney',
-      subtitle: 'Australia'
+      image: '../img/clientimgs/jake-blucker-tMzCrBkM99Y-unsplash.jpg',
+      title: 'California',
+      subtitle: 'USA'
+    },
+    {
+      image: '../img/clientimgs/fabio-comparelli-uq2E2V4LhCY-unsplash.jpg',
+      title: 'Switzerland',
+      subtitle: ''
     },
     {
       image: '../img/clientimgs/assets/destinations-machu.jpg',
       title: 'Machu Picchu',
       subtitle: 'Peru'
+    },
+    {
+      image: '../img/clientimgs/assets/destinations-rome.jpg',
+      title: 'Italy',
+      subtitle: ''
     }
-    // Add more destination data objects as needed
   ];
 
   const blogPostData = [
@@ -134,39 +209,38 @@ document.addEventListener('DOMContentLoaded', function () {
       title: 'A girls guide to korea!',
       excerpt: "From must-see sights to local fashion tips, our insider's guide has everything you need for an unforgettable girls' trip to Korea."
     }
-    // Add more blog post data objects as needed
   ];
 
-// Render tour cards
-const tourCardContainer = document.getElementById('tourCardContainer');
-if (tourCardContainer) {
-  tourCardContainer.innerHTML = ''; // Clear any existing content
-  tourData.forEach(tour => {
-    const tourCard = `
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img class="w-full h-56 object-cover" src="${tour.image}" alt="${tour.title}">
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-slate-900">${tour.title}</h3>
-          <p class="text-sm text-stone-400">${tour.duration}</p>
-          <p class="text-2xl font-bold text-slate-900">${tour.price}</p>
-          <button class="mt-4 w-full bg-orange-400 text-white py-2 rounded hover:bg-orange-500 transition duration-300 ${tour.bookingClass}">Book Now</button>
+  // Render tour cards
+  const tourCardContainer = document.getElementById('tourCardContainer');
+  if (tourCardContainer) {
+    tourCardContainer.innerHTML = ''; // Clear any existing content
+    tourData.forEach(tour => {
+      const tourCard = `
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden tour-card">
+          <img class="w-full h-56 object-cover" src="${tour.image}" alt="${tour.title}">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-slate-900 mb-2">${tour.title}</h3>
+            <p class="text-sm text-stone-400 mb-4">${tour.duration}</p>
+            <p class="text-2xl font-bold text-slate-900 mb-4">${tour.price}</p>
+            <button class="w-full bg-orange-400 text-white py-2 px-4 rounded-lg hover:bg-orange-500 transition duration-300 shadow-md ${tour.bookingClass}">Book Now</button>
+          </div>
         </div>
-      </div>
-    `;
-    tourCardContainer.insertAdjacentHTML('beforeend', tourCard);
-  });
-}
+      `;
+      tourCardContainer.insertAdjacentHTML('beforeend', tourCard);
+    });
+  }
 
   // Render destination cards
-  const destinationCardContainer = document.querySelector('.grid.grid-cols-1.md\\:grid-cols-2.lg\\:grid-cols-3.gap-6');
+  const destinationCardContainer = document.getElementById('destinationCardContainer');
   if (destinationCardContainer) {
     destinationData.forEach(destination => {
       const destinationCard = `
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img class="w-full h-64 object-cover" src="${destination.image}" alt="${destination.title}">
-          <div class="p-4">
-            <h3 class="text-lg font-bold">${destination.title}</h3>
-            <p class="text-gray-600">${destination.subtitle}</p>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden destination-card transition duration-300 hover:shadow-xl">
+          <img class="w-full h-64 object-cover transition duration-300 hover:scale-105" src="${destination.image}" alt="${destination.title}">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">${destination.title}</h3>
+            <p class="text-base text-stone-500">${destination.subtitle}</p>
           </div>
         </div>
       `;
@@ -175,7 +249,7 @@ if (tourCardContainer) {
   }
 
   // Render blog post cards
-  const blogPostCardContainer = document.querySelector('.grid.grid-cols-1.md\\:grid-cols-2.lg\\:grid-cols-3.gap-8');
+  const blogPostCardContainer = document.getElementById('blogPostCardContainer');
   if (blogPostCardContainer) {
     blogPostData.forEach(blogPost => {
       const blogPostCard = `
@@ -191,4 +265,25 @@ if (tourCardContainer) {
       blogPostCardContainer.insertAdjacentHTML('beforeend', blogPostCard);
     });
   }
+
+  // Scroll to top button
+  const scrollToTopButton = document.createElement('button');
+  scrollToTopButton.classList.add('scroll-to-top');
+  scrollToTopButton.innerHTML = '<i class="fas fa-arrow-up"></i>';
+  document.body.appendChild(scrollToTopButton);
+
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 100) {
+      scrollToTopButton.classList.add('show');
+    } else {
+      scrollToTopButton.classList.remove('show');
+    }
+  });
+
+  scrollToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 });
