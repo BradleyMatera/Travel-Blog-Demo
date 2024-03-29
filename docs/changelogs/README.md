@@ -1,5 +1,33 @@
 # Changelog
 
+## v0.4.0 - 2024/03/28
+
+This week's update emphasizes on enhancing the interactivity and efficiency of the ReadySetTravel website. Notable improvements have been made to the user interface, backend functionalities, and the overall codebase structure.
+
+### Enhanced JavaScript Functionality
+
+- Integrated advanced JavaScript features to enrich the user experience:
+  - **Dynamic Content Rendering**: Utilized JavaScript to dynamically generate tour, destination, and blog post cards, significantly improving page load times and user interaction.
+  - **Improved Form Handling**: Enhanced search and booking forms with better validation and submission feedback, ensuring a smooth and intuitive user experience.
+  - **Scroll-to-Top Button**: Implemented a scroll-to-top button for easy navigation, improving accessibility and user convenience.
+- Explored deep into JavaScript objects for managing data structures efficiently, enhancing the website's dynamic content generation capabilities.
+
+### CSS Grid Implementation
+
+- Adopted CSS Grid layout in several sections of the website for a more flexible and responsive design. This includes the Top Notch Destinations gallery and the Trending Tours section, offering a seamless experience across various screen sizes.
+- Refined the website's aesthetic and functional appeal by applying grid-area naming and placement, ensuring a coherent visual structure.
+
+### Simplification of File Paths
+
+- Optimized asset management by simplifying file paths (`../` instead of full paths), streamlining the website's maintenance and loading efficiency.
+- Restructured CSS and JavaScript files into a logical organization, improving code readability and manageability.
+
+### Other Updates and Fixes
+
+- **UI/UX Enhancements**: Applied tailored animations and transitions across the website, including the header and navigation bar, to foster an engaging user interface.
+- **Performance Optimization**: Implemented strategies for faster page loading, including image optimization and script deferment.
+- **Bug Fixes and Refinements**: Addressed various bugs and refined features based on user feedback and testing outcomes. This includes fixes to layout issues and enhancements in the booking process.
+  
 ## v0.3.0 - 2024/03/20
 
 ### Features
