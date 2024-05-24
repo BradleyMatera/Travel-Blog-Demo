@@ -39,6 +39,13 @@ const store = new Vuex.Store({
   },
 });
 
+const Home = { template: '<div>Home</div>' };
+const About = { template: '<div>About</div>' };
+const Destinations = { template: '<div>Destinations</div>' };
+const Tours = { template: '<div>Tours</div>' };
+const Blog = { template: '<div>Blog</div>' };
+const BookingForm = { template: '<div>Booking Form</div>' };
+
 const routes = [
   { path: '/', component: Home },
   { path: '/about', component: About },
