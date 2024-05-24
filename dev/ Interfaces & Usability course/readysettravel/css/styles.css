@@ -56,52 +56,52 @@ h1, h2, h3 {
 .booking-form {
   @apply relative bg-cover bg-center p-6 rounded-lg;
   background-image: url('assets/booking-bg.jpg');
+}
 
-  &::before {
-    content: '';
-    @apply absolute inset-0 bg-white bg-opacity-50 rounded-lg;
-    z-index: 0;
-  }
+.booking-form::before {
+  content: '';
+  @apply absolute inset-0 bg-white bg-opacity-50 rounded-lg;
+  z-index: 0;
+}
 
-  & > * {
-    @apply relative z-10;
-  }
+.booking-form > * {
+  @apply relative z-10;
+}
 
-  input:focus,
-  textarea:focus {
-    @apply border-orange-400 outline-none shadow-outline-orange;
-  }
+.booking-form input:focus,
+.booking-form textarea:focus {
+  @apply border-orange-400 outline-none shadow-outline-orange;
 }
 
 .testimonial {
   @apply relative bg-gray-100 p-10 rounded-lg shadow-md mb-8;
+}
 
-  &::before {
-    content: '\201C';
-    @apply absolute top-0 left-0 text-8xl text-orange-400;
-    font-family: 'Abril Fatface', cursive;
-    z-index: 1;
-  }
+.testimonial::before {
+  content: '\201C';
+  @apply absolute top-0 left-0 text-8xl text-orange-400;
+  font-family: 'Abril Fatface', cursive;
+  z-index: 1;
+}
 
-  p {
-    @apply text-lg mb-4;
-  }
+.testimonial p {
+  @apply text-lg mb-4;
+}
 
-  .author {
-    @apply font-bold text-blue-600;
-  }
+.testimonial .author {
+  @apply font-bold text-blue-600;
 }
 
 .scroll-to-top {
   @apply fixed bottom-4 right-4 p-3 bg-orange-400 text-white rounded-full opacity-0 invisible transition-all duration-300;
+}
 
-  &:hover {
-    @apply bg-orange-500;
-  }
+.scroll-to-top:hover {
+  @apply bg-orange-500;
+}
 
-  &.show {
-    @apply opacity-100 visible;
-  }
+.scroll-to-top.show {
+  @apply opacity-100 visible;
 }
 
 @keyframes fadeInUp {
