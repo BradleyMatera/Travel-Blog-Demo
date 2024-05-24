@@ -4,9 +4,8 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #222222;
-  line-height: 1.6;
-  background-color: #f9fafb;
+  color: #1a202c;
+  background-color: #edf2f7;
 }
 
 h1, h2, h3 {
@@ -70,7 +69,7 @@ h1, h2, h3 {
 
 .booking-form input:focus,
 .booking-form textarea:focus {
-  @apply border-orange-400 outline-none shadow-outline-orange;
+  @apply border-orange-500 outline-none shadow-outline-orange;
 }
 
 .testimonial {
@@ -79,7 +78,7 @@ h1, h2, h3 {
 
 .testimonial::before {
   content: '\201C';
-  @apply absolute top-0 left-0 text-8xl text-orange-400;
+  @apply absolute top-0 left-0 text-8xl text-orange-500;
   font-family: 'Abril Fatface', cursive;
   z-index: 1;
 }
@@ -93,11 +92,11 @@ h1, h2, h3 {
 }
 
 .scroll-to-top {
-  @apply fixed bottom-4 right-4 p-3 bg-orange-400 text-white rounded-full opacity-0 invisible transition-all duration-300;
+  @apply fixed bottom-4 right-4 p-3 bg-orange-500 text-white rounded-full opacity-0 invisible transition-all duration-300;
 }
 
 .scroll-to-top:hover {
-  @apply bg-orange-500;
+  @apply bg-orange-600;
 }
 
 .scroll-to-top.show {
