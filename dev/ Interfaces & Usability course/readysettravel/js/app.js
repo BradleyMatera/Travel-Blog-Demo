@@ -3,6 +3,13 @@ import VueRouter from 'vue-router';
 import Vuex from 'vuex';
 import axios from 'axios';
 
+import Home from './components/Home.vue';
+import About from './components/About.vue';
+import Destinations from './components/Destinations.vue';
+import Tours from './components/Tours.vue';
+import Blog from './components/Blog.vue';
+import BookingForm from './components/BookingForm.vue';
+
 Vue.use(VueRouter);
 Vue.use(Vuex);
 
@@ -38,13 +45,6 @@ const store = new Vuex.Store({
     },
   },
 });
-
-const Home = { template: '<div>Home</div>' };
-const About = { template: '<div>About</div>' };
-const Destinations = { template: '<div>Destinations</div>' };
-const Tours = { template: '<div>Tours</div>' };
-const Blog = { template: '<div>Blog</div>' };
-const BookingForm = { template: '<div>Booking Form</div>' };
 
 const routes = [
   { path: '/', component: Home },
@@ -113,16 +113,6 @@ const bookingFormHandler = () => {
 document.addEventListener('DOMContentLoaded', () => {
   smoothScroll();
   bookingFormHandler();
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  // Smooth scrolling for navigation links
-  document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', event => {
-      event.preventDefault();
-      document.querySelector(anchor.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-    });
-  });
 
   // Interaction for Book Now buttons
   document.querySelectorAll('.Tour1BookBtn, .Tour2BookBtn, .Tour3BookBtn, .Tour4BookBtn, .Tour5BookBtn, .Tour6BookBtn, .Tour7BookBtn, .Tour8BookBtn, .Tour9BookBtn').forEach(button => {
