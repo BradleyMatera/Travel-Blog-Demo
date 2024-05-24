@@ -1,10 +1,6 @@
-/* Global Styles */
-body, h1, h2, h3, p, ul, li, a {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-}
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -17,223 +13,97 @@ h1, h2, h3 {
   font-family: 'Abril Fatface', cursive;
 }
 
-a {
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #EEBA5A;
-}
-
-/* Utility Classes */
-.text-orange-400 {
-  color: #EEBA5A;
-}
-
-.bg-orange-400 {
-  background-color: #EEBA5A;
-}
-
-.hover\:bg-orange-500:hover {
-  background-color: #d8a04e;
-}
-
-.shadow-md {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.shadow-lg {
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-}
-
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
-.overflow-hidden {
-  overflow: hidden;
-}
-
-.text-center {
-  text-align: center;
-}
-
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  @apply mx-auto px-6;
 }
 
-/* Navigation Styles */
-nav {
-  background-color: #A8C7DC;
-  position: sticky;
-  top: 0;
-  z-index: 50;
+.text-shadow-lg {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-nav a:hover {
-  color: #587C93;
+.animate-fade-in-up {
+  animation: fadeInUp 1s ease-out;
 }
 
-/* Header Styles */
-header {
-  background-size: cover;
-  background-position: center;
-  color: #D1D5DB;
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animation-delay-400 {
+  animation-delay: 0.4s;
+}
+
+.custom-header-height {
   height: 30vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
 }
 
-header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+.grid-auto-fit {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-header .container {
-  position: relative;
-  z-index: 2;
+.destination-card,
+.tour-card,
+.blog-post-card {
+  @apply bg-white rounded-lg shadow-lg overflow-hidden transition duration-300;
 }
 
-header h1, header p {
-  animation: fadeInUp 1s ease;
+.destination-card:hover,
+.tour-card:hover,
+.blog-post-card:hover {
+  @apply shadow-xl transform scale-105;
 }
 
-/* Sections */
-section {
-  padding: 4rem 0;
-}
+.booking-form {
+  @apply relative bg-cover bg-center p-6 rounded-lg;
+  background-image: url('assets/booking-bg.jpg');
 
-.bg-gray-800 {
-  background-color: #587C93;
-  color: #ffffff;
-}
+  &::before {
+    content: '';
+    @apply absolute inset-0 bg-white bg-opacity-50 rounded-lg;
+    z-index: 0;
+  }
 
-/* Services Section */
-section[aria-label="Services section"] .flex {
-  align-items: center;
-}
+  & > * {
+    @apply relative z-10;
+  }
 
-section[aria-label="Services section"] img {
-  height: 6rem;
-}
-
-/* Cards */
-.tour-card, .destination-card, .blog-post-card {
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.tour-card:hover, .destination-card:hover, .blog-post-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Grid Layout */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 1.5rem;
-}
-
-@media (min-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
+  input:focus,
+  textarea:focus {
+    @apply border-orange-400 outline-none shadow-outline-orange;
   }
 }
 
-@media (min-width: 1024px) {
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
+.testimonial {
+  @apply relative bg-gray-100 p-10 rounded-lg shadow-md mb-8;
+
+  &::before {
+    content: '\201C';
+    @apply absolute top-0 left-0 text-8xl text-orange-400;
+    font-family: 'Abril Fatface', cursive;
+    z-index: 1;
+  }
+
+  p {
+    @apply text-lg mb-4;
+  }
+
+  .author {
+    @apply font-bold text-blue-600;
   }
 }
 
-/* Buttons */
-button {
-  background-color: #EEBA5A;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-button:hover {
-  background-color: #d8a04e;
-  transform: scale(1.05);
-}
-
-/* Footer Styles */
-footer {
-  background-color: #5c5e60;
-  color: #ab8c1c;
-  text-align: center;
-}
-
-footer p, footer a {
-  color: #444444;
-}
-
-footer a:hover {
-  color: #EEBA5A;
-  transform: scale(1.2);
-}
-
-footer .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-  footer .container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-}
-
-/* Scroll to Top Button */
 .scroll-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 15px;
-  background-color: #EEBA5A;
-  color: #fff;
-  border-radius: 50%;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-  z-index: 100;
+  @apply fixed bottom-4 right-4 p-3 bg-orange-400 text-white rounded-full opacity-0 invisible transition-all duration-300;
+
+  &:hover {
+    @apply bg-orange-500;
+  }
+
+  &.show {
+    @apply opacity-100 visible;
+  }
 }
 
-.scroll-to-top:hover {
-  background-color: #d8a04e;
-}
-
-.scroll-to-top.show {
-  opacity: 1;
-  visibility: visible;
-}
-
-/* Animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -243,114 +113,4 @@ footer .container {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.tour-card, .destination-card, .blog-post-card {
-  opacity: 0;
-  animation: fadeInUp 0.5s ease forwards;
-}
-
-.tour-card:nth-child(1), .destination-card:nth-child(1) {
-  animation-delay: 0.1s;
-}
-
-.tour-card:nth-child(2), .destination-card:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.tour-card:nth-child(3), .destination-card:nth-child(3) {
-  animation-delay: 0.3s;
-}
-
-/* Booking Form */
-.booking-form {
-  position: relative;
-  background-image: url('../img/clientimgs/oxana-v-qoAIlAmLJBU-unsplash.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-.booking-form::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 8px;
-  z-index: 0;
-}
-
-.booking-form > * {
-  position: relative;
-  z-index: 1;
-}
-
-.booking-form input:focus,
-.booking-form textarea:focus {
-  border-color: #EEBA5A;
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(238, 186, 90, 0.3);
-}
-
-/* Search Section */
-section[aria-label="Search section"] {
-  background-image: url('../img/clientimgs/nadia-hania-fNGL2sMxPI4-unsplash.jpg');
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-}
-
-/* Testimonial Section */
-.testimonial {
-  background-color: #f4f4f4;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-  position: relative;
-}
-
-.testimonial::before {
-  content: '\201C';
-  position: absolute;
-  top: -20px;
-  left: 20px;
-  font-size: 6rem;
-  color: #EEBA5A;
-  font-family: 'Abril Fatface', cursive;
-  z-index: 1;
-}
-
-.testimonial p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.testimonial .author {
-  font-weight: bold;
-  color: #587C93;
-}
-
-/* About Page Image Hover Effect */
-.about-image {
-  transition: transform 0.3s ease;
-}
-
-.about-image:hover {
-  transform: scale(1.05);
-}
-
-/* Hover Effect for CTA Buttons */
-.cta-button {
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #d8a04e;
-  transform: scale(1.05);
 }
