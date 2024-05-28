@@ -1,57 +1,3 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-import Vuex from 'vuex';
-import axios from 'axios';
-
-import Home from './components/Home.vue';
-import About from './components/About.vue';
-import Destinations from './components/Destinations.vue';
-import Tours from './components/Tours.vue';
-import Blog from './components/Blog.vue';
-import BookingForm from './components/BookingForm.vue';
-
-Vue.use(VueRouter);
-Vue.use(Vuex);
-
-const store = new Vuex.Store({
-  state: {
-    tours: [],
-    destinations: [],
-    blogPosts: [],
-  },
-  mutations: {
-    setTours(state, tours) {
-      state.tours = tours;
-    },
-    setDestinations(state, destinations) {
-      state.destinations = destinations;
-    },
-    setBlogPosts(state, blogPosts) {
-      state.blogPosts = blogPosts;
-    },
-  },
-  actions: {
-    async fetchTours({ commit }) {
-      const response = await axios.get('/api/tours');
-      commit('setTours', response.data);
-    },
-    async fetchDestinations({ commit }) {
-      const response = await axios.get('/api/destinations');
-      commit('setDestinations', response.data);
-    },
-    async fetchBlogPosts({ commit }) {
-      const response = await axios.get('/api/blog-posts');
-      commit('setBlogPosts', response.data);
-    },
-  },
-});
-
-const routes = [
-  { path: '/', component: Home },
-  { path: '/about', component: About },
-  { path: '/destinations', component: Destinations },
-  { path: '/tours', component: Tours },
-  { path: '/blog', component: Blog },
   { path: '/book', component: BookingForm },
 ];
 
@@ -202,63 +148,63 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const tourData = [
     {
-      image: '../img/clientimgs/assets/tour-mountainHiking.jpg',
+      image: '../img/tour-mountainHiking.jpg',
       title: 'Alps Mountain Hiking Tour',
       duration: '4 days | 10 stops',
       price: '$1,500',
       bookingClass: 'Tour1BookBtn'
     },
     {
-      image: '../img/clientimgs/assets/tour-snorkel.jpg',
+      image: '../img/tour-snorkel.jpg',
       title: 'Snorkel the Barrier Reef Tour',
       duration: '2 days | 3 stops',
       price: '$1,000',
       bookingClass: 'Tour2BookBtn'
     },
     {
-      image: '../img/clientimgs/assets/tour-pyramids.jpg',
+      image: '../img/tour-pyramids.jpg',
       title: 'Tour the Pyramids on Camelback',
       duration: '3 days | 5 stops',
       price: '$2,000',
       bookingClass: 'Tour3BookBtn'
     },
     {
-      image: '/img/clientimgs/dibakar-roy-DngE5PTxOwY-unsplash.jpg',
+      image: '../img/morning-sea.jpg',
       title: 'Morning at a Sea Tour',
       duration: '6 days | Morning Only',
       price: '$1,500',
       bookingClass: 'Tour4BookBtn'
     },
     {
-      image: '/img/clientimgs/ema-studios-4RS_8dmxAR0-unsplash.jpg',
+      image: '../img/ngorongoro.jpg',
       title: 'Ngorongoro Conservation Tours',
       duration: '7 days | Varies',
       price: '$1,000',
       bookingClass: 'Tour5BookBtn'
     },
     {
-      image: '../img/clientimgs/jenna-day-UM8bURrginM-unsplash.jpg',
+      image: '../img/ellis-island.jpg',
       title: 'Ellis Island Tours',
       duration: '1 day | only 1 stop',
       price: '$2,000',
       bookingClass: 'Tour6BookBtn'
     },
     {
-      image: '/img/clientimgs/nathan-cima-RTQKAxfUGMw-unsplash.jpg',
+      image: '../img/guatemala-wine-house.jpg',
       title: 'Guatemala Wine House Tour',
       duration: '7 days | 12 tastings',
       price: '$1,500',
       bookingClass: 'Tour7BookBtn'
     },
     {
-      image: '../img/clientimgs/norbert-braun-KHK607p3TVA-unsplash.jpg',
+      image: '../img/thailand-adult-beach.jpg',
       title: 'Thailand Adult Beach Tour',
       duration: '7 days | Beach Access',
       price: '$1,000',
       bookingClass: 'Tour8BookBtn'
     },
     {
-      image: '../img/clientimgs/ryan-spencer-XGKaRnWjv1c-unsplash.jpg',
+      image: '../img/mediterranean-adults.jpg',
       title: 'Pathway to the Mediterraneans adults only tour',
       duration: '23 days | 13 stops',
       price: '$2,000',
@@ -268,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const destinationData = [
     {
-      image: '/img/clientimgs/assets/destinations-rome.jpg',
+      image: '../img/rome.jpg',
       title: 'Rome',
       subtitle: 'Italy'
     },
@@ -278,71 +224,71 @@ document.addEventListener('DOMContentLoaded', () => {
       subtitle: 'Australia'
     },
     {
-      image: '/img/clientimgs/assets/destinations-rio.jpg',
+      image: '../img/rio.jpg',
       title: 'Rio de Janeiro',
       subtitle: 'Brazil'
     },
     {
-      image: '../img/clientimgs/ema-studios-4RS_8dmxAR0-unsplash.jpg',
-      title: 'Madagascar',
-      subtitle: ''
-    },
-    {
-      image: '../img/clientimgs/philipp-kammerer-6Mxb_mZ_Q8E-unsplash.jpg',
-      title: 'Austria',
-      subtitle: ''
-    },
-    {
-      image: '../img/clientimgs/damiano-baschiera-hFXZ5cNfkOk-unsplash.jpg',
-      title: 'Paris',
-      subtitle: 'France'
-    },
-    {
-      image: '../img/clientimgs/jake-blucker-tMzCrBkM99Y-unsplash.jpg',
-      title: 'California',
-      subtitle: 'USA'
-    },
-    {
-      image: '../img/clientimgs/fabio-comparelli-uq2E2V4LhCY-unsplash.jpg',
-      title: 'Switzerland',
-      subtitle: ''
-    },
-    {
-      image: '../img/clientimgs/assets/destinations-machu.jpg',
-      title: 'Machu Picchu',
-      subtitle: 'Peru'
-    },
-    {
-      image: '../img/clientimgs/assets/destinations-rome.jpg',
-      title: 'Italy',
-      subtitle: ''
-    }
-  ];
+    image: '../img/madagascar.jpg',
+    title: 'Madagascar',
+    subtitle: ''
+  },
+  {
+    image: '../img/austria.jpg',
+    title: 'Austria',
+    subtitle: ''
+  },
+  {
+    image: '../img/paris.jpg',
+    title: 'Paris',
+    subtitle: 'France'
+  },
+  {
+    image: '../img/california.jpg',
+    title: 'California',
+    subtitle: 'USA'
+  },
+  {
+    image: '../img/switzerland.jpg',
+    title: 'Switzerland',
+    subtitle: ''
+  },
+  {
+    image: '../img/machu-picchu.jpg',
+    title: 'Machu Picchu',
+    subtitle: 'Peru'
+  },
+  {
+    image: '../img/italy.jpg',
+    title: 'Italy',
+    subtitle: ''
+  }
+];
 
-  const blogPostData = [
-    {
-      image: '../img/clientimgs/bigfamily.jpeg',
-      title: 'How to save big money with a big family',
-      excerpt: 'Traveling with a large family can be expensive, but with these insider tips, you can save money without sacrificing fun or sp....'
-    },
-    {
-      image: '../img/clientimgs/bigfam.jpeg',
-      title: 'Our 2024 Maui Vacation',
-      excerpt: 'Join the Johnson family as they explore the stunning beaches, lush landscapes, and vibrant culture of Maui. From snorkeling with sea turtl......'
-    },
-    {
-      image: '../img/clientimgs/2012 deployment.jpeg',
-      title: "Kandahar, Afghanistan's Hidden Gem",
-      excerpt: 'In this throwback post from 2012, intrepid traveler bradley shares his experience hiking through the remote and breathtaking Zhari Dist.....'
-    },
-    {
-      image: '../img/clientimgs/denaya korea.jpeg',
-      title: 'A girls guide to korea!',
-      excerpt: "From must-see sights to local fashion tips, our insider's guide has everything you need for an unforgettable girls' trip to Korea."
-    }
-  ];
+const blogPostData = [
+  {
+    image: '../img/bigfamily.jpg',
+    title: 'How to save big money with a big family',
+    excerpt: 'Traveling with a large family can be expensive, but with these insider tips, you can save money without sacrificing fun or sp....'
+  },
+  {
+    image: '../img/maui-vacation.jpg',
+    title: 'Our 2024 Maui Vacation',
+    excerpt: 'Join the Johnson family as they explore the stunning beaches, lush landscapes, and vibrant culture of Maui. From snorkeling with sea turtl......'
+  },
+  {
+    image: '../img/kandahar.jpg',
+    title: "Kandahar, Afghanistan's Hidden Gem",
+    excerpt: 'In this throwback post from 2012, intrepid traveler Bradley shares his experience hiking through the remote and breathtaking Zhari Dist.....'
+  },
+  {
+    image: '../img/korea.jpg',
+    title: 'A girls guide to Korea!',
+    excerpt: "From must-see sights to local fashion tips, our insider's guide has everything you need for an unforgettable girls' trip to Korea."
+  }
+];
 
-  renderCards('tourCardContainer', tourData, 'tour');
-  renderCards('destinationCardContainer', destinationData, 'destination');
-  renderCards('blogPostCardContainer', blogPostData, 'blog');
+renderCards('tourCardContainer', tourData, 'tour');
+renderCards('destinationCardContainer', destinationData, 'destination');
+renderCards('blogPostCardContainer', blogPostData, 'blog');
 });
