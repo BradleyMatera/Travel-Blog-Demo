@@ -54,7 +54,7 @@ h1, h2, h3 {
 
 .booking-form {
   @apply relative bg-cover bg-center p-6 rounded-lg;
-  background-image: url('../img/assets/booking-bg.jpg');
+  background-image: url('../img/booking-bg.jpg');
 }
 
 .booking-form::before {

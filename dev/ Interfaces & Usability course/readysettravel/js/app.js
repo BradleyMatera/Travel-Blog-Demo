@@ -1,4 +1,4 @@
-  import Vue from 'vue';
+import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Vuex from 'vuex';
 import axios from 'axios';
@@ -283,66 +283,67 @@ document.addEventListener('DOMContentLoaded', () => {
       subtitle: 'Brazil'
     },
     {
-    image: '../img/madagascar.jpg',
-    title: 'Madagascar',
-    subtitle: ''
-  },
-  {
-    image: '../img/austria.jpg',
-    title: 'Austria',
-    subtitle: ''
-  },
-  {
-    image: '../img/paris.jpg',
-    title: 'Paris',
-    subtitle: 'France'
-  },
-  {
-    image: '../img/california.jpg',
-    title: 'California',
-    subtitle: 'USA'
-  },
-  {
-    image: '../img/switzerland.jpg',
-    title: 'Switzerland',
-    subtitle: ''
-  },
-  {
-    image: '../img/machu-picchu.jpg',
-    title: 'Machu Picchu',
-    subtitle: 'Peru'
-  },
-  {
-    image: '../img/italy.jpg',
-    title: 'Italy',
-    subtitle: ''
-  }
-];
+      image: '../img/madagascar.jpg',
+      title: 'Madagascar',
+      subtitle: ''
+    },
+    {
+      image: '../img/austria.jpg',
+      title: 'Austria',
+      subtitle: ''
+    },
+    {
+      image: '../img/paris.jpg',
+      title: 'Paris',
+      subtitle: 'France'
+    },
+    {
+      image: '../img/california.jpg',
+      title: 'California',
+      subtitle: 'USA'
+    },
+    {
+      image: '../img/switzerland.jpg',
+      title: 'Switzerland',
+      subtitle: ''
+    },
+    {
+      image: '../img/machu-picchu.jpg',
+      title: 'Machu Picchu',
+      subtitle: 'Peru'
+    },
+    {
+      image: '../img/italy.jpg',
+      title: 'Italy',
+      subtitle: ''
+    }
+  ];
 
-const blogPostData = [
-  {
-    image: '../img/bigfamily.jpg',
-    title: 'How to save big money with a big family',
-    excerpt: 'Traveling with a large family can be expensive, but with these insider tips, you can save money without sacrificing fun or sp....'
-  },
-  {
-    image: '../img/maui-vacation.jpg',
-    title: 'Our 2024 Maui Vacation',
-    excerpt: 'Join the Johnson family as they explore the stunning beaches, lush landscapes, and vibrant culture of Maui. From snorkeling with sea turtl......'
-  },
-  {
-    image: '../img/kandahar.jpg',
-    title: "Kandahar, Afghanistan's Hidden Gem",
-    excerpt: 'In this throwback post from 2012, intrepid traveler Bradley shares his experience hiking through the remote and breathtaking Zhari Dist.....'
-  },
-  {
-    image: '../img/korea.jpg',
-    title: 'A girls guide to Korea!',
-    excerpt: "From must-see sights to local fashion tips, our insider's guide has everything you need for an unforgettable girls' trip to Korea."
-  }
-];
+  const blogPostData = [
+    {
+      image: '../img/bigfamily.jpg',
+      title: 'How to save big money with a big family',
+      excerpt: 'Traveling with a large family can be expensive, but with these insider tips, you can save money without sacrificing fun or sp....'
+    },
+    {
+      image: '../img/maui-vacation.jpg',
+      title: 'Our 2024 Maui Vacation',
+      excerpt: 'Join the Johnson family as they explore the stunning beaches, lush landscapes, and vibrant culture of Maui. From snorkeling with sea turtl......'
+    },
+    {
+      image: '../img/kandahar.jpg',
+      title: "Kandahar, Afghanistan's Hidden Gem",
+      excerpt: 'In this throwback post from 2012, intrepid traveler Bradley shares his experience hiking through the remote and breathtaking Zhari Dist.....'
+    },
+    {
+      image: '../img/korea.jpg',
+      title: 'A girls guide to Korea!',
+      excerpt: "From must-see sights to local fashion tips, our insider's guide has everything you need for an unforgettable girls' trip to Korea."
+    }
+  ];
 
-renderCards('tourCardContainer', tourData, 'tour');
-renderCards('destinationCardContainer', destinationData, 'destination');
-renderCards('blogPostCardContainer', blogPostData, 'blog');
+  renderCards('tourCardContainer', tourData, 'tour');
+  renderCards('destinationCardContainer', destinationData, 'destination');
+  renderCards('blogPostCardContainer', blogPostData, 'blog');
 });
+
