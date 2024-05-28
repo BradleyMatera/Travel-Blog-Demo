@@ -65,7 +65,7 @@ new Vue({
   store,
   mounted() {
     this.$store.dispatch('fetchTours');
-    this.$store.dispatch('fetchDestinations');
+        this.$store.dispatch('fetchDestinations');
     this.$store.dispatch('fetchBlogPosts');
   },
 }).$mount('#app');
@@ -293,7 +293,7 @@ document.addEventListener('DOMContentLoaded', () => {
       subtitle: ''
     },
     {
-      image: '../img/paris.jpg',
+      image : '../img/paris.jpg',
       title: 'Paris',
       subtitle: 'France'
     },
@@ -346,4 +346,3 @@ document.addEventListener('DOMContentLoaded', () => {
   renderCards('destinationCardContainer', destinationData, 'destination');
   renderCards('blogPostCardContainer', blogPostData, 'blog');
 });
-
