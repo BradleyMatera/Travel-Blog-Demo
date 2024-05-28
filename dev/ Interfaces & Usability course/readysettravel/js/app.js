@@ -1,3 +1,57 @@
+  import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Vuex from 'vuex';
+import axios from 'axios';
+
+import Home from './components/Home.vue';
+import About from './components/About.vue';
+import Destinations from './components/Destinations.vue';
+import Tours from './components/Tours.vue';
+import Blog from './components/Blog.vue';
+import BookingForm from './components/BookingForm.vue';
+
+Vue.use(VueRouter);
+Vue.use(Vuex);
+
+const store = new Vuex.Store({
+  state: {
+    tours: [],
+    destinations: [],
+    blogPosts: [],
+  },
+  mutations: {
+    setTours(state, tours) {
+      state.tours = tours;
+    },
+    setDestinations(state, destinations) {
+      state.destinations = destinations;
+    },
+    setBlogPosts(state, blogPosts) {
+      state.blogPosts = blogPosts;
+    },
+  },
+  actions: {
+    async fetchTours({ commit }) {
+      const response = await axios.get('/api/tours');
+      commit('setTours', response.data);
+    },
+    async fetchDestinations({ commit }) {
+      const response = await axios.get('/api/destinations');
+      commit('setDestinations', response.data);
+    },
+    async fetchBlogPosts({ commit }) {
+      const response = await axios.get('/api/blog-posts');
+      commit('setBlogPosts', response.data);
+    },
+  },
+});
+
+const routes = [
+  { path: '/', component: Home },
+  { path: '/about', component: About },
+  { path: '/destinations', component: Destinations },
+  { path: '/tours', component: Tours },
+  { path: '/blog', component: Blog },
   { path: '/book', component: BookingForm },
 ];
 
