@@ -2,8 +2,7 @@
   "name": "readysettravel",
   "version": "1.0.0",
   "scripts": {
-    "start": "parcel public/index.html",
-    "build": "parcel build public/index.html --dist-dir build"
+    "build": "postcss src/index.css -o build/index.css && parcel build public/index.html --dist-dir build"
   },
   "dependencies": {
     "react": "^17.0.2",
