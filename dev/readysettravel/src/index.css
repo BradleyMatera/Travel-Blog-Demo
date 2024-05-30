@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .shadow-outline-orange {
+    box-shadow: 0 0 0 3px rgba(255, 165, 0, 0.5);
+  }
+}
+
 .container {
   @apply mx-auto px-6;
 }
