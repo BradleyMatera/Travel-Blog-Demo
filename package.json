@@ -1,0 +1,21 @@
+{
+  "name": "readysettravel",
+  "version": "1.0.0",
+  "description": "A static web application for Ready Set Travel.",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html --dist-dir build",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BradleyMatera/WDV-119-Bradley-Matera.git"
+  },
+  "author": "Bradley Matera",
+  "license": "MIT",
+  "dependencies": {
+    "parcel": "^2.0.0"
+  },
+  "devDependencies": {}
+}
