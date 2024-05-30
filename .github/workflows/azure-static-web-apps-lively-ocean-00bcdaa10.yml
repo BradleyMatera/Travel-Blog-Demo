@@ -21,10 +21,10 @@ jobs:
           node-version: '14'
 
       - name: Install dependencies
-        run: npm install
+        run: cd readysettravel && npm install
 
       - name: Build app
-        run: npm run build
+        run: cd readysettravel && npm run build
 
       - name: Build And Deploy
         uses: Azure/static-web-apps-deploy@v1
