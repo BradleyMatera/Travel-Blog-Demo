@@ -18,7 +18,7 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_LIVELY_OCEAN_00BCDAA10 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "/readysettravel"
+          app_location: "/dev/readysettravel"
           api_location: ""
           output_location: ""
   close_pull_request_job:
