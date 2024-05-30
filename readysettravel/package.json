@@ -1,4 +1,4 @@
-{
+ {
   "name": "readysettravel",
   "version": "1.0.0",
   "description": "A static web application for Ready Set Travel.",
@@ -17,7 +17,7 @@
   "dependencies": {
     "parcel": "^2.0.0",
     "vue": "^2.6.14",
-    "vue-vie-router": "^3.5.1",
+    "vue-router": "^3.5.1",
     "vuex": "^3.6.2",
     "axios": "^0.21.1"
   },
