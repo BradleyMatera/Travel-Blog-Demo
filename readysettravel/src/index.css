@@ -2,52 +2,14 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-body {
-  font-family: 'Roboto', sans-serif;
-  color: #1a202c;
-  background-color: #edf2f7;
-}
-
-h1, h2, h3 {
-  font-family: 'Abril Fatface', cursive;
-}
-
 .container {
   @apply mx-auto px-6;
 }
 
-.text-shadow-lg {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.animate-fade-in-up {
-  animation: fadeInUp 1s ease-out;
-}
-
-.animation-delay-200 {
-  animation-delay: 0.2s;
-}
-
-.animation-delay-400 {
-  animation-delay: 0.4s;
-}
-
-.custom-header-height {
-  height: 30vh;
-}
-
-.grid-auto-fit {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.destination-card,
-.tour-card,
 .blog-post-card {
   @apply bg-white rounded-lg shadow-lg overflow-hidden transition duration-300;
 }
 
-.destination-card:hover,
-.tour-card:hover,
 .blog-post-card:hover {
   @apply shadow-xl transform scale-105;
 }
@@ -57,7 +19,7 @@ h1, h2, h3 {
   background-image: url('../img/booking-bg.jpg');
 }
 
-.booking-form::before {
+.booking-form:before {
   content: '';
   @apply absolute inset-0 bg-white bg-opacity-50 rounded-lg;
   z-index: 0;
@@ -67,7 +29,6 @@ h1, h2, h3 {
   @apply relative z-10;
 }
 
-.booking-form input:focus,
 .booking-form textarea:focus {
   @apply border-orange-500 outline-none shadow-outline-orange;
 }
@@ -76,7 +37,7 @@ h1, h2, h3 {
   @apply relative bg-gray-100 p-10 rounded-lg shadow-md mb-8;
 }
 
-.testimonial::before {
+.testimonial:before {
   content: '\201C';
   @apply absolute top-0 left-0 text-8xl text-orange-500;
   font-family: 'Abril Fatface', cursive;
@@ -92,7 +53,7 @@ h1, h2, h3 {
 }
 
 .scroll-to-top {
-  @apply fixed bottom-4 right-4 p-3 bg-orange-500 text-white rounded-full opacity-0 invisible transition-all duration-300;
+  @apply fixed bottom-4 right-4 p-3 bg-orange-500 text-white rounded-full opacity-75;
 }
 
 .scroll-to-top:hover {
@@ -101,15 +62,4 @@ h1, h2, h3 {
 
 .scroll-to-top.show {
   @apply opacity-100 visible;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
