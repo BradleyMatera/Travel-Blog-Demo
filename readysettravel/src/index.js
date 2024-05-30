@@ -1,12 +1,6 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import './index.css';
 
-const Tours = () => {
-  return (
-    <div>
-      <h1>Tours</h1>
-      <p>Check out our amazing tours.</p>
-    </div>
-  );
-};
-
-export default Tours;
+ReactDOM.render(<App />, document.getElementById('app'));
