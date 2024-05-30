@@ -37,6 +37,10 @@ jobs:
           app_location: "/readysettravel"
           api_location: ""
           output_location: "/readysettravel/build"
+      
+      - name: Azure Login
+                uses: Azure/login@v2.1.1
+            
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
