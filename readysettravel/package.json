@@ -1,4 +1,4 @@
- {
+{
   "name": "readysettravel",
   "version": "1.0.0",
   "description": "A static web application for Ready Set Travel.",
@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "tailwindcss": "^2.2.19",
-    "@tailwindcss/postcss7-compat": "^2.2.19",
+    "@tailwindcss/postcss7-compat": "^2.2.17",
     "autoprefixer": "^10.4.0",
     "postcss": "^7.0.36",
     "postcss-import": "^14.0.2"
