@@ -1,0 +1,16 @@
+{
+  "name": "readysettravel",
+  "version": "1.0.0",
+  "description": "ReadySetTravel web application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node run start",
+    "build": "node run build",
+    "test": "node run test"
+  },
+  "author": "your-name",
+  "license": "MIT",
+  "dependencies": {
+    "node": "*"
+  }
+}
