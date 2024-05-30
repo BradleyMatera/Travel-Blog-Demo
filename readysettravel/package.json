@@ -15,7 +15,17 @@
   "author": "Bradley Matera",
   "license": "MIT",
   "dependencies": {
-    "parcel": "^2.0.0"
+    "parcel": "^2.0.0",
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.1",
+    "vuex": "^3.6.2",
+    "axios": "^0.21.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "tailwindcss": "^2.2.19",
+    "@tailwindcss/postcss7-compat": "^2.2.19",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^7.0.36",
+    "postcss-import": "^14.0.2"
+  }
 }
