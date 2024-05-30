@@ -1,16 +1,31 @@
 {
   "name": "readysettravel",
   "version": "1.0.0",
-  "description": "ReadySetTravel web application",
+  "description": "A static web application for Ready Set Travel.",
   "main": "index.js",
   "scripts": {
-    "start": "node run start",
-    "build": "node run build",
-    "test": "node run test"
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html --dist-dir build",
+    "test": "echo \"No test specified\" && exit 0"
   },
-  "author": "your-name",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BradleyMatera/WDV-119-Bradley-Matera.git"
+  },
+  "author": "Bradley Matera",
   "license": "MIT",
   "dependencies": {
-    "node": "*"
+    "parcel": "^2.0.0",
+    "vue": "^2.6.14",
+    "vue-vie-router": "^3.5.1",
+    "vuex": "^3.6.2",
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^2.2.19",
+    "@tailwindcss/postcss7-compat": "^2.2.19",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^7.0.36",
+    "postcss-import": "^14.0.2"
   }
 }
