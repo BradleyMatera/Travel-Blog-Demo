@@ -1,5 +1,4 @@
 import React from 'react';
-
 function Footer() {
   return (
     <footer className="bg-slate-500 py-12">

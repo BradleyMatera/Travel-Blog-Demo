@@ -7,7 +7,6 @@ import About from './components/About';
 import Destinations from './components/Destinations';
 import Blog from './components//Blog';
 import BookingForm from './components/BookingForm';
-
 function App() {
   return (
     <Router>

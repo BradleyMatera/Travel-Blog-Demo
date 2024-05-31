@@ -26,7 +26,7 @@ function Destinations() {
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold leading-10 text-center text-neutral-800 mb-8">Trending Escapades</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <!-- Tour Cards Here -->
+        
           </div>
         </div>
       </section>
@@ -34,7 +34,7 @@ function Destinations() {
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold leading-10 text-center text-neutral-800 mb-8">Family Focused Journeys</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <!-- Family Tour Cards Here -->
+           
           </div>
         </div>
       </section>
@@ -42,7 +42,7 @@ function Destinations() {
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold leading-10 text-center text-neutral-800 mb-8">Adults Only Adventures</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <!-- Adults Only Tour Cards Here -->
+           
           </div>
         </div>
       </section>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 function Navbar() {
   return (
     <nav className="bg-slate-200 py-4 sticky top-0 z-50 shadow-md" aria-label="Primary navigation">

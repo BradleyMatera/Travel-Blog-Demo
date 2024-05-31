@@ -1,5 +1,4 @@
 import React from 'react';
-
 function BookingForm() {
   return (
     <div>
@@ -26,7 +25,7 @@ function BookingForm() {
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold leading-10 text-center text-neutral-800 mb-8">Plan the Perfect Trip</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <!-- Booking Form Here -->
+        
           </div>
         </div>
       </section>
