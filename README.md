@@ -14,6 +14,71 @@ Hello! My name is Bradley Matera, a student from Davis, Illinois. The purpose of
 
 <br>
 
+
+
+# React.js
+
+## ⚙️ Overview
+- This week was dedicated to transitioning the ReadySetTravel site to a React-based framework, enhancing maintainability and scalability. Key tasks included setting up a React environment, converting existing pages to React components, and integrating Tailwind CSS for consistent styling.
+
+## 🌵 Challenges
+- Faced challenges with integrating Tailwind CSS in the React framework, particularly with class names and ensuring proper application of styles.
+- Addressed issues with component structure and routing in React, ensuring a seamless user experience and efficient data flow.
+
+## 🏆 Accomplishments
+- Successfully set up a React project and configured Tailwind CSS for styling.
+- Converted all existing pages (Home, About, Destinations, Blog, BookingForm, Tours) to React components.
+- Ensured all image paths and custom styles are correctly applied in the new React environment.
+- Enhanced the site's interactivity and responsiveness using React's state management and component-based architecture.
+- Successfully deployed the React-based ReadySetTravel site on Azure, making it live and ensuring it works with the Git repository.
+
+## 🔮 Next Steps
+- Conduct user testing to gather feedback on the new React-based site and make necessary adjustments.
+- Continue to refine and expand the site's features using React and Tailwind CSS.
+- Explore advanced React functionalities to further enhance user experience and site performance.
+
+## Deployment
+- Successfully deployed the React-based ReadySetTravel site on Azure. [View the live site](https://lively-ocean-00bcdaa10.5.azurestaticapps.net/).
+
+---
+
+# Changelog
+
+## v0.4.0 - 2024/05/30
+
+### Features
+- Migrated ReadySetTravel to a React framework for improved maintainability and scalability.
+- Integrated Tailwind CSS for consistent and responsive styling across all components.
+- Converted existing HTML pages to React components, ensuring seamless transition and functionality.
+- Set up and configured npm build commands for the React project.
+
+### Enhancements
+- Optimized component structure and routing for efficient data flow and user experience.
+- Ensured all custom styles and image paths are correctly applied in the new React environment.
+- Improved site interactivity and responsiveness using React's state management.
+- Built a thorough understanding of workflows and YAML files, learning about their functions and configurations.
+
+### Bug Fixes
+- Addressed issues with Tailwind CSS integration and class name application.
+- Fixed routing issues to ensure seamless navigation between pages.
+
+### Documentation
+- Updated README to reflect the transition to React and new development practices.
+- Documented the setup and configuration process for the React environment.
+- Included information on updating through both Mac and PC.
+
+### Accessibility
+- Ensured all React components meet WCAG AA contrast ratio guidelines.
+- Added descriptive text to images and form elements for screen readers.
+
+### Validation
+- Conducted HTML and CSS validation checks to ensure code quality.
+
+### Deployment
+- Successfully deployed the React-based ReadySetTravel site on Azure. [View the live site](https://lively-ocean-00bcdaa10.5.azurestaticapps.net/).
+
+
+
 ## 📢 &nbsp; Weekly Stand Up
 
 Each week I will summarize my milestone activity and progress by writing a stand-up. A stand-up is meant to be a succinct update on how things are going. Use these prompts as a guide on what to write about:
