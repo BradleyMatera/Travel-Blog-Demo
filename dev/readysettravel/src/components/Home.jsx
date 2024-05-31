@@ -1,4 +1,5 @@
 import React from 'react';
+
 function Home() {
   return (
     <div>
@@ -9,6 +10,7 @@ function Home() {
           <p className="text-lg md:text-xl lg:text-2xl font-semibold text-center text-shadow-md animate-fade-in-up animation-delay-200">Get the best advice and tips for your dream trip</p>
         </div>
       </header>
+      
       <section className="bg-gray-800 py-12 text-center">
         <div className="container mx-auto">
           <h2 className="text-3xl font-Abril_Fatface text-white mb-6 animate-fade-in-up">Where do you want to go?</h2>
@@ -19,6 +21,7 @@ function Home() {
           </form>
         </div>
       </section>
+      
       <section className="py-16">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold leading-10 text-center text-neutral-800 mb-8">Plan the Perfect Trip</h2>
@@ -38,19 +41,21 @@ function Home() {
           </div>
         </div>
       </section>
+      
       <section className="bg-gray-100 py-16">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold leading-10 text-center text-neutral-800 mb-8">Trending Tours</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            
+            {/* Add tour items here */}
           </div>
         </div>
       </section>
+      
       <section className="py-16">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold leading-10 text-center text-neutral-800 mb-8">Top Notch Destinations</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            
+            {/* Add destination items here */}
           </div>
         </div>
       </section>
