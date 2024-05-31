@@ -1,5 +1,4 @@
 import React from 'react';
-
 function Home() {
   return (
     <div>
@@ -43,7 +42,7 @@ function Home() {
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold leading-10 text-center text-neutral-800 mb-8">Trending Tours</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <!-- Tour Cards Here -->
+            
           </div>
         </div>
       </section>
@@ -51,7 +50,7 @@ function Home() {
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold leading-10 text-center text-neutral-800 mb-8">Top Notch Destinations</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <!-- Destination Cards Here -->
+            
           </div>
         </div>
       </section>
