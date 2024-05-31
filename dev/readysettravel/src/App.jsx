@@ -5,8 +5,10 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import About from './components/About';
 import Destinations from './components/Destinations';
-import Blog from './components//Blog';
+import Blog from './components/Blog';
 import BookingForm from './components/BookingForm';
+import Tours from './components/Tours';
+
 function App() {
   return (
     <Router>
@@ -16,7 +18,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
           <Route path="/destinations" component={Destinations} />
-          <Route path="/tours" component={Destinations} />
+          <Route path="/tours" component={Tours} />
           <Route path="/blog" component={Blog} />
           <Route path="/book" component={BookingForm} />
         </Switch>

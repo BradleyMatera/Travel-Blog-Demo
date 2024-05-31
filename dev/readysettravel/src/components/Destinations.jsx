@@ -4,7 +4,7 @@ import React from 'react';
 function Destinations() {
   return (
     <div>
-      <header className="relative bg-cover bg-center text-white custom-header-height flex items-center justify-center" style={{ backgroundImage: "url('public/img/hero-bg.jpg')" }}>
+      <header className="relative bg-cover bg-center text-white custom-header-height flex items-center justify-center" style={{ backgroundImage: "url('/img/hero-bg.jpg')" }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="container mx-auto flex flex-col justify-center items-center py-1 md:py-2 px-6 z-10">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight font-Abril_Fatface mb-4 text-center text-shadow-lg animate-fade-in-up">Explore Top Destinations</h1>
@@ -28,23 +28,23 @@ function Destinations() {
           <h2 className="text-3xl font-bold leading-10 text-center text-neutral-800 mb-8">Trending Destinations</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="text-center">
-              <img src="public/img/destinations-paris.jpg" alt="Paris" className="w-full h-64 object-cover mb-4" />
+              <img src="/img/destinations-paris.jpg" alt="Paris" className="w-full h-64 object-cover mb-4" />
               <h3 className="text-lg font-semibold text-gray-800">Paris, France</h3>
             </div>
             <div className="text-center">
-              <img src="public/img/destinations-sydney.jpg" alt="Sydney" className="w-full h-64 object-cover mb-4" />
+              <img src="/img/destinations-sydney.jpg" alt="Sydney" className="w-full h-64 object-cover mb-4" />
               <h3 className="text-lg font-semibold text-gray-800">Sydney, Australia</h3>
             </div>
             <div className="text-center">
-              <img src="public/img/destinations-rio.jpg" alt="Rio de Janeiro" className="w-full h-64 object-cover mb-4" />
+              <img src="/img/destinations-rio.jpg" alt="Rio de Janeiro" className="w-full h-64 object-cover mb-4" />
               <h3 className="text-lg font-semibold text-gray-800">Rio de Janeiro, Brazil</h3>
             </div>
             <div className="text-center">
-              <img src="public/img/destinations-rome.jpg" alt="Rome" className="w-full h-64 object-cover mb-4" />
+              <img src="/img/destinations-rome.jpg" alt="Rome" className="w-full h-64 object-cover mb-4" />
               <h3 className="text-lg font-semibold text-gray-800">Rome, Italy</h3>
             </div>
             <div className="text-center">
-              <img src="public/img/destinations-machu.jpg" alt="Machu Picchu" className="w-full h-64 object-cover mb-4" />
+              <img src="/img/destinations-machu.jpg" alt="Machu Picchu" className="w-full h-64 object-cover mb-4" />
               <h3 className="text-lg font-semibold text-gray-800">Machu Picchu, Peru</h3>
             </div>
           </div>
