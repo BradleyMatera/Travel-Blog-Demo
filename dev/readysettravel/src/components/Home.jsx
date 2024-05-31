@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Home = () => {
+function Home() {
   return (
     <div>
-      <h1>Welcome to Ready Set Travel</h1>
+      <!-- Your Home content here -->
     </div>
   );
 }
