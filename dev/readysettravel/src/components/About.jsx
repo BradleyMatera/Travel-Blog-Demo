@@ -34,7 +34,7 @@ function About() {
               <p className="text-lg text-gray-600">Our mission is to provide you with the best advice, insider tips, and personalized recommendations to make your dream trip a reality. Let us be your trusted companion as you embark on a journey of a lifetime.</p>
             </div>
             <div>
-              <img src="../img/clientimgs/mike-c-valdivia-ZufC1l0WSNU-unsplash.jpg" alt="About ReadySetTravel" className="w-full h-auto rounded-lg shadow-lg transition duration-300 hover:scale-105" />
+              <img src="../img/mike-c-valdivia-ZufC1l0WSNU-unsplash.jpg" alt="About ReadySetTravel" className="w-full h-auto rounded-lg shadow-lg transition duration-300 hover:scale-105" />
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@ function About() {
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-bold leading-10 font-Abril_Fatface text-neutral-800 mb-6">Ready to Explore?</h2>
           <p className="text-xl text-stone-500 mb-8">Start planning your dream vacation today!</p>
-          <a href="../dev/Interfaces&Usabilitycourse/readysettravel/" className="inline-block bg-orange-400 text-white py-3 px-8 rounded-lg text-lg font-semibold hover:bg-orange-500 transition duration-300 shadow-md">Book Now</a>
+          <a href="../dev/readysettravel/" className="inline-block bg-orange-400 text-white py-3 px-8 rounded-lg text-lg font-semibold hover:bg-orange-500 transition duration-300 shadow-md">Book Now</a>
         </div>
       </section>
     </div>
