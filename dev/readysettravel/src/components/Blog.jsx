@@ -17,17 +17,17 @@ function Blog() {
           <h2 className="text-3xl font-bold leading-10 text-center text-neutral-800 mb-8">Latest Blog Posts</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="text-center">
-              <img src="./public/img/jack-ward-rknrvCrfS1k-unsplash.jpg" alt="Blog Post 1" className="w-full h-64 object-cover mb-4" />
+              <img src="/public/img/jack-ward-rknrvCrfS1k-unsplash.jpg" alt="Blog Post 1" className="w-full h-64 object-cover mb-4" />
               <h3 className="text-lg font-semibold text-gray-800">Exploring the Wonders of Paris</h3>
               <p className="text-base font-light text-stone-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis.</p>
             </div>
             <div className="text-center">
-              <img src="./public/img/jake-blucker-tMzCrBkM99Y-unsplash.jpg" alt="Blog Post 2" className="w-full h-64 object-cover mb-4" />
+              <img src="./readysettravel/public/img/jake-blucker-tMzCrBkM99Y-unsplash.jpg" alt="Blog Post 2" className="w-full h-64 object-cover mb-4" />
               <h3 className="text-lg font-semibold text-gray-800">A Journey Through the Heart of Australia</h3>
               <p className="text-base font-light text-stone-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis.</p>
             </div>
             <div className="text-center">
-              <img src="./public/img/jenna-day-UM8bURrginM-unsplash.jpg" alt="Blog Post 3" className="w-full h-64 object-cover mb-4" />
+              <img src="./img/jenna-day-UM8bURrginM-unsplash.jpg" alt="Blog Post 3" className="w-full h-64 object-cover mb-4" />
               <h3 className="text-lg font-semibold text-gray-800">Discovering the Beauty of Brazil</h3>
               <p className="text-base font-light text-stone-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis.</p>
             </div>
