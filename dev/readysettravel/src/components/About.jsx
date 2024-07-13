@@ -1,45 +1,185 @@
-// src/components/About.js
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+
+const ParallaxHeader = styled.header`
+  background-image: url('/img/hero-bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+`;
+
+const Overlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+`;
+
+const HeaderContent = styled(motion.div)`
+  position: relative;
+  z-index: 10;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+const Section = styled.section`
+  padding: 6rem 0;
+`;
+
+const StatisticBox = styled(motion.div)`
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+`;
+
+function AnimatedStatistic({ value, label }) {
+  const [count, setCount] = useState(0);
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start({
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.5 },
+      });
+      const end = parseInt(value, 10);
+      const duration = 2000;
+      const startTime = Date.now();
+
+      const timer = setInterval(() => {
+        const timePassed = Date.now() - startTime;
+        const progress = Math.min(timePassed / duration, 1);
+        setCount(Math.floor(progress * end));
+
+        if (progress === 1) {
+          clearInterval(timer);
+        }
+      }, 50);
+
+      return () => clearInterval(timer);
+    }
+    return undefined;
+  }, [inView, value, controls]);
+
+  return (
+    <StatisticBox ref={ref} initial={{ opacity: 0, y: 50 }} animate={controls}>
+      <h3 className="text-4xl font-bold mb-2">
+        {count}
+        +
+      </h3>
+      <p className="text-xl">{label}</p>
+    </StatisticBox>
+  );
+}
+
+AnimatedStatistic.propTypes = {
+  value: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+};
 
 function About() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+  }, [controls, inView]);
+
   return (
-    <div>
-      <header className="relative bg-cover bg-center text-white custom-header-height flex items-center justify-center" style={{ backgroundImage: "url('/img/hero-bg.jpg')" }}>
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="container mx-auto flex flex-col justify-center items-center py-1 md:py-2 px-6 z-10">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight font-Abril_Fatface mb-4 text-center text-shadow-lg animate-fade-in-up">Discover Our Story</h1>
-          <p className="text-lg md:text-xl lg:text-2xl font-semibold text-center text-shadow-md animate-fade-in-up animation-delay-200">Learn about our journey, values, and the passion that drives us to deliver unforgettable travel experiences.</p>
-        </div>
-      </header>
+    <div className="bg-gray-50">
+      <ParallaxHeader>
+        <Overlay />
+        <HeaderContent
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="container mx-auto"
+        >
+          <motion.h1
+            className="text-6xl md:text-7xl font-bold mb-4 font-serif"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
+          >
+            Discover Our Story
+          </motion.h1>
+          <motion.p
+            className="text-2xl md:text-3xl"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8, duration: 0.8 }}
+          >
+            Crafting Unforgettable Travel Experiences Since 2005
+          </motion.p>
+        </HeaderContent>
+      </ParallaxHeader>
 
-      <section className="bg-gray-800 py-12 text-center">
-        <div className="container mx-auto">
-          <h2 className="text-3xl font-Abril_Fatface text-white mb-6 animate-fade-in-up">Where do you want to go?</h2>
-          <form role="search" aria-label="Search form" className="flex flex-col md:flex-row justify-center items-center">
-            <label htmlFor="destination" className="sr-only">Enter a destination</label>
-            <input type="text" id="destination" placeholder="Enter a destination" className="w-full max-w-md p-2 mr-0 md:mr-4 text-gray-800 rounded-lg mb-4 md:mb-0 focus:outline-none focus:ring-2 focus:ring-orange-400" aria-label="Search for a destination" name="destination" />
-            <button type="submit" className="bg-orange-400 text-white py-3 px-6 rounded-lg hover:bg-orange-500 transition duration-300 shadow-md animate-fade-in-up animation-delay-400">Search</button>
-          </form>
+      <Section className="bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-12">Our Mission</h2>
+          <p className="text-xl text-gray-700 max-w-4xl mx-auto text-center leading-relaxed">
+            At ReadySetTravel, we&apos;re dedicated to transforming your travel dreams into reality.
+            We believe that every journey should be as unique as you are, filled with authentic
+            experiences and unforgettable moments.
+          </p>
         </div>
-      </section>
+      </Section>
 
-      <section className="py-16">
-        <div className="container mx-auto">
-          <h2 className="text-3xl font-bold leading-10 text-center text-neutral-800 mb-8">About ReadySetTravel</h2>
-          <p className="text-base font-light text-stone-500 mb-8 text-center">At ReadySetTravel, we believe that travel has the power to transform lives and create unforgettable memories. Our team of experienced travel experts is dedicated to crafting extraordinary journeys that cater to your unique preferences and desires.</p>
-          <p className="text-base font-light text-stone-500 mb-8 text-center">Whether you’re seeking thrilling adventures, cultural immersion, or a luxurious getaway, we have curated a collection of destinations and tours that will ignite your wanderlust. With our meticulous attention to detail and commitment to exceptional service, we ensure that every aspect of your trip is seamlessly planned and executed.</p>
-          <p className="text-base font-light text-stone-500 mb-8 text-center">Our mission is to provide you with the best advice, insider tips, and personalized recommendations to make your dream trip a reality. Let us be your trusted companion as you embark on a journey of a lifetime.</p>
+      <Section className="bg-blue-600 text-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-12">Our Impact</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <AnimatedStatistic value="1000" label="Trips Organized" />
+            <AnimatedStatistic value="50" label="Countries Explored" />
+            <AnimatedStatistic value="98" label="% Client Satisfaction" />
+          </div>
         </div>
-      </section>
+      </Section>
 
-      <section className="bg-gray-100 py-16">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold leading-10 text-neutral-800 mb-8">Ready to Explore?</h2>
-          <p className="text-base font-light text-stone-500 mb-8">Start planning your dream vacation today!</p>
-          <Link to="/book" className="bg-orange-400 text-white py-3 px-6 rounded-lg hover:bg-orange-500 transition duration-300 shadow-md">Book Now</Link>
-        </div>
-      </section>
+      <Section ref={ref} className="bg-gray-100">
+        <motion.div
+          className="container mx-auto px-4"
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          initial="hidden"
+          animate={controls}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <h2 className="text-4xl font-bold text-center mb-12">Ready to Start Your Journey?</h2>
+          <p className="text-2xl mb-10 text-center">Let us help you plan the trip of a lifetime.</p>
+          <div className="text-center">
+            <motion.a
+              href="/book"
+              className="bg-blue-600 text-white py-4 px-10 rounded-full text-xl font-semibold hover:bg-blue-700 transition duration-300 inline-block"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Book Now
+            </motion.a>
+          </div>
+        </motion.div>
+      </Section>
     </div>
   );
 }
