@@ -58,13 +58,17 @@ const CardContent = styled.div`
 
 const tours = [
   {
-    id: 1, title: 'Paris Explorer', image: '/img/destinations-paris.jpg', description: 'Discover the City of Light',
+    id: 1,
+    title: 'Paris Explorer',
+    image: '/img/destinations-paris.jpg',
+    description: 'Discover the City of Light',
   },
-
   {
-    id: 2, title: 'Tokyo Adventure', image: '/img/japan-image.jpg', description: 'Experience the blend of tradition and modernity',
+    id: 2,
+    title: 'Tokyo Adventure',
+    image: '/img/japan-image.jpg',
+    description: 'Experience the blend of tradition and modernity',
   },
-
   {
     id: 3,
     title: 'Bali Retreat',
