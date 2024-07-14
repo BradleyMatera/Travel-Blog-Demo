@@ -2,7 +2,7 @@
   "name": "readysettravel",
   "description": "ReadySetTravel is a travel agency website that offers unique and engaging experiences to clients.",
   "type": "react-app",
-  "homepage": "https://bradleymatera.github.io/WDV-119-Bradley-Matera/",
+  "homepage": "https://bradleymatera.github.io/ReadySetTravelPages/",
   "version": "1.0.0",
   "dependencies": {
     "@emotion/react": "^11.11.0",
