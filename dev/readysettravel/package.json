@@ -1,9 +1,9 @@
 {
   "name": "readysettravel",
+  "version": "1.0.0",
   "description": "ReadySetTravel is a travel agency website that offers unique and engaging experiences to clients.",
   "type": "react-app",
-  "homepage": "https://bradleymatera.github.io/ReadySetTravelPages/",
-  "version": "1.0.0",
+  "homepage": "https://bradleymatera.github.io/WDV-119-Bradley-Matera/",
   "dependencies": {
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
@@ -50,7 +50,6 @@
     "@babel/core": "^7.21.0",
     "@babel/plugin-proposal-class-properties": "^7.18.6",
     "@babel/plugin-proposal-export-default-from": "^7.22.5",
-    "@babel/plugin-proposal-export-namespace-from": "^7.22.5",
     "@babel/plugin-proposal-nullish-coalescing-operator": "^7.22.5",
     "@babel/plugin-proposal-optional-chaining": "^7.22.5",
     "@babel/plugin-proposal-private-methods": "^7.21.11",
@@ -76,7 +75,6 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "parcel": "^2.8.0",
     "postcss-cli": "^9.3.5",
-    "tailwindcss": "^3.4.3",
     "postcss": "^8.4.39",
     "postcss-nested": "^5.0.2",
     "postcss-preset-env": "^7.3.3",

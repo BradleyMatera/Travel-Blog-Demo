@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/WDV-119-Bradley-Matera/static/css/main.efefea3b.css",
-    "main.js": "/WDV-119-Bradley-Matera/static/js/main.15193a37.js",
-    "static/js/488.722d7ace.chunk.js": "/WDV-119-Bradley-Matera/static/js/488.722d7ace.chunk.js",
-    "static/media/booking-bg.jpg": "/WDV-119-Bradley-Matera/static/media/booking-bg.dec03650b1c34fb9c3a7.jpg",
-    "index.html": "/WDV-119-Bradley-Matera/index.html",
-    "main.efefea3b.css.map": "/WDV-119-Bradley-Matera/static/css/main.efefea3b.css.map",
-    "main.15193a37.js.map": "/WDV-119-Bradley-Matera/static/js/main.15193a37.js.map",
-    "488.722d7ace.chunk.js.map": "/WDV-119-Bradley-Matera/static/js/488.722d7ace.chunk.js.map"
+    "main.css": "/ReadySetTravelPages/static/css/main.2426639f.css",
+    "main.js": "/ReadySetTravelPages/static/js/main.4f629c55.js",
+    "static/js/488.722d7ace.chunk.js": "/ReadySetTravelPages/static/js/488.722d7ace.chunk.js",
+    "static/media/booking-bg.jpg": "/ReadySetTravelPages/static/media/booking-bg.dec03650b1c34fb9c3a7.jpg",
+    "index.html": "/ReadySetTravelPages/index.html",
+    "main.2426639f.css.map": "/ReadySetTravelPages/static/css/main.2426639f.css.map",
+    "main.4f629c55.js.map": "/ReadySetTravelPages/static/js/main.4f629c55.js.map",
+    "488.722d7ace.chunk.js.map": "/ReadySetTravelPages/static/js/488.722d7ace.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.efefea3b.css",
-    "static/js/main.15193a37.js"
+    "static/css/main.2426639f.css",
+    "static/js/main.4f629c55.js"
   ]
 }
