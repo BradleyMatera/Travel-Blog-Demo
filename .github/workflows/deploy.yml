@@ -8,14 +8,11 @@ on:
     branches:
       - main
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -36,21 +33,16 @@ jobs:
       with:
         node-version: '18'
 
-    - name: Find package.json
-      id: find-package-json
-      run: |
-        PACKAGE_JSON=$(find . -name "package.json" -not -path "*/node_modules/*" -print -quit)
-        echo "PACKAGE_JSON_PATH=$(dirname $PACKAGE_JSON)" >> $GITHUB_OUTPUT
-
     - name: Install dependencies
       run: yarn install --frozen-lockfile
-      working-directory: ${{ steps.find-package-json.outputs.PACKAGE_JSON_PATH }}
+      working-directory: ./readysettravel
 
     - name: Build app
       run: yarn build
-      working-directory: ${{ steps.find-package-json.outputs.PACKAGE_JSON_PATH }}
+      working-directory: ./readysettravel
       env:
         CI: false
+        PUBLIC_URL: /WDV-119-Bradley-Matera
 
     - name: Setup Pages
       uses: actions/configure-pages@v3
@@ -58,7 +50,7 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v2
       with:
-        path: ${{ steps.find-package-json.outputs.PACKAGE_JSON_PATH }}/build
+        path: ./readysettravel/build
 
     - name: Deploy to GitHub Pages
       id: deployment
