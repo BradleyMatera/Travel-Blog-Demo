@@ -29,13 +29,27 @@ jobs:
       with:
         node-version: '18'
 
+    - name: List directory contents
+      run: ls -R
+
+    - name: Find package.json
+      id: find-package-json
+      run: |
+        PACKAGE_JSON=$(find . -name "package.json" -not -path "*/node_modules/*" -print -quit)
+        if [ -z "$PACKAGE_JSON" ]; then
+          echo "No package.json found"
+          exit 1
+        fi
+        echo "PACKAGE_JSON_DIR=$(dirname $PACKAGE_JSON)" >> $GITHUB_OUTPUT
+        echo "Package.json found in: $(dirname $PACKAGE_JSON)"
+
     - name: Install dependencies
       run: yarn install --frozen-lockfile
-      working-directory: ./readysettravel
+      working-directory: ${{ steps.find-package-json.outputs.PACKAGE_JSON_DIR }}
 
     - name: Build app
       run: yarn build
-      working-directory: ./readysettravel
+      working-directory: ${{ steps.find-package-json.outputs.PACKAGE_JSON_DIR }}
       env:
         CI: false
         PUBLIC_URL: /WDV-119-Bradley-Matera
@@ -46,7 +60,7 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v2
       with:
-        path: ./readysettravel/build
+        path: ${{ steps.find-package-json.outputs.PACKAGE_JSON_DIR }}/build
 
     - name: Deploy to GitHub Pages
       id: deployment
