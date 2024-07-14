@@ -12,6 +12,9 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
@@ -19,27 +22,24 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '18'  # Using a more recent LTS version of Node.js
+        node-version: '18'
 
     - name: Install dependencies
-      run: yarn install --frozen-lockfile  # Using yarn as per your project setup
+      run: yarn install --frozen-lockfile
 
     - name: Build app
       run: yarn build
       env:
-        CI: false  # This prevents treating warnings as errors
+        CI: false
 
     - name: Deploy to GitHub Pages
-      if: github.ref == 'refs/heads/main'  # Only deploy on push to main, not on PRs
-      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/main'
+      uses: actions/deploy-pages@v2
       with:
+        artifact_name: github-pages
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build
-        # cname: your-custom-domain.com  # Uncomment and set this if you have a custom domain
 
     - name: Upload build artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-pages-artifact@v2
       with:
-        name: build
-        path: buildine
-        
+        path: build       
