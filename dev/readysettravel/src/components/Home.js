@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { useForm, Controller } from 'react-hook-form';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ParallaxHeader = styled.header`
   background-image: url('/img/hero-bg.jpg');
@@ -58,22 +61,13 @@ const CardContent = styled.div`
 
 const tours = [
   {
-    id: 1,
-    title: 'Paris Explorer',
-    image: '/img/destinations-paris.jpg',
-    description: 'Discover the City of Light',
+    id: 1, title: 'Paris Explorer', image: '/img/destinations-paris.jpg', description: 'Discover the City of Light',
   },
   {
-    id: 2,
-    title: 'Tokyo Adventure',
-    image: '/img/japan-image.jpg',
-    description: 'Experience the blend of tradition and modernity',
+    id: 2, title: 'Tokyo Adventure', image: '/img/japan-image.jpg', description: 'Experience the blend of tradition and modernity',
   },
   {
-    id: 3,
-    title: 'Bali Retreat',
-    image: '/img/bali.jpg',
-    description: 'Relax in tropical paradise',
+    id: 3, title: 'Bali Retreat', image: '/img/bali.jpg', description: 'Relax in tropical paradise',
   },
 ];
 
@@ -84,8 +78,17 @@ const destinations = [
 ];
 
 function Home() {
+  const { control, handleSubmit } = useForm();
+  const [tourData] = useState(tours);
+  const [destinationData] = useState(destinations);
+
+  const onSubmit = (data) => {
+    toast.success(`Searching for destination: ${data.destination}`);
+  };
+
   return (
     <div className="bg-gray-50">
+      <ToastContainer />
       <ParallaxHeader>
         <Overlay />
         <HeaderContent
@@ -115,15 +118,27 @@ function Home() {
       <Section className="bg-gray-800">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-serif text-white mb-8 text-center">Where do you want to go?</h2>
-          <form role="search" aria-label="Search form" className="flex flex-col md:flex-row justify-center items-center">
+          <form onSubmit={handleSubmit(onSubmit)} role="search" aria-label="Search form" className="flex flex-col md:flex-row justify-center items-center">
             <label htmlFor="destination" className="sr-only">Enter a destination</label>
-            <input
-              type="text"
-              id="destination"
-              placeholder="Enter a destination"
-              className="w-full max-w-md p-3 mr-0 md:mr-4 text-gray-800 rounded-lg mb-4 md:mb-0 focus:outline-none focus:ring-2 focus:ring-orange-400"
-              aria-label="Search for a destination"
+            <Controller
               name="destination"
+              control={control}
+              defaultValue=""
+              rules={{ required: 'This field is required' }}
+              render={({ field, fieldState: { error } }) => (
+                <div>
+                  <input
+                    name={field.name}
+                    onChange={field.onChange}
+                    onBlur={field.onBlur}
+                    value={field.value}
+                    ref={field.ref}
+                    placeholder="Enter a destination"
+                    className="w-full max-w-md p-3 mr-0 md:mr-4 text-gray-800 rounded-lg mb-4 md:mb-0 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                  />
+                  {error && <span className="text-red-500">{error.message}</span>}
+                </div>
+              )}
             />
             <motion.button
               type="submit"
@@ -161,8 +176,13 @@ function Home() {
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Trending Tours</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {tours.map((tour) => (
-              <Card key={tour.id}>
+            {tourData.map((tour) => (
+              <Card
+                key={tour.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+              >
                 <CardImage src={tour.image} alt={tour.title} />
                 <CardContent>
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">{tour.title}</h3>
@@ -178,8 +198,13 @@ function Home() {
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Top Notch Destinations</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {destinations.map((destination) => (
-              <Card key={destination.id}>
+            {destinationData.map((destination) => (
+              <Card
+                key={destination.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+              >
                 <CardImage src={destination.image} alt={destination.name} />
                 <CardContent>
                   <h3 className="text-xl font-semibold text-gray-800">{destination.name}</h3>

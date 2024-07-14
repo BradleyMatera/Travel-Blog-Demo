@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/WDV-119-Bradley-Matera/static/css/main.24fa41fc.css",
-    "main.js": "/WDV-119-Bradley-Matera/static/js/main.cb516162.js",
+    "main.css": "/WDV-119-Bradley-Matera/static/css/main.efefea3b.css",
+    "main.js": "/WDV-119-Bradley-Matera/static/js/main.15193a37.js",
     "static/js/488.722d7ace.chunk.js": "/WDV-119-Bradley-Matera/static/js/488.722d7ace.chunk.js",
     "static/media/booking-bg.jpg": "/WDV-119-Bradley-Matera/static/media/booking-bg.dec03650b1c34fb9c3a7.jpg",
     "index.html": "/WDV-119-Bradley-Matera/index.html",
-    "main.24fa41fc.css.map": "/WDV-119-Bradley-Matera/static/css/main.24fa41fc.css.map",
-    "main.cb516162.js.map": "/WDV-119-Bradley-Matera/static/js/main.cb516162.js.map",
+    "main.efefea3b.css.map": "/WDV-119-Bradley-Matera/static/css/main.efefea3b.css.map",
+    "main.15193a37.js.map": "/WDV-119-Bradley-Matera/static/js/main.15193a37.js.map",
     "488.722d7ace.chunk.js.map": "/WDV-119-Bradley-Matera/static/js/488.722d7ace.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.24fa41fc.css",
-    "static/js/main.cb516162.js"
+    "static/css/main.efefea3b.css",
+    "static/js/main.15193a37.js"
   ]
 }

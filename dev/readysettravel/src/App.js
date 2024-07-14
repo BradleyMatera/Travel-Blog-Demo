@@ -1,8 +1,10 @@
-import React, {
-  useState, useEffect,
-} from 'react';
+import React, { useState, useEffect } from 'react';
 import {
-  BrowserRouter as Router, Route, Routes, useLocation,
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+  Navigate,
 } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import Navbar from './components/Navbar';
@@ -18,7 +20,6 @@ const AppContainer = motion.div;
 
 function AnimatedRoutes() {
   const location = useLocation();
-
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
@@ -28,6 +29,10 @@ function AnimatedRoutes() {
         <Route path="/tours" element={<Tours />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/book" element={<BookingForm />} />
+        {/* Add this line to redirect /WDV-119-Bradley-Matera to the home page */}
+        <Route path="/WDV-119-Bradley-Matera" element={<Navigate to="/" replace />} />
+        {/* Add a catch-all route */}
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </AnimatePresence>
   );
