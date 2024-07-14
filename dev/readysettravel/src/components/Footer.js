@@ -8,10 +8,10 @@ import {
 } from 'react-icons/fa';
 
 const FooterContainer = styled.footer`
-  background: linear-gradient(to right, #FF0000, #0000FF);
+  background: linear-gradient(to right, #1e3a8a, #3b82f6); /* Match primary color scheme */
   color: #fff;
   padding: 40px 20px 20px;
-  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  font-family: 'Inter', sans-serif; /* Assuming Inter is used across the site */
 `;
 
 const Content = styled.div`
@@ -30,11 +30,13 @@ const Section = styled.div`
 const SectionTitle = styled.h3`
   font-size: 18px;
   margin-bottom: 15px;
+  font-weight: 700;
 `;
 
 const SectionText = styled.p`
   font-size: 14px;
   line-height: 1.5;
+  color: #e5e7eb; /* Light gray text color */
 `;
 
 const LinkList = styled.ul`
@@ -47,12 +49,13 @@ const LinkItem = styled.li`
 `;
 
 const Link = styled.a`
-  color: #fff;
+  color: #e5e7eb; /* Light gray text color */
   text-decoration: none;
   font-size: 14px;
   line-height: 1.8;
   &:hover {
     text-decoration: underline;
+    color: #ffffff; /* White on hover */
   }
 `;
 
@@ -64,6 +67,10 @@ const IconWrapper = styled.div`
   font-size: 20px;
   margin-right: 15px;
   cursor: pointer;
+  color: #e5e7eb; /* Light gray text color */
+  &:hover {
+    color: #ffffff; /* White on hover */
+  }
 `;
 
 const BottomBar = styled.div`
@@ -75,6 +82,7 @@ const BottomBar = styled.div`
 
 const Copyright = styled.p`
   font-size: 14px;
+  color: #e5e7eb; /* Light gray text color */
 `;
 
 function Footer() {

@@ -8,7 +8,7 @@ const ParallaxHeader = styled.header`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 50vh;
   position: relative;
 `;
 
@@ -58,11 +58,11 @@ const CardContent = styled.div`
 
 const tours = [
   {
-    id: 1, title: 'Paris Explorer', image: '/img/paris.jpg', description: 'Discover the City of Light',
+    id: 1, title: 'Paris Explorer', image: '/img/destinations-paris.jpg', description: 'Discover the City of Light',
   },
 
   {
-    id: 2, title: 'Tokyo Adventure', image: '/img/tokyo.jpg', description: 'Experience the blend of tradition and modernity',
+    id: 2, title: 'Tokyo Adventure', image: '/img/japan-image.jpg', description: 'Experience the blend of tradition and modernity',
   },
 
   {
@@ -74,9 +74,9 @@ const tours = [
 ];
 
 const destinations = [
-  { id: 1, name: 'Rome', image: '/img/rome.jpg' },
+  { id: 1, name: 'Rome', image: '/img/destinations-rome.jpg' },
   { id: 2, name: 'New York', image: '/img/newyork.jpg' },
-  { id: 3, name: 'Sydney', image: '/img/sydney.jpg' },
+  { id: 3, name: 'Sydney', image: '/img/destinations-sydney.jpg' },
 ];
 
 function Home() {
@@ -137,7 +137,7 @@ function Home() {
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Plan the Perfect Trip</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {['Flights', 'Transportation', 'Guides'].map((item) => (
+            {['Flights', 'Transport', 'Guide'].map((item) => (
               <motion.div
                 key={item}
                 className="text-center"

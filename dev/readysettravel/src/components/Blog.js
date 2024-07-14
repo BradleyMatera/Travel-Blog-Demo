@@ -4,12 +4,12 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const ParallaxHeader = styled.header`
-  background-image: url('/img/blog-hero.jpg');
+  background-image: url('/img/hero-bg.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60vh;
+  height: 50vh;
   position: relative;
 `;
 
