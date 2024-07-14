@@ -33,15 +33,12 @@ jobs:
       run: ls -R
 
     - name: Find package.json
-      id: find-package-json
       run: |
-        PACKAGE_JSON=$(find . -name "package.json" -not -path "*/node_modules/*" -print -quit)
-        if [ -z "$PACKAGE_JSON" ]; then
-          echo "No package.json found"
-          exit 1
-        fi
-        echo "PACKAGE_JSON_DIR=$(dirname $PACKAGE_JSON)" >> $GITHUB_OUTPUT
-        echo "Package.json found in: $(dirname $PACKAGE_JSON)"
+        PACKAGE_JSON_PATH=$(find . -name package.json | grep -v /node_modules/ | head -n 1)
+        echo "PACKAGE_JSON_PATH=$PACKAGE_JSON_PATH" >> $GITHUB_ENV
+
+    - name: Debug - Print package.json path
+      run: echo "package.json found at $PACKAGE_JSON_PATH"
 
     - name: Install dependencies
       run: yarn install --frozen-lockfile
