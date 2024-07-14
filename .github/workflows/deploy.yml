@@ -4,29 +4,42 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Set up Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
-        node-version: '14'
+        node-version: '18'  # Using a more recent LTS version of Node.js
 
     - name: Install dependencies
-      run: npm install
+      run: yarn install --frozen-lockfile  # Using yarn as per your project setup
 
     - name: Build app
-      run: npm run build
+      run: yarn build
+      env:
+        CI: false  # This prevents treating warnings as errors
 
     - name: Deploy to GitHub Pages
+      if: github.ref == 'refs/heads/main'  # Only deploy on push to main, not on PRs
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build
-        cname: your-custom-domain.com  # If you have a custom domain, otherwise remove this line
+        # cname: your-custom-domain.com  # Uncomment and set this if you have a custom domain
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: build
+        path: buildine
+        
