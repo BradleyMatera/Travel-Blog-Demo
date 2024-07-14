@@ -31,11 +31,9 @@ jobs:
 
     - name: Install dependencies
       run: yarn install --frozen-lockfile
-      working-directory: dev/readysettravel
 
     - name: Build app
       run: yarn build
-      working-directory: dev/readysettravel
       env:
         CI: false
         PUBLIC_URL: /ReadySetTravelPages/
@@ -46,7 +44,7 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v2
       with:
-        path: dev/readysettravel/build
+        path: ./build
 
     - name: Deploy to GitHub Pages
       id: deployment
