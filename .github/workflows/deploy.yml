@@ -29,27 +29,16 @@ jobs:
       with:
         node-version: '18'
 
-    - name: List directory contents
-      run: ls -R
-
-    - name: Find package.json
-      run: |
-        PACKAGE_JSON_PATH=$(find . -name package.json | grep -v /node_modules/ | head -n 1)
-        echo "PACKAGE_JSON_PATH=$PACKAGE_JSON_PATH" >> $GITHUB_ENV
-
-    - name: Debug - Print package.json path
-      run: echo "package.json found at $PACKAGE_JSON_PATH"
-
     - name: Install dependencies
       run: yarn install --frozen-lockfile
-      working-directory: ${{ steps.find-package-json.outputs.PACKAGE_JSON_DIR }}
+      working-directory: ./dev/readysettravel
 
     - name: Build app
       run: yarn build
-      working-directory: ${{ steps.find-package-json.outputs.PACKAGE_JSON_DIR }}
+      working-directory: ./dev/readysettravel
       env:
         CI: false
-        PUBLIC_URL: /https://github.com/BradleyMatera/ReadySetTravelPages
+        PUBLIC_URL: /ReadySetTravelPages/
 
     - name: Setup Pages
       uses: actions/configure-pages@v3
@@ -57,9 +46,8 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v2
       with:
-        path: ${{ steps.find-package-json.outputs.PACKAGE_JSON_DIR }}/build
+        path: ./dev/readysettravel/build
 
     - name: Deploy to GitHub Pages
       id: deployment
-      if: github.ref == 'refs/heads/main'
       uses: actions/deploy-pages@v2
