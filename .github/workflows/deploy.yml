@@ -1,4 +1,4 @@
-name: Deploy React App
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -13,16 +13,12 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
   build-and-deploy:
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code

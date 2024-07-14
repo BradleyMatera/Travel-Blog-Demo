@@ -1,5 +1,8 @@
 {
   "name": "readysettravel",
+  "description": "ReadySetTravel is a travel agency website that offers unique and engaging experiences to clients.",
+  "type": "react-app",
+  "homepage": "https://bradleymatera.github.io/WDV-119-Bradley-Matera/",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -25,6 +28,7 @@
     "yup-phone": "^1.3.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.24.8",
     "@babel/plugin-proposal-class-properties": "^7.18.6",
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/preset-env": "^7.24.8",
@@ -34,6 +38,7 @@
     "eslint": "^8.26.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
     "eslint-plugin-react": "^7.34.4",
     "eslint-plugin-react-hooks": "^4.6.2",
     "parcel": "^2.0.0",
