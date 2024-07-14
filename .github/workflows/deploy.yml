@@ -24,22 +24,30 @@ jobs:
       with:
         node-version: '18'
 
+    - name: Find package.json
+      id: find-package-json
+      run: |
+        PACKAGE_JSON=$(find . -name "package.json" -not -path "*/node_modules/*" -print -quit)
+        echo "PACKAGE_JSON_PATH=$(dirname $PACKAGE_JSON)" >> $GITHUB_OUTPUT
+
     - name: Install dependencies
       run: yarn install --frozen-lockfile
+      working-directory: ${{ steps.find-package-json.outputs.PACKAGE_JSON_PATH }}
 
     - name: Build app
       run: yarn build
+      working-directory: ${{ steps.find-package-json.outputs.PACKAGE_JSON_PATH }}
       env:
         CI: false
+
+    - name: Upload build artifacts
+      uses: actions/upload-pages-artifact@v2
+      with:
+        path: ${{ steps.find-package-json.outputs.PACKAGE_JSON_PATH }}/build
 
     - name: Deploy to GitHub Pages
       if: github.ref == 'refs/heads/main'
       uses: actions/deploy-pages@v2
       with:
         artifact_name: github-pages
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Upload build artifacts
-      uses: actions/upload-pages-artifact@v2
-      with:
-        path: build       
+        github_token: ${{ secrets.GITHUB_TOKEN }}      
