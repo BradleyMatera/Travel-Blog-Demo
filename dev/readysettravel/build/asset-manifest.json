@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ReadySetTravelPages/static/css/main.2426639f.css",
-    "main.js": "/ReadySetTravelPages/static/js/main.4f629c55.js",
+    "main.js": "/ReadySetTravelPages/static/js/main.cb0ff2ce.js",
     "static/js/488.722d7ace.chunk.js": "/ReadySetTravelPages/static/js/488.722d7ace.chunk.js",
     "static/media/booking-bg.jpg": "/ReadySetTravelPages/static/media/booking-bg.dec03650b1c34fb9c3a7.jpg",
     "index.html": "/ReadySetTravelPages/index.html",
     "main.2426639f.css.map": "/ReadySetTravelPages/static/css/main.2426639f.css.map",
-    "main.4f629c55.js.map": "/ReadySetTravelPages/static/js/main.4f629c55.js.map",
+    "main.cb0ff2ce.js.map": "/ReadySetTravelPages/static/js/main.cb0ff2ce.js.map",
     "488.722d7ace.chunk.js.map": "/ReadySetTravelPages/static/js/488.722d7ace.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2426639f.css",
-    "static/js/main.4f629c55.js"
+    "static/js/main.cb0ff2ce.js"
   ]
 }
