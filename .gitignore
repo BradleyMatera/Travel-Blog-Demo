@@ -1,4 +1,14 @@
-# globs
+API_KEY
+*.env
+*.secret
+*.config
+*.pem
+*.crt
+*.key
+*.p12
+*.pfx
+*.cer
+*.der# globs
 Makefile.in
 *.userprefs
 *.usertasks
