@@ -1,4 +1,22 @@
-API_KEY
+# Ignore node_modules
+node_modules/
+
+# Ignore API keys and sensitive files
+.env
+*.key
+*.pem
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore build files
+dist/
+build/
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.dbAPI_KEY
 *.env
 *.secret
 *.config
