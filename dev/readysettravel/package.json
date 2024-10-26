@@ -1,50 +1,11 @@
 {
-  "name": "readysettravel",
-  "version": "1.0.0",
-  "description": "ReadySetTravel is a travel agency website that offers unique and engaging experiences to clients.",
-  "type": "react-app",
-  "homepage": "https://bradleymatera.github.io/ReadySetTravelPages/",
-  "dependencies": {
-    "@emotion/react": "^11.11.0",
-    "@emotion/styled": "^11.11.0",
-    "@fontsource/inter": "5.0.19",
-    "@tanstack/react-query": "^4.0.0",
-    "@testing-library/dom": "^8.15.1",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^14.0.0",
-    "@testing-library/react-hooks": "^7.0.2",
-    "@testing-library/user-event": "^14.4.0",
-    "@types/jest": "^29.5.1",
-    "@types/lodash": "^4.14.195",
-    "@types/node": "^18.11.1",
-    "@types/react": "^18.2.28",
-    "@types/react-dom": "^18.2.3",
-    "@types/react-router-dom": "^5.3.3",
-    "axios": "^1.7.2",
-    "framer-motion": "^7.4.2",
-    "nth-check": "^2.1.1",
-    "prop-types": "^15.8.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-dropzone": "^14.2.3",
-    "react-helmet": "^6.1.0",
-    "react-hook-form": "^7.43.0",
-    "react-i18next": "^14.1.2",
-    "react-icons": "^5.2.1",
-    "react-intersection-observer": "^9.4.3",
-    "react-modal": "^3.15.6",
-    "react-redux": "^8.1.1",
-    "react-router": "^6.14.0",
-    "react-router-dom": "^6.14.0",
-    "react-scripts": "^5.0.1",
-    "react-spring": "^9.4.1",
-    "react-toastify": "^9.1.2",
-    "react-transition-group": "^4.4.5",
-    "react-use-form-state": "0.13.2",
-    "react-use-media-query": "^1.0.2",
-    "styled-components": "^6.1.11",
-    "tailwindcss": "^3.4.3",
-    "web-vitals": "^4.2.1"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
@@ -54,31 +15,5 @@
     "postcss-preset-env": "^7.3.3",
     "typescript": "^4.5.5",
     "gh-pages": "^4.0.0"
-  },
-  "scripts": {
-    "start": "npm start",
-    "build": "npm run build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "test": "npm test",
-    "eject": "npm run eject"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ],
-    "modern": [
-      "last 2 versions",
-      "> 1%",
-      "not dead",
-      "not op_mini all"
-    ]
   }
 }

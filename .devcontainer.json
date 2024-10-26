@@ -1,0 +1,7 @@
+{
+  "tasks": {
+    "test": "echo \"No tests are configured for this repository.\"",
+    "build": "npm install && npm run build",
+    "launch": "yarn install && yarn start"
+  }
+}
