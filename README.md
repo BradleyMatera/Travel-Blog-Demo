@@ -36,9 +36,21 @@ To get started with ReadySetTravel, follow these steps:
    yarn build
    ```
 
+5. Deploy to GitHub Pages:
+   ```bash
+   yarn deploy
+   ```
+
 ## Usage
 
 Once the development server is running, you can access the application in your browser at `http://localhost:3000`.
+
+To deploy the application to GitHub Pages, run the following command:
+```bash
+yarn deploy
+```
+
+The application will be deployed to the `gh-pages` branch and accessible at `https://yourusername.github.io/readysettravel`.
 
 ## Features
 
